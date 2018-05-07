@@ -20,6 +20,7 @@ export default [
       commonjs(),
       json(),
       babel({
+        runtimeHelpers: true,
         exclude: ['node_modules/**', '**/*.json']
       })
     ]
@@ -39,6 +40,7 @@ export default [
     ],
     plugins: [
       babel({
+        runtimeHelpers: true,
         exclude: ['node_modules/**']
       })
     ]
