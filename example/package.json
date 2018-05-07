@@ -1,0 +1,12 @@
+{
+  "name": "ok-example",
+  "version": "0.0.1",
+  "description": "OpenKnowledge example",
+  "main": "index.js",
+  "author": "Sina Mahmoodi",
+  "license": "MIT",
+  "dependencies": {
+    "ipfs": "^0.28.2",
+    "orbit-db": "^0.19.7"
+  }
+}
