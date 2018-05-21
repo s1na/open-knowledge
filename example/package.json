@@ -7,6 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "ipfs": "^0.28.2",
-    "orbit-db": "^0.19.7"
+    "ipfs-api": "^21.0.0",
+    "n3": "^1.0.0-beta.1"
   }
 }

@@ -7,11 +7,16 @@
   "main": "dist/open-knowledge.cjs.js",
   "module": "dist/open-knowledge.esm.js",
   "browser": "dist/open-knowledge.umd.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:s1na/open-knowledge.git"
+  },
   "engines": {
     "node": ">=8.0.0"
   },
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "dev": "rollup -w -c"
   },
   "dependencies": {},
   "devDependencies": {

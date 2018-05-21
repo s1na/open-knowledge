@@ -1,20 +1,25 @@
 'use strict'
 
+import Store from './store'
+
 export default class OpenKnowledge {
-  constructor(orbitdb) {
-    this.orbitdb = orbitdb 
+  constructor(ipfs, repo) {
+    this.store = new Store(ipfs, repo)
   }
 
   async init() {
-    this.kvstore = await this.orbitdb.keyvalue('openknowledge.kv')
-    // this.logstore = await orbitdb.log('OpenKnowledge.log')
+    await this.store.init()
   }
 
   async add(k, v) {
-    return this.kvstore.put(k, v)
+    return this.store.add(k, v)
   }
 
   async get(k) {
-    return this.kvstore.get(k)
+    return this.store.get(k)
+  }
+
+  addQuad(s, p, o, g) {
+    return this.store.addQuad(s, p, o, g)
   }
 }

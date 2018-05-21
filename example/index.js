@@ -1,7 +1,7 @@
 'use strict'
 
-const IPFS = require('ipfs')
-const OrbitDB = require('orbit-db')
+//const IPFS = require('ipfs')
+const ipfsAPI = require('ipfs-api')
 const OpenKnowledge = require('../dist/open-knowledge.cjs.js')
 
 const ipfsOptions = {
@@ -10,13 +10,12 @@ const ipfsOptions = {
   }
 }
 
-const ipfs = new IPFS(ipfsOptions)
+//const ipfs = new IPFS(ipfsOptions)
+const ipfs = ipfsAPI('/ip4/0.0.0.0/tcp/5001')
+const repo = 'zdpuAzjriaoFVgjznag9T9E8cANfTjZ4XiMWHXpSMEkjG2uqu'
 
-ipfs.on('error', (e) => console.error(e))
-ipfs.on('ready', async () => {
-  const orbit = new OrbitDB(ipfs)
-  const ok = new OpenKnowledge(orbit)
-  await ok.init()
-  await ok.add('myfile.rdf', 'test')
-  console.log(await ok.get('myfile.rdf'))
+const ok = new OpenKnowledge(ipfs, repo)
+ok.init().then(async () => {
+  await ok.store.addGraph('myGraph')
+  await ok.addQuad('<http://en.wikipedia.org/wiki/Tony_Benn>', '<http://purl.org/dc/elements/1.1/title>', 'Tony Benn', 'myGraph')
 })
