@@ -12,10 +12,10 @@ const ipfsOptions = {
 
 //const ipfs = new IPFS(ipfsOptions)
 const ipfs = ipfsAPI('/ip4/0.0.0.0/tcp/5001')
-const repo = 'zdpuAzjriaoFVgjznag9T9E8cANfTjZ4XiMWHXpSMEkjG2uqu'
+const repo = 'zdpuB1vFoGwf5teb9nhuWLDYh29oh9rqhArtSuTdFbhRbWUAE'
 
 const ok = new OpenKnowledge(ipfs, repo)
 ok.init().then(async () => {
-  await ok.store.addGraph('myGraph')
-  await ok.addQuad('<http://en.wikipedia.org/wiki/Tony_Benn>', '<http://purl.org/dc/elements/1.1/title>', 'Tony Benn', 'myGraph')
+  await ok.store.addGraph('default')
+  await ok.addQuad('<http://en.wikipedia.org/wiki/Tony_Benn>', '<http://purl.org/dc/elements/1.1/title>', 'Tony Benn', 'default')
 })
