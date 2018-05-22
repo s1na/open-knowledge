@@ -6,8 +6,6 @@ export default class Store {
   constructor(ipfs, repo) {
     this.ipfs = ipfs
     this._repoCid = repo
-    this._graphs = {}
-    this._size = null
     this.state = null
     this.dag = new Dag(ipfs, repo)
   }
@@ -19,6 +17,10 @@ export default class Store {
     }
 
     console.log('Fetched root state: ', this.state)
+  }
+
+  size() {
+    return this.state.size
   }
 
   async addGraph(name) {
@@ -80,7 +82,9 @@ export default class Store {
 
     await this._updateGraph(g, graph)
 
-    this._size = null
+    this.state.size++
+    this._repoCid = (await this.dag.put(this.state)).toBaseEncodedString()
+    console.log('New root: ', this._repoCid)
   }
 
   async getQuads(s, p, o, g) {
@@ -184,25 +188,5 @@ export default class Store {
     o = decodeURIComponent(o)
 
     return [s, p, o]
-  }
-
-  size() {
-    let size = this._size;
-    if (size !== null) {
-      return size;
-    }
-
-    // Calculate the number of quads by counting to the deepest level
-    size = 0;
-    var graphs = this._graphs, subjects, subject;
-    for (let graphKey in graphs) {
-      for (let subjectKey in (subjects = graphs[graphKey].subjects)) {
-        for (let predicateKey in (subject = subjects[subjectKey])) {
-          size += Object.keys(subject[predicateKey]).length;
-        }
-      }
-    }
-
-    return this._size = size;
   }
 }
