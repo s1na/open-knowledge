@@ -18,4 +18,5 @@ const ok = new OpenKnowledge(ipfs, repo)
 ok.init().then(async () => {
   await ok.store.addGraph('default')
   await ok.addQuad('<http://en.wikipedia.org/wiki/Tony_Benn>', '<http://purl.org/dc/elements/1.1/title>', 'Tony Benn', 'default')
+  console.log(await ok.store.getQuads(null, null, null, 'default'))
 })

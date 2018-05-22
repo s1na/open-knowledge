@@ -41,12 +41,15 @@ export default class Store {
     await this._updateGraph(name, graph)
   }
 
+  async addQuads(quads) {
+    for (var i = 0; i < quads.length; i++) {
+      await this.addQuad(quads[i])
+    }
+  }
+
   async addQuad(s, p, o, g) {
     // IPLD links should not contain special chars like /
-    s = encodeURIComponent(s)
-    p = encodeURIComponent(p)
-    o = encodeURIComponent(o)
-    g = encodeURIComponent(g)
+    ({ s, p, o, g } = this._sanitizeQuad(s, p, o, g))
 
     if (!(g in this.state.graphs)) {
       throw new Error('Graph does not exist')
@@ -57,6 +60,7 @@ export default class Store {
 
     let { existed, cid: spo } = await this._addToIndex(this._repoCid + '/graphs/' + g + '/spo', s, p, o)
     if (existed) {
+      console.log('Quad already exists, skipping')
       return
     }
 
@@ -81,10 +85,46 @@ export default class Store {
     this._size = null
   }
 
-  async addQuads(quads) {
-    for (var i = 0; i < quads.length; i++) {
-      this.addQuad(quads[i])
+  async getQuads(s, p, o, g) {
+    ({ s, p, o, g } = this._sanitizeQuad(s, p, o, g))
+
+    if (!(g in this.state.graphs)) {
+      throw new Error('Failed to get graph')
     }
+
+    let els = { s, p, o }
+    let variable = []
+    let fixed = []
+    let fixedEls = []
+
+    for (let k in els) {
+      if (els[k] === null) {
+        variable.push(k)
+      } else {
+        fixed.push(k)
+        fixedEls.push(els[k])
+      }
+    }
+
+    let iname = fixed.join('') + variable.join('')
+    let path = this._repoCid + '/graphs/' + g + '/' + iname
+
+    return this._loopIndex(path, fixedEls, variable)
+  }
+
+  async _loopIndex(basePath, fixed, variable) {
+    if (variable.length === 0) {
+      return [this._decodeTriple(...fixed)]
+    }
+
+    let res = []
+    console.log('getting index ', basePath + '/' + fixed.join('/'))
+    let index = await this.dag.get(basePath + '/' + fixed.join('/'))
+    for (let k in index) {
+      res = res.concat(await this._loopIndex(basePath, fixed.concat([k]), variable.slice(1)))
+    }
+
+    return res
   }
 
   // Adds a quad to a three-layered index.
@@ -126,6 +166,23 @@ export default class Store {
     this.state.graphs[name] = { '/': cid }
     this._repoCid = (await this.dag.put(this.state)).toBaseEncodedString()
     console.log('Updated graph ', name, '. New root: ', this._repoCid)
+  }
+
+  _sanitizeQuad(s, p, o, g) {
+    s = typeof s === 'string' ? encodeURIComponent(s) : s
+    p = typeof p === 'string' ? encodeURIComponent(p) : p
+    o = typeof o === 'string' ? encodeURIComponent(o) : o
+    g = typeof g === 'string' ? encodeURIComponent(g) : g
+
+    return { s, p, o, g }
+  }
+
+  _decodeTriple(s, p, o) {
+    s = decodeURIComponent(s)
+    p = decodeURIComponent(p)
+    o = decodeURIComponent(o)
+
+    return [s, p, o]
   }
 
   size() {
