@@ -56,7 +56,6 @@ export default class Store {
     }
 
     let graph = await this.dag.get(this._repoCid + '/graphs/' + g)
-    console.log(graph)
 
     let { existed, cid: spo } = await this._addToIndex(this._repoCid + '/graphs/' + g + '/spo', s, p, o)
     if (existed) {
@@ -78,7 +77,6 @@ export default class Store {
       osp: { '/': osp },
       ops: { '/': ops },
     }
-    console.log(graph)
 
     await this._updateGraph(g, graph)
 
@@ -95,33 +93,36 @@ export default class Store {
     let els = { s, p, o }
     let variable = []
     let fixed = []
-    let fixedEls = []
+    let fixedEls = {}
 
     for (let k in els) {
       if (els[k] === null) {
         variable.push(k)
       } else {
         fixed.push(k)
-        fixedEls.push(els[k])
+        fixedEls[k] = els[k]
       }
     }
 
     let iname = fixed.join('') + variable.join('')
     let path = this._repoCid + '/graphs/' + g + '/' + iname
+    for (let k in fixed) {
+      path += '/' + fixedEls[fixed[k]]
+    }
 
     return this._loopIndex(path, fixedEls, variable)
   }
 
-  async _loopIndex(basePath, fixed, variable) {
+  async _loopIndex(path, fixed, variable) {
     if (variable.length === 0) {
-      return [this._decodeTriple(...fixed)]
+      return [this._decodeTriple(fixed.s, fixed.p, fixed.o)]
     }
 
     let res = []
-    console.log('getting index ', basePath + '/' + fixed.join('/'))
-    let index = await this.dag.get(basePath + '/' + fixed.join('/'))
+    console.log('getting index ', path)
+    let index = await this.dag.get(path)
     for (let k in index) {
-      res = res.concat(await this._loopIndex(basePath, fixed.concat([k]), variable.slice(1)))
+      res = res.concat(await this._loopIndex(path + '/' + k, Object.assign({}, fixed, { [variable[0]]: k }), variable.slice(1)))
     }
 
     return res
