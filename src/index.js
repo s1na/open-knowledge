@@ -19,7 +19,7 @@ export default class OpenKnowledge {
     return this.store.get(k)
   }
 
-  addQuad(s, p, o, g) {
-    return this.store.addQuad(s, p, o, g)
+  addTriple(s, p, o, g) {
+    return this.store.addTriple(s, p, o, g)
   }
 }

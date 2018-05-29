@@ -29,7 +29,7 @@ export default class Store {
       return
     }
 
-    let emptyObjCid = (await this.dag.put({})).toBaseEncodedString()
+    let emptyObjCid = await this.dag.put({})
 
     let graph = {
       spo: { '/': emptyObjCid },
@@ -43,21 +43,56 @@ export default class Store {
     await this._updateGraph(name, graph)
   }
 
-  async addQuads(quads) {
+  async seqAddTriples(quads) {
     for (var i = 0; i < quads.length; i++) {
-      await this.addQuad(quads[i])
+      await this.addQuad(...quads[i])
     }
   }
 
-  async addQuad(s, p, o, g) {
+  async addTriples(triples, g) {
+    ({ g } = this._sanitizeQuad(null, null, null, g))
+
+    if (!(g in this.state.graphs)) {
+      throw new Error('Graph ' + g + ' does not exist')
+    }
+
+    let diff = { spo: {}, sop: {}, pso: {}, pos: {}, osp: {}, ops: {} }
+    for (let i in triples) {
+      let triple = triples[i]
+      let { s, p, o } = this._sanitizeQuad(triple[0], triple[1], triple[2], g)
+
+      // Skip if exists
+      let item = await this.dag.get(this._repoCid + '/graphs/' + g + '/spo/' + s + '/' + p)
+      if (item !== null && o in item) {
+        console.log('triple exists, skipping')
+        continue
+      }
+
+      this._addToDiff(diff.spo, s, p, o)
+      this._addToDiff(diff.sop, s, o, p)
+      this._addToDiff(diff.pso, p, s, o)
+      this._addToDiff(diff.pos, p, o, s)
+      this._addToDiff(diff.osp, o, s, p)
+      this._addToDiff(diff.ops, o, p, s)
+    }
+
+    let cid = await this.dag.merge(this._repoCid + '/graphs/' + g, diff)
+    if (cid === null) {
+      return
+    }
+
+    this.state.graphs[g] = { '/': cid }
+    this._repoCid = await this.dag.put(this.state)
+    console.log('Updated graph ', g, '. New root: ', this._repoCid)
+  }
+
+  async addTriple(s, p, o, g) {
     // IPLD links should not contain special chars like /
     ({ s, p, o, g } = this._sanitizeQuad(s, p, o, g))
 
     if (!(g in this.state.graphs)) {
-      throw new Error('Graph does not exist')
+      throw new Error('Graph ' + g + ' does not exist')
     }
-
-    let graph = await this.dag.get(this._repoCid + '/graphs/' + g)
 
     let { existed, cid: spo } = await this._addToIndex(this._repoCid + '/graphs/' + g + '/spo', s, p, o)
     if (existed) {
@@ -71,7 +106,7 @@ export default class Store {
     let { cid: osp } = await this._addToIndex(this._repoCid + '/graphs/' + g + '/osp', o, s, p)
     let { cid: ops } = await this._addToIndex(this._repoCid + '/graphs/' + g + '/ops', o, p, s)
 
-    graph = {
+    let graph = {
       sop: { '/': sop },
       spo: { '/': spo },
       pso: { '/': pso },
@@ -83,11 +118,11 @@ export default class Store {
     await this._updateGraph(g, graph)
 
     this.state.size++
-    this._repoCid = (await this.dag.put(this.state)).toBaseEncodedString()
+    this._repoCid = await this.dag.put(this.state)
     console.log('New root: ', this._repoCid)
   }
 
-  async getQuads(s, p, o, g) {
+  async getTriples(s, p, o, g) {
     ({ s, p, o, g } = this._sanitizeQuad(s, p, o, g))
 
     if (!(g in this.state.graphs)) {
@@ -155,11 +190,11 @@ export default class Store {
     let existed = key2 in index2
     if (!existed) {
       index2[key2] = true
-      let cid2 = (await this.dag.put(index2)).toBaseEncodedString()
+      let cid2 = await this.dag.put(index2)
       index1[key1] = { '/': cid2 }
-      let cid1 = (await this.dag.put(index1)).toBaseEncodedString()
+      let cid1 = await this.dag.put(index1)
       index0[key0] = { '/': cid1 }
-      let cid0 = (await this.dag.put(index0)).toBaseEncodedString()
+      let cid0 = await this.dag.put(index0)
       return { existed: false, cid: cid0 }
     }
 
@@ -167,10 +202,16 @@ export default class Store {
   }
 
   async _updateGraph(name, obj) {
-    let cid = (await this.dag.put(obj)).toBaseEncodedString()
+    let cid = await this.dag.put(obj)
     this.state.graphs[name] = { '/': cid }
-    this._repoCid = (await this.dag.put(this.state)).toBaseEncodedString()
+    this._repoCid = await this.dag.put(this.state)
     console.log('Updated graph ', name, '. New root: ', this._repoCid)
+  }
+
+  _addToDiff(i0, k0, k1, k2) {
+    let i1 = i0[k0] || (i0[k0] = {})
+    let i2 = i1[k1] || (i1[k1] = {})
+    i2[k2] = true
   }
 
   _sanitizeQuad(s, p, o, g) {

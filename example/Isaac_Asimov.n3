@@ -1,0 +1,674 @@
+@prefix dbo:	<http://dbpedia.org/ontology/> .
+@prefix dbr:	<http://dbpedia.org/resource/> .
+<http://dbpedia.org/resource/Probe_(1988_TV_series)>	dbo:creator	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/John_W._Campbell>	dbo:influenced	dbr:Isaac_Asimov .
+dbr:Lucky_Starr_and_the_Big_Sun_of_Mercury	dbo:author	dbr:Isaac_Asimov .
+dbr:Lucky_Starr_and_the_Oceans_of_Venus	dbo:author	dbr:Isaac_Asimov .
+dbr:Lucky_Starr_and_the_Pirates_of_the_Asteroids	dbo:author	dbr:Isaac_Asimov .
+dbr:Lucky_Starr_and_the_Rings_of_Saturn	dbo:author	dbr:Isaac_Asimov .
+dbr:Of_Matters_Great_and_Small	dbo:author	dbr:Isaac_Asimov .
+dbr:Of_Time_and_Space_and_Other_Things	dbo:author	dbr:Isaac_Asimov .
+dbr:Foundation_and_Earth	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Solar_System_and_Back	dbo:author	dbr:Isaac_Asimov .
+dbr:Robots_and_Empire	dbo:author	dbr:Isaac_Asimov .
+dbr:Fact_and_Fancy	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Asimov\u0027s_Mysteries>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Todd_A._Fonseca>	dbo:influencedBy	dbr:Isaac_Asimov .
+dbr:Inside_the_Atom	dbo:author	dbr:Isaac_Asimov .
+dbr:Pebble_in_the_Sky	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/._._._That_Thou_Art_Mindful_of_Him>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Mirror_Image_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+@prefix dbp:	<http://dbpedia.org/property/> .
+dbr:Primortals	dbp:creators	dbr:Isaac_Asimov .
+dbr:A_Statue_for_Father	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Light_Verse_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Tercentenary_Incident	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Lenny_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Naked_Sun	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Heredity_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Robot_Dreams_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Foundation\u0027s_Edge>	dbo:author	dbr:Isaac_Asimov .
+dbr:Prelude_to_Foundation	dbo:author	dbr:Isaac_Asimov .
+dbr:Forward_the_Foundation	dbo:author	dbr:Isaac_Asimov .
+dbr:Marooned_off_Vesta	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Mother_Earth_(novelette)>	dbo:author	dbr:Isaac_Asimov .
+dbr:The_End_of_Eternity	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Gods_Themselves	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/David_Starr,_Space_Ranger>	dbo:author	dbr:Isaac_Asimov .
+dbr:Day_of_the_Hunters	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/P\u00E2t\u00E9_de_Foie_Gras_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+dbr:Victory_Unintentional	dbo:author	dbr:Isaac_Asimov .
+dbr:A_Loint_of_Paw	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Ultimate_Crime	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/History_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Stranger_in_Paradise_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Let\u0027s_Get_Together_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Robots_of_Dawn	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/The_Stars,_Like_Dust>	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Currents_of_Space	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Positronic_Man	dbo:author	dbr:Isaac_Asimov .
+dbr:Jack_Williamson	dbo:influenced	dbr:Isaac_Asimov .
+dbr:John_Gribbin	dbo:influencedBy	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Liar!_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+dbr:Extraterrestrial_Civilizations	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_1_(1939)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Speculations_(book)>	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Death_Dealers	dbo:author	dbr:Isaac_Asimov .
+dbr:Nine_Tomorrows	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Breeds_There_a_Man...%3F>	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Union_Club_Mysteries	dbo:author	dbr:Isaac_Asimov .
+dbr:Murder_at_the_ABA	dbo:author	dbr:Isaac_Asimov .
+dbr:Lucky_Starr_and_the_Moons_of_Jupiter	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Dying_Night	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Early_Asimov	dbo:author	dbr:Isaac_Asimov .
+@prefix ns3:	<http://dbpedia.org/resource/The_Asimov_Chronicles:> .
+ns3:_Fifty_Years_of_Isaac_Asimov	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Asimov\u0027s_Guide_to_Shakespeare>	dbo:author	dbr:Isaac_Asimov .
+dbr:Before_the_Golden_Age	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Callistan_Menace	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Hugo_Winners	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Caves_of_Steel	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Bicentennial_Man_and_Other_Stories	dbo:author	dbr:Isaac_Asimov .
+dbr:Earth_Is_Room_Enough	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Nemesis_(Asimov_novel)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/The_Edge_of_Tomorrow_(Asimov_book)>	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Martian_Way_and_Other_Stories	dbo:author	dbr:Isaac_Asimov .
+dbr:Second_Foundation	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Singing_Bell	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Talking_Stone	dbo:author	dbr:Isaac_Asimov .
+dbr:Opus_100	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Dust_of_Death	dbo:author	dbr:Isaac_Asimov .
+dbr:First_Law	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Robbie_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Satisfaction_Guaranteed_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/I\u0027m_in_Marsport_Without_Hilda>	dbo:author	dbr:Isaac_Asimov .
+dbr:Feminine_Intuition	dbo:author	dbr:Isaac_Asimov .
+dbr:Galley_Slave	dbo:author	dbr:Isaac_Asimov .
+dbr:Robot_AL-76_Goes_Astray	dbo:author	dbr:Isaac_Asimov .
+dbr:Opus_200	dbo:author	dbr:Isaac_Asimov .
+dbr:Catch_That_Rabbit	dbo:author	dbr:Isaac_Asimov .
+dbr:Little_Lost_Robot	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Runaround_(story)>	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Rest_of_the_Robots	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Ugly_Little_Boy	dbo:author	dbr:Isaac_Asimov .
+dbr:Tales_of_the_Black_Widowers	dbo:author	dbr:Isaac_Asimov .
+dbr:Banquets_of_the_Black_Widowers	dbo:author	dbr:Isaac_Asimov .
+dbr:Casebook_of_the_Black_Widowers	dbo:author	dbr:Isaac_Asimov .
+dbr:More_Tales_of_the_Black_Widowers	dbo:author	dbr:Isaac_Asimov .
+dbr:Puzzles_of_the_Black_Widowers	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Return_of_the_Black_Widowers	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_10_(1948)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_11_(1949)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_12_(1950)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_13_(1951)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_14_(1952)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_15_(1953)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_16_(1954)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_17_(1955)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_18_(1956)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_19_(1957)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_20_(1958)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_21_(1959)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_22_(1960)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_23_(1961)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_24_(1962)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_25_(1963)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_2_(1940)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_3_(1941)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_4_(1942)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_5_(1943)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_6_(1944)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_7_(1945)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_8_(1946)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Isaac_Asimov_Presents_The_Great_SF_Stories_9_(1947)>	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Best_Mysteries_of_Isaac_Asimov	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Disappearing_Man_and_Other_Mysteries	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Key_Word_and_Other_Mysteries	dbo:author	dbr:Isaac_Asimov .
+dbr:Captain_Video_and_His_Video_Rangers	dbo:author	dbr:Isaac_Asimov .
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+@prefix wikipedia-en:	<http://en.wikipedia.org/wiki/> .
+wikipedia-en:Isaac_Asimov	foaf:primaryTopic	dbr:Isaac_Asimov .
+dbr:Hiroyuki_Morioka	dbo:influencedBy	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Christopher_Pike_(author)>	dbo:influencedBy	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Francisco_Santos_(swimmer)__Xesko__1>	dbo:influencedBy	dbr:Isaac_Asimov .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix yago:	<http://dbpedia.org/class/yago/> .
+dbr:Isaac_Asimov	rdf:type	yago:WikicatAmericanCrimeFictionWriters ,
+		yago:WikicatAmericanMaleNovelists .
+@prefix wikidata:	<http://www.wikidata.org/entity/> .
+dbr:Isaac_Asimov	rdf:type	wikidata:Q36180 ,
+		yago:Novelist110363573 ,
+		yago:WikicatAmericanShortStoryWriters ,
+		foaf:Person ,
+		yago:WikicatHistoriansOfScience .
+@prefix umbel-rc:	<http://umbel.org/umbel/rc/> .
+dbr:Isaac_Asimov	rdf:type	umbel-rc:Writer ,
+		yago:WikicatAmericanHumanists ,
+		yago:WikicatWorldconGuestsOfHonor ,
+		yago:WikicatSFWAGrandMasters ,
+		yago:Chemist109913824 ,
+		yago:Visitor110757193 ,
+		yago:GuestOfHonor110151261 ,
+		yago:Guest110150940 ,
+		yago:WikicatBiochemists ,
+		wikidata:Q24229398 ,
+		yago:WikicatAmericanNon-fictionEnvironmentalWriters ,
+		yago:WikicatHistoriansOfAstronomy ,
+		wikidata:Q215627 ,
+		yago:Biochemist109854915 ,
+		umbel-rc:PersonWithOccupation ,
+		yago:EnlistedPerson110058777 ,
+		yago:Soldier110622053 ,
+		yago:WikicatAlternateHistoryWriters ,
+		yago:WikicatScienceFictionBibliographies ,
+		yago:WikicatSovietEmigrantsToTheUnitedStates ,
+		yago:Bibliography106486630 ,
+		yago:WikicatScienceWriters ,
+		yago:WikicatScienceFictionWriters ,
+		yago:WikicatBibliographiesByWriter ,
+		yago:WikicatBibliographiesOfAmericanWriters ,
+		yago:Database106637824 ,
+		yago:List106481320 ,
+		yago:WikicatAmericanWriters ,
+		yago:Scientist110560637 ,
+		yago:WikicatJewishAtheists ,
+		yago:Advocate109774783 ,
+		yago:WikicatAmericanAtheists .
+@prefix ns10:	<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+dbr:Isaac_Asimov	rdf:type	ns10:NaturalPerson ,
+		ns10:Agent ,
+		yago:WikicatPeopleFromBrooklyn ,
+		yago:WikicatJewishSkeptics ,
+		yago:Peer109626238 ,
+		yago:Worker109632518 ,
+		yago:WikicatFellowsOfTheCommitteeForSkepticalInquiry ,
+		yago:Colleague109935990 ,
+		yago:Serviceman110582746 ,
+		yago:SkilledWorker110605985 ,
+		yago:WikicatAmericanBiochemists ,
+		yago:Associate109816771 ,
+		umbel-rc:Artist ,
+		yago:Writer110794014 ,
+		dbo:Agent ,
+		yago:Performer110415638 .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+dbr:Isaac_Asimov	rdf:type	owl:Thing ,
+		yago:Communicator109610660 ,
+		yago:Message106598915 ,
+		yago:Scholar110557854 ,
+		yago:Entertainer109616922 ,
+		yago:Creator109614315 ,
+		yago:Comedian109940146 ,
+		yago:Intellectual109621545 ,
+		yago:Artist109812338 ,
+		yago:Alumnus109786338 ,
+		yago:WikicatSkeptics ,
+		yago:Autobiographer109825296 ,
+		yago:Communication100033020 ,
+		yago:Editor110044879 ,
+		yago:SportsFan110639925 ,
+		yago:WikicatScienceFictionFans ,
+		yago:Abstraction100002137 ,
+		yago:WikicatHumorResearchers ,
+		yago:Enthusiast110059582 ,
+		yago:Supporter110677713 ,
+		yago:WikicatCrimeFictionWriters ,
+		yago:WikicatPeopleOfRussianDescent ,
+		yago:ResearchWorker110523076 ,
+		yago:NonreligiousPerson109625789 ,
+		dbo:Writer ,
+		yago:WikicatAmericanNovelists ,
+		yago:Biographer109855433 ,
+		yago:WikicatYiddish-speakingPeople ,
+		yago:WikicatJewishScientists ,
+		yago:WikicatAmericanAutobiographers ,
+		yago:WikicatAmericanEssayists ,
+		yago:Emigrant110051975 ,
+		yago:Migrant110314952 ,
+		yago:Traveler109629752 ,
+		yago:WikicatAmericanSkeptics ,
+		yago:WikicatAmericanScienceWriters ,
+		yago:Humorist110191943 ,
+		yago:Skeptic110604634 ,
+		yago:Maestro110280130 ,
+		yago:Person100007846 ,
+		yago:Object100002684 ,
+		yago:YagoLegalActor ,
+		yago:YagoLegalActorGeo ,
+		yago:WikicatAmericanWritersOfRussianDescent ,
+		yago:WikicatAmericanPeopleOfRussian-JewishDescent ,
+		yago:PhysicalEntity100001930 ,
+		yago:WikicatJewishAmericanNovelists ,
+		yago:WikicatEnglish-languageWriters ,
+		yago:WikicatAmericanMysteryWriters ,
+		yago:WikicatCriticsOfReligions ,
+		yago:WikicatAmericanScienceFictionWriters ,
+		yago:WikicatJewishAmericanWriters ,
+		yago:WikicatColumbiaUniversityAlumni ,
+		yago:WikicatFellowsOfTheAmericanAcademyOfArtsAndSciences ,
+		yago:WikicatAmericanNon-fictionWriters ,
+		yago:WikicatEditors ,
+		yago:WikicatNon-fictionWriters ,
+		yago:WikicatAmericanPeople ,
+		yago:Information106634376 ,
+		yago:Authority109824361 ,
+		yago:Organism100004475 ,
+		dbo:Person ,
+		yago:Critic109979321 ,
+		yago:Evaluator110066732 ,
+		yago:CausalAgent100007347 ,
+		yago:Whole100003553 ,
+		yago:LivingThing100004258 ,
+		yago:Historian110177150 ,
+		yago:Expert109617867 .
+@prefix ns12:	<http://dbpedia.org/class/yago/WikicatPeopleWithHIV/> .
+dbr:Isaac_Asimov	rdf:type	ns12:AIDS ,
+		yago:Atheist109820044 ,
+		yago:Disbeliever110015897 ,
+		yago:WikicatAmericanComedians ,
+		yago:Essayist110064405 ,
+		wikidata:Q5 ,
+		yago:WikicatUnitedStatesArmySoldiers ,
+		yago:WikicatPeopleFromShumyachskyDistrict ,
+		yago:Humanist110191192 ,
+		yago:WikicatAmericanHumorists .
+@prefix schema:	<http://schema.org/> .
+dbr:Isaac_Asimov	rdf:type	schema:Person ,
+		yago:Wikicat20th-centuryAmericanNovelists .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+dbr:Isaac_Asimov	rdfs:label	"Isaac Asimov"@es ,
+		"Isaac Asimov"@de ,
+		"Isaac Asimov"@it ,
+		"\u0625\u0633\u062D\u0642 \u0639\u0638\u064A\u0645\u0648\u0641"@ar ,
+		"\u0410\u0437\u0438\u043C\u043E\u0432, \u0410\u0439\u0437\u0435\u043A"@ru ,
+		"Isaac Asimov"@nl ,
+		"Isaac Asimov"@pt ,
+		"Isaac Asimov"@pl ,
+		"\u30A2\u30A4\u30B6\u30C3\u30AF\u30FB\u30A2\u30B7\u30E2\u30D5"@ja ,
+		"Isaac Asimov"@en ,
+		"Isaac Asimov"@fr ,
+		"\u827E\u8428\u514B\u00B7\u963F\u897F\u83AB\u592B"@zh ;
+	rdfs:comment	"\u0625\u0633\u062D\u0642 \u0639\u0638\u064A\u0645\u0648\u0641 \u0623\u0648 \u0625\u0633\u062D\u0627\u0642 \u0623\u0633\u064A\u0645\u0648\u0641 \u0623\u0648 \u0625\u0633\u062D\u0627\u0642 \u0623\u0632\u064A\u0645\u0648\u0641 (2 \u064A\u0646\u0627\u064A\u0631 1920 - 6 \u0623\u0628\u0631\u064A\u0644 1992) (\u0628\u0627\u0644\u0639\u0628\u0631\u064A\u0629: \u05D0\u05D9\u05D9\u05D6\u05E7 \u05D0\u05E1\u05D9\u05DE\u05D5\u05D1 \u0622\u064A\u0632\u0643 \u0623\u0633\u064A\u0645\u0648\u0641) (\u0628\u0627\u0644\u0631\u0648\u0633\u064A\u0629: \u0410\u0439\u0437\u0435\u043A \u0410\u0437\u0438\u043C\u043E\u0432) (\u0628\u0627\u0644\u0625\u0646\u062C\u0644\u064A\u0632\u064A\u0629: Isaac Asimov) \u0645\u0624\u0644\u0641 \u0623\u0645\u0631\u064A\u0643\u064A \u0631\u0648\u0633\u064A \u0627\u0644\u0645\u0648\u0644\u062F \u0648\u0643\u064A\u0645\u064A\u0627\u0626\u064A \u062D\u064A\u0648\u064A \u0641\u064A \u062A\u062E\u0635\u0635\u0647 \u0627\u0644\u0623\u0635\u0644\u064A."@ar ,
+		"\u4EE5\u6492\u00B7\u827E\u897F\u83AB\u592B\uFF08Isaac Asimov\uFF0C\u751F\u540D\uFF1A\u4F0A\u8428\u514B\u00B7\u5C24\u591A\u7EF4\u5947\u00B7\u5965\u6D4E\u83AB\u592B\uFF0C\u0418\u0441\u0430\u0430\u043A \u042E\u0301\u0434\u043E\u0432\u0438\u0447 \u041E\u0437\u0438\u0301\u043C\u043E\u0432\uFF0C1920\u5E741\u67082\u65E5\uFF0D1992\u5E744\u67086\u65E5\uFF09\uFF0C\u51FA\u751F\u65BC\u4FC4\u7F85\u65AF\u7684\u7F8E\u7C4D\u7336\u592A\u4EBA\u4F5C\u5BB6\u8207\u751F\u7269\u5316\u5B78\u6559\u6388\uFF0C\u9580\u85A9\u5B78\u6703\u6703\u54E1\uFF0C\u4ED6\u5275\u4F5C\u529B\u8C50\u6C9B\uFF0C\u7522\u91CF\u9A5A\u4EBA\uFF0C\u4F5C\u54C1\u4EE5\u79D1\u5E7B\u5C0F\u8AAA\u548C\u79D1\u666E\u53E2\u66F8\u6700\u70BA\u4EBA\u7A31\u9053\u3002\u7F8E\u570B\u79D1\u5E7B\u5C0F\u8AAA\u9EC3\u91D1\u6642\u4EE3\u7684\u4EE3\u8868\u4EBA\u7269\u4E4B\u4E00\u3002 \u827E\u897F\u83AB\u592B\u4E00\u751F\u5275\u4F5C\u548C\u7DE8\u8F2F\u904E\u7684\u66F8\u7C4D\u8D85\u904E500\u518A\uFF0C\u64DA\u4F30\u8A08\u4ED6\u81F3\u5C11\u5BEB\u904E9000\u5C01\u7684\u4FE1\u51FD\u548C\u660E\u4FE1\u7247\uFF0C\u8457\u4F5C\u985E\u5225\u9664\u4E86\u54F2\u5B78\u985E\u4EE5\u5916\uFF0C\u5E7E\u4E4E\u6DB5\u84CB\u6574\u500B\u300C\u675C\u5A01\u5341\u9032\u4F4D\u5716\u66F8\u5206\u985E\u6CD5\u300D\u3002\u827E\u897F\u83AB\u592B\u662F\u516C\u8A8D\u7684\u79D1\u5E7B\u5927\u5E2B\uFF0C\u4E0E\u5112\u52D2\u00B7\u51E1\u5C14\u7EB3\u3001H\u00B7G\u00B7\u5A01\u5C14\u65AF\u5E76\u79F0\u4E3A\u79D1\u5E7B\u5386\u53F2\u4E0A\u7684\u4E09\u5DE8\u5934\uFF0C\u540C\u65F6\u8FD8\u4E0E\u7F85\u4F2F\u7279\u00B7\u6D77\u840A\u56E0\u3001\u4E9E\u745F\u00B7\u514B\u62C9\u514B\u4E26\u5217\u70BA\u79D1\u5E7B\u5C0F\u8AAA\u7684\u4E09\u5DE8\u982D\u3002\u827E\u897F\u83AB\u592B\u7684\u4F5C\u54C1\u4E2D\uFF0C\u4EE5\u300C\u57FA\u5730\u7CFB\u5217\u300D\u6700\u70BA\u4EBA\u7A31\u9053\uFF0C\u5176\u5B83\u7684\u4E3B\u8981\u8457\u4F5C\u9084\u6709\u300C\u9280\u6CB3\u5E1D\u570B\u4E09\u90E8\u66F2\u300D\u548C\u300C\u6A5F\u5668\u4EBA\u7CFB\u5217\u300D\uFF0C\u4E09\u5927\u7CFB\u5217\u6700\u5F8C\u5728\u300C\u57FA\u5730\u7CFB\u5217\u300D\u7684\u67B6\u7A7A\u5B87\u5B99\u4E2D\u5408\u6B78\u4E00\u7D71\uFF0C\u88AB\u8A89\u4E3A\u300C\u79D1\u5E7B\u5723\u7ECF\u300D\u3002\u827E\u897F\u83AB\u592B\u7B46\u4E0B\u7522\u51FA\u4E0D\u5C11\u77ED\u7BC7\u5C0F\u8AAA\uFF0C\u5176\u4E2D\u300A\u65E5\u66AE\u300B\uFF08Nightfall\uFF09\u66FE\u7372\u7F8E\u570B\u79D1\u5E7B\u4F5C\u5BB6\u5354\u6703\u7968\u9078\u70BA1964\u5E74\u524D\u7684\u6700\u4F73\u77ED\u7BC7\u5C0F\u8AAA\u3002\u4ED6\u4E5F\u5BEB\u63A8\u7406\u5C0F\u8AAA\u548C\u5947\u5E7B\u5C0F\u8AAA\uFF0C\u4EE5\u53CA\u5927\u91CF\u7684\u975E\u6587\u5B78\u985E\u4F5C\u54C1\uFF0C\u4E26\u66FE\u7528\u7B46\u540D\u4FDD\u7F85\u00B7\u6CD5\u862D\u897F\uFF08Paul French\uFF09\u70BA\u9752\u5C11\u5E74\u64B0\u5BEB\u79D1\u5E7B\u5C0F\u8AAA\u300C\u5E78\u904B\u4E4B\u661F\u7CFB\u5217\u300D\u3002"@zh ,
+		"Isaac Asimov, geboren als Isaak Judovitsj Ozimov (Russisch: \u0418\u0441\u0430\u0430\u043A \u042E\u0434\u043E\u0432\u0438\u0447 \u041E\u0437\u0438\u043C\u043E\u0432) (Petrovitsji (in de toenmalige Sovjet-Unie), 2 januari 1920 \u2013 New York, 6 april 1992) was een Amerikaans schrijver en biochemicus. Hij was een zeer succesvol en vruchtbaar auteur van sciencefiction en van populairwetenschappelijke boeken voor het grote publiek. Hij heeft ongeveer 500 publicaties op zijn naam. Fans noemen hem nog steeds liefkozend The Good Doctor. Hij behoort samen met Arthur C. Clarke en Robert Heinlein tot de 'Grote Drie' van de sciencefictionschrijvers in de 20e eeuw."@nl ,
+		"Le sue opere sono considerate una pietra miliare sia nel campo della fantascienza sia in quello della divulgazione scientifica.\u00C8 autore di una vastissima e variegata produzione, stimata intorno ai 500 volumi pubblicati, incentrata non solo su argomenti scientifici, ma anche sul romanzo poliziesco, la fantascienza umoristica e la letteratura per ragazzi."@it ,
+		"Isaac Asimov (em russo: \u0418\u0441\u0430\u0430\u043A \u042E\u0434\u043E\u0432\u0438\u0447 \u041E\u0437\u0438\u043C\u043E\u0432; transl.: Isaak Yudavich Azimov; Petrovichi, R\u00FAssia Sovi\u00E9tica, atual R\u00FAssia, per\u00EDodo entre 4 de outubro de 1919 e 2 de janeiro de 1920 \u2014 Brooklyn, 6 de abril de 1992) foi um escritor e bioqu\u00EDmico americano, nascido na R\u00FAssia, autor de obras de fic\u00E7\u00E3o cient\u00EDfica e divulga\u00E7\u00E3o cient\u00EDfica. Asimov foi membro e vice-presidente por muito tempo da Mensa, ainda que com falta: ele os descrevia como \"intelectualmente combalidos\". Exercia, com mais frequ\u00EAncia e assiduidade, a presid\u00EAncia da American Humanist Association (Associa\u00E7\u00E3o Humanista Americana)."@pt ,
+		"Isaac Asimov, n\u00E9 vers le 2 janvier 1920 \u00E0 Petrovitchi (en Russie) et mort le 6 avril 1992 \u00E0 New York aux \u00C9tats-Unis, est un \u00E9crivain am\u00E9ricano-russe, naturalis\u00E9 en 1928, surtout connu pour ses \u0153uvres de science-fiction et ses livres de vulgarisation scientifique."@fr ,
+		"Isaac Asimov (/\u02C8a\u026Az\u1D7Bk \u02C8\u00E6z\u1D7Bm\u0252v/; born Isaak Ozimov; c. January 2, 1920 \u2013 April 6, 1992) was an American author and professor of biochemistry at Boston University. He was known for his works of science fiction and popular science. Asimov was a prolific writer, and wrote or edited more than 500 books and an estimated 90,000 letters and postcards. His books have been published in 9 of the 10 major categories of the Dewey Decimal Classification."@en ,
+		"Isaac Asimov (\u02C8a\u026Az\u0259k \u02C8\u00E6z\u0259m\u0259f; en ruso \u0410\u0301\u0439\u0437\u0435\u043A \u0410\u0437\u0438\u0301\u043C\u043E\u0432 \u2014\u00C1yzek Az\u00EDmov\u2014, nombre original: \u0418\u0441\u0430\u00E1\u043A \u042E\u0301\u0434\u043E\u0432\u0438\u0447 \u041E\u0437\u0438\u0301\u043C\u043E\u0432 \u2014Isaak Y\u00FAdovich Oz\u00EDmov\u2014 Petr\u00F3vichi, RSFS de Rusia, 20 de diciembre de 1919jul./ 2 de enero de 1920greg.-Nueva York, Estados Unidos, 6 de abril de 1992) fue un escritor y profesor de bioqu\u00EDmica en la Facultad de Medicina de la Universidad de Boston de origen ruso, nacionalizado estadounidense, conocido por ser un prol\u00EDfico autor de obras de ciencia ficci\u00F3n, historia y divulgaci\u00F3n cient\u00EDfica. Asimov, as\u00ED mismo, ten\u00EDa un dilatado conocimiento sobre las ciencias naturales en todo su conjunto."@es ,
+		"Isaac Asimov (wym. \u02C8a\u026Az\u0259k \u02C8\u00E6z\u026Am\u028Cv, urodzony jako Isaak Judowicz Ozimow (ros. \u0418\u0441\u0430\u0430\u043A \u042E\u0434\u043E\u0432\u0438\u0447 \u041E\u0437\u0438\u043C\u043E\u0432); ur. 2 stycznia 1920 w Pietrowiczach w obwodzie smole\u0144skim, obecnie Rosyjska Federacyjna SRR; zm. 6 kwietnia 1992 w Nowym Jorku, USA) \u2013 ameryka\u0144ski pisarz i profesor biochemii pochodzenia rosyjsko-\u017Cydowskiego. Najwi\u0119kszy sukces osi\u0105gn\u0105\u0142 jako autor ksi\u0105\u017Cek fantastycznonaukowych oraz popularnonaukowych. Wi\u0119kszo\u015B\u0107 prac Asimova z zakresu popularyzacji nauki wyja\u015Bnia koncepcje naukowe w spos\u00F3b historyczny, cofaj\u0105c si\u0119 w czasie w miar\u0119 mo\u017Cliwo\u015Bci jak najdalej, do samych pocz\u0105tk\u00F3w rozwoju danej dziedziny. Cz\u0119sto podaje narodowo\u015Bci, daty urodzenia i \u015Bmierci wspominanych przez siebie naukowc\u00F3w, jak r\u00F3wnie\u017C etymologi\u0119 i sposoby wymawiania termin\u00F3w technicznych. Jako przyk\u0142ady mo\u017Cna wymieni\u0107 Guide to Sci"@pl ,
+		"\u0410\u0301\u0439\u0437\u0435\u043A \u0410\u0437\u0438\u0301\u043C\u043E\u0432 (Isaac Asimov, \u0438\u043C\u044F \u043F\u0440\u0438 \u0440\u043E\u0436\u0434\u0435\u043D\u0438\u0438 \u0418\u0441\u0430\u00E1\u043A \u042E\u0301\u0434\u043E\u0432\u0438\u0447 \u041E\u0437\u0438\u0301\u043C\u043E\u0432; 2 \u044F\u043D\u0432\u0430\u0440\u044F 1920 \u0433\u043E\u0434\u0430, \u041F\u0435\u0442\u0440\u043E\u0432\u0438\u0447\u0438, \u0428\u0443\u043C\u044F\u0447\u0441\u043A\u0438\u0439 \u0440\u0430\u0439\u043E\u043D, \u0421\u043C\u043E\u043B\u0435\u043D\u0441\u043A\u0430\u044F \u043E\u0431\u043B\u0430\u0441\u0442\u044C, \u0420\u0421\u0424\u0421\u0420 \u2014 6 \u0430\u043F\u0440\u0435\u043B\u044F 1992 \u0433\u043E\u0434\u0430, \u041D\u044C\u044E-\u0419\u043E\u0440\u043A, \u0421\u0428\u0410) \u2014 \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0438\u0439 \u043F\u0438\u0441\u0430\u0442\u0435\u043B\u044C-\u0444\u0430\u043D\u0442\u0430\u0441\u0442, \u043F\u043E\u043F\u0443\u043B\u044F\u0440\u0438\u0437\u0430\u0442\u043E\u0440 \u043D\u0430\u0443\u043A\u0438, \u0431\u0438\u043E\u0445\u0438\u043C\u0438\u043A. \u0410\u0432\u0442\u043E\u0440 \u043E\u043A\u043E\u043B\u043E 500 \u043A\u043D\u0438\u0433, \u0432 \u043E\u0441\u043D\u043E\u0432\u043D\u043E\u043C \u0445\u0443\u0434\u043E\u0436\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0445 (\u043F\u0440\u0435\u0436\u0434\u0435 \u0432\u0441\u0435\u0433\u043E \u0432 \u0436\u0430\u043D\u0440\u0435 \u043D\u0430\u0443\u0447\u043D\u043E\u0439 \u0444\u0430\u043D\u0442\u0430\u0441\u0442\u0438\u043A\u0438, \u043D\u043E \u0442\u0430\u043A\u0436\u0435 \u0438 \u0432 \u0434\u0440\u0443\u0433\u0438\u0445 \u0436\u0430\u043D\u0440\u0430\u0445: \u0444\u044D\u043D\u0442\u0435\u0437\u0438, \u0434\u0435\u0442\u0435\u043A\u0442\u0438\u0432, \u044E\u043C\u043E\u0440) \u0438 \u043D\u0430\u0443\u0447\u043D\u043E-\u043F\u043E\u043F\u0443\u043B\u044F\u0440\u043D\u044B\u0445 (\u0432 \u0441\u0430\u043C\u044B\u0445 \u0440\u0430\u0437\u043D\u044B\u0445 \u043E\u0431\u043B\u0430\u0441\u0442\u044F\u0445 \u2014 \u043E\u0442 \u0430\u0441\u0442\u0440\u043E\u043D\u043E\u043C\u0438\u0438 \u0438 \u0433\u0435\u043D\u0435\u0442\u0438\u043A\u0438 \u0434\u043E \u0438\u0441\u0442\u043E\u0440\u0438\u0438 \u0438 \u043B\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u043E\u0432\u0435\u0434\u0435\u043D\u0438\u044F). \u041C\u043D\u043E\u0433\u043E\u043A\u0440\u0430\u0442\u043D\u044B\u0439 \u043B\u0430\u0443\u0440\u0435\u0430\u0442 \u043F\u0440\u0435\u043C\u0438\u0439 \u0425\u044C\u044E\u0433\u043E \u0438 \u041D\u0435\u0431\u044C\u044E\u043B\u0430. \u041D\u0435\u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0442\u0435\u0440\u043C\u0438\u043D\u044B \u0438\u0437 \u0435\u0433\u043E \u043F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u0439 \u2014 robotics (\u0440\u043E\u0431\u043E\u0442\u0435\u0445\u043D\u0438\u043A\u0430, \u0440\u043E\u0431\u043E\u0442\u0438\u043A\u0430), positronic (\u043F\u043E\u0437\u0438\u0442\u0440\u043E\u043D\u043D\u044B\u0439), psychohistory (\u043F\u0441\u0438\u0445\u043E\u0438\u0441\u0442\u043E\u0440\u0438\u044F, \u043D\u0430\u0443\u043A\u0430 \u043E \u043F\u043E\u0432\u0435\u0434\u0435\u043D\u0438\u0438 \u0431\u043E\u043B\u044C\u0448\u0438\u0445 \u0433\u0440\u0443\u043F\u043F \u043B\u044E\u0434\u0435\u0439) \u2014 \u043F\u0440\u043E\u0447\u043D\u043E \u0432\u043E\u0448\u043B\u0438 \u0432 \u0430\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439 \u0438 \u0434\u0440\u0443\u0433\u0438\u0435 \u044F\u0437\u044B\u043A\u0438. \u0412 \u0430\u043D\u0433\u043B\u043E-\u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u043E\u0439 \u043B\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u043D\u043E\u0439 \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u0438 \u0410\u0437\u0438\u043C\u043E\u0432\u0430"@ru ,
+		"\u30A2\u30A4\u30B6\u30C3\u30AF\u30FB\u30A2\u30B7\u30E2\u30D5\uFF08Isaac Asimov\u30011920\u5E741\u67082\u65E5 \u2013 1992\u5E744\u67086\u65E5\uFF09\u306F\u3001\u30A2\u30E1\u30EA\u30AB\u306E\u4F5C\u5BB6\u3001\u751F\u5316\u5B66\u8005\u3067\u3042\u308B\u3002\u975E\u5E38\u306B\u6210\u529F\u3057\u305F\u591A\u4F5C\u306E\u4F5C\u5BB6\u3067\u3042\u308A\u3001\u305D\u306E\u8457\u4F5C\u306F500\u518A\u4EE5\u4E0A\u3092\u6570\u3048\u308B\u3002\u5F7C\u304C\u6271\u3046\u30C6\u30FC\u30DE\u306F\u79D1\u5B66\u3001\u8A00\u8A9E\u3001\u6B74\u53F2\u3001\u8056\u66F8\u306A\u3069\u591A\u5C90\u306B\u308F\u305F\u308A\u3001\u30C7\u30E5\u30FC\u30A4\u5341\u9032\u5206\u985E\u6CD5\u306E10\u3042\u308B\u4E3B\u8981\u30AB\u30C6\u30B4\u30EA\u306E\u3046\u30619\u3064\u306B\u308F\u305F\u308B\u304C\u3001\u7279\u306BSF\u3001\u4E00\u822C\u5411\u3051\u79D1\u5B66\u89E3\u8AAC\u66F8\u3001\u63A8\u7406\u5C0F\u8AAC\u306B\u3088\u3063\u3066\u3088\u304F\u77E5\u3089\u308C\u3066\u3044\u308B\u3002 \u65E5\u672C\u8A9E\u3067\u306F\u300C\u30A2\u30B7\u30E2\u30D5\u300D\u3068\u300C\u30A2\u30B8\u30E2\u30D5\u300D\u306A\u3069\u306E\u7247\u4EEE\u540D\u8868\u8A18\u304C\u3042\u308A\u3001\u524D\u8005\u3067\u306E\u8868\u8A18\u304C\u4E00\u822C\u7684\u3067\u3042\u308B\u3002\u672C\u4EBA\u304C\u671B\u3093\u3067\u3044\u305F\u8AAD\u307F\u306F\u5F8C\u8005\u306E\u767A\u97F3\u306B\u6BD4\u8F03\u7684\u8FD1\u3044[\u02C8a\u026Az\u0259k \u02C8\u00E6z\u0268m\u0259v]\u3067\u3042\u308B\u3002 \u30B8\u30E5\u30D6\u30CA\u30A4\u30EB\u4F5C\u54C1\u3067\u306F\u30DD\u30FC\u30EB\u30FB\u30D5\u30EC\u30F3\u30C1\u3068\u3044\u3046\u7B46\u540D\u3092\u7528\u3044\u305F\u30021942\u5E74\u767A\u8868\u306ESF\u77ED\u7DE8 Time Pussy \u3067\u306F George E. Dale \u3068\u3044\u3046\u7B46\u540D\u3092\u7528\u3044\u305F\u30021971\u5E74\u306E\u8457\u66F8 The Sensuous Dirty Old Man \u3067\u306F Dr. A \u3068\u3044\u3046\u7B46\u540D\u3092\u7528\u3044\u305F\u3002"@ja ,
+		"Isaac Asimov (englisch [\u02C8a\u026Az\u0259k \u02C8\u00E6z\u026Am\u0254v]; * 20. Dezember 1919jul./ 2. Januar 1920greg. in Petrowitschi, Sowjetrussland (heute Russische F\u00F6deration) als \u0418\u0441\u0430\u00E1\u043A \u042E\u0301\u0434\u043E\u0432\u0438\u0447 \u041E\u0437\u0438\u0301\u043C\u043E\u0432; \u2020 6. April 1992 in New York, Vereinigte Staaten) war ein russisch-amerikanischer Biochemiker, Sachbuchautor und einer der bekanntesten sowie produktivsten Science-Fiction-Schriftsteller seiner Zeit."@de .
+@prefix dbpedia-cs:	<http://cs.dbpedia.org/resource/> .
+dbr:Isaac_Asimov	owl:sameAs	dbpedia-cs:Isaac_Asimov .
+@prefix dbpedia-eu:	<http://eu.dbpedia.org/resource/> .
+dbr:Isaac_Asimov	owl:sameAs	dbpedia-eu:Isaac_Asimov ,
+		<http://el.dbpedia.org/resource/\u0399\u03C3\u03B1\u03AC\u03BA_\u0391\u03C3\u03AF\u03BC\u03C9\u03C6> .
+@prefix dbpedia-pl:	<http://pl.dbpedia.org/resource/> .
+dbr:Isaac_Asimov	owl:sameAs	dbpedia-pl:Isaac_Asimov .
+@prefix yago-res:	<http://yago-knowledge.org/resource/> .
+dbr:Isaac_Asimov	owl:sameAs	yago-res:Isaac_Asimov_bibliography .
+@prefix dbpedia-es:	<http://es.dbpedia.org/resource/> .
+dbr:Isaac_Asimov	owl:sameAs	dbpedia-es:Isaac_Asimov ,
+		yago-res:Isaac_Asimov .
+@prefix dbpedia-fr:	<http://fr.dbpedia.org/resource/> .
+dbr:Isaac_Asimov	owl:sameAs	dbpedia-fr:Isaac_Asimov ,
+		<http://ja.dbpedia.org/resource/\u30A2\u30A4\u30B6\u30C3\u30AF\u30FB\u30A2\u30B7\u30E2\u30D5> ,
+		<http://rdf.freebase.com/ns/m.03rx9> .
+@prefix ns21:	<http://data.europa.eu/euodp/jrc-names/> .
+dbr:Isaac_Asimov	owl:sameAs	ns21:Isaac_Asimov ,
+		dbr:Isaac_Asimov .
+@prefix dbpedia-pt:	<http://pt.dbpedia.org/resource/> .
+dbr:Isaac_Asimov	owl:sameAs	dbpedia-pt:Isaac_Asimov .
+@prefix dbpedia-id:	<http://id.dbpedia.org/resource/> .
+dbr:Isaac_Asimov	owl:sameAs	dbpedia-id:Isaac_Asimov .
+@prefix dbpedia-nl:	<http://nl.dbpedia.org/resource/> .
+dbr:Isaac_Asimov	owl:sameAs	dbpedia-nl:Isaac_Asimov .
+@prefix ns25:	<http://sw.cyc.com/concept/> .
+dbr:Isaac_Asimov	owl:sameAs	ns25:Mx4rvmwZvpwpEbGdrcN5Y29ycA .
+@prefix dbpedia-de:	<http://de.dbpedia.org/resource/> .
+dbr:Isaac_Asimov	owl:sameAs	dbpedia-de:Isaac_Asimov .
+@prefix dbpedia-wikidata:	<http://wikidata.dbpedia.org/resource/> .
+dbr:Isaac_Asimov	owl:sameAs	dbpedia-wikidata:Q34981 ,
+		<http://zitgist.com/music/artist/921108ff-319f-443e-83eb-3a21a767f7ef> ,
+		<http://ko.dbpedia.org/resource/\uC544\uC774\uC791_\uC544\uC2DC\uBAA8\uD504> ,
+		<http://d-nb.info/gnd/118646109> ,
+		wikidata:Q34981 .
+@prefix dbpedia-it:	<http://it.dbpedia.org/resource/> .
+dbr:Isaac_Asimov	owl:sameAs	dbpedia-it:Isaac_Asimov .
+@prefix dct:	<http://purl.org/dc/terms/> .
+@prefix ns30:	<http://dbpedia.org/resource/Category:People_with_HIV/> .
+dbr:Isaac_Asimov	dct:subject	ns30:AIDS .
+@prefix dbc:	<http://dbpedia.org/resource/Category:> .
+dbr:Isaac_Asimov	dct:subject	dbc:Futurians ,
+		dbc:United_States_Army_soldiers ,
+		dbc:American_male_novelists ,
+		dbc:American_non-fiction_environmental_writers ,
+		dbc:Jewish_American_writers ,
+		dbc:AIDS-related_deaths_in_New_York ,
+		dbc:People_with_acquired_American_citizenship ,
+		dbc:World_federalists ,
+		dbc:Columbia_University_School_of_General_Studies_alumni ,
+		dbc:American_biochemists ,
+		dbc:American_humorists ,
+		dbc:Male_short_story_writers ,
+		<http://dbpedia.org/resource/Category:20th-century_American_novelists> ,
+		dbc:Russian_Jews ,
+		dbc:Historians_of_science ,
+		dbc:Male_feminists ,
+		dbc:American_humanists ,
+		dbc:American_skeptics ,
+		dbc:Yiddish-speaking_people ,
+		dbc:Jewish_American_novelists ,
+		dbc:American_science_fiction_writers ,
+		<http://dbpedia.org/resource/Category:Asimov\u0027s_Science_Fiction_people> ,
+		dbc:American_non-fiction_writers ,
+		dbc:American_mystery_writers ,
+		dbc:American_people_of_Russian-Jewish_descent ,
+		dbc:American_science_writers ,
+		dbc:Soviet_emigrants_to_the_United_States ,
+		dbc:American_alternate_history_writers ,
+		dbc:Humor_researchers ,
+		dbc:Boston_University_faculty ,
+		<http://dbpedia.org/resource/Category:1920_births> ,
+		dbc:Fellows_of_the_American_Academy_of_Arts_and_Sciences ,
+		dbc:Critics_of_religions ,
+		dbc:Fellows_of_the_Committee_for_Skeptical_Inquiry ,
+		dbc:Isaac_Asimov ,
+		dbc:American_memoirists ,
+		dbc:Historians_of_astronomy ,
+		dbc:Science_fiction_fans ,
+		dbc:American_male_essayists ,
+		dbc:American_essayists ,
+		dbc:Hugo_Award-winning_writers ,
+		dbc:American_writers_of_Russian_descent ,
+		dbc:Science_Fiction_Hall_of_Fame_inductees ,
+		dbc:American_atheists ,
+		dbc:Nebula_Award_winners ,
+		dbc:Mensans ,
+		dbc:American_military_personnel_of_World_War_II ,
+		dbc:SFWA_Grand_Masters ,
+		dbc:Jewish_skeptics ,
+		dbc:New_York_Democrats ,
+		dbc:Writers_from_Brooklyn ,
+		dbc:Bible_commentators ,
+		<http://dbpedia.org/resource/Category:1992_deaths> ,
+		dbc:People_from_Shumyachsky_District ,
+		dbc:Jewish_atheists ,
+		dbc:Jewish_American_short_story_writers ;
+	foaf:name	"Isaac Asimov"@en ;
+	foaf:depiction	<http://commons.wikimedia.org/wiki/Special:FilePath/Isaac.Asimov01.jpg> ;
+	dct:description	"American author"@en ;
+	foaf:givenName	"Isaac"@en ;
+	foaf:gender	"male"@en ;
+	foaf:isPrimaryTopicOf	wikipedia-en:Isaac_Asimov ;
+	foaf:surname	"Asimov"@en ;
+	dbo:movement	dbr:Golden_Age_of_Science_Fiction ;
+	dbo:spouse	dbr:Janet_Asimov ;
+	dbp:children	"David Asimov"^^rdf:langString ,
+		"Robyn Joan Asimov"^^rdf:langString ;
+	dbp:signature	"Isaac Asimov signature.svg"^^rdf:langString .
+@prefix prov:	<http://www.w3.org/ns/prov#> .
+dbr:Isaac_Asimov	prov:wasDerivedFrom	<http://en.wikipedia.org/wiki/Isaac_Asimov?oldid=744970050> ;
+	dbo:birthName	"Isaak Ozimov"@en ;
+	dbo:education	dbr:Biochemistry ,
+		dbr:Columbia_University .
+@prefix dc:	<http://purl.org/dc/elements/1.1/> .
+dbr:Isaac_Asimov	dc:subject	dbr:Textbooks ,
+		dbr:Literary_criticism ,
+		dbr:Popular_science ;
+	dbo:wikiPageExternalLink	<http://latimesblogs.latimes.com/herocomplex/2010/01/isaac-asimov-was-born-90-years-ago-today.html> ,
+		<http://www.thewaythefutureblogs.com/2010/01/isaac/> ,
+		<http://www.asimovonline.com/> ,
+		<http://www.asimovreviews.net/> ,
+		<https://helda.helsinki.fi/handle/10138/166004> .
+@prefix ns34:	<http://www3.sympatico.ca/n.rieck/links/cool_sci_fi.html#> .
+dbr:Isaac_Asimov	dbo:wikiPageExternalLink	ns34:asimov-suggested-reading-order ,
+		<http://books.guardian.co.uk/authors/author/0,5917,-9,00.html> ,
+		<http://schools.nyc.gov/SchoolPortals/21/K099/default.htm> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+dbr:Isaac_Asimov	dbo:activeYearsStartYear	"1939"^^xsd:gYear ;
+	dbo:genre	dbr:Social_SF ,
+		dbr:Hard_SF ,
+		dbr:Mystery_fiction ;
+	dbo:occupation	dbr:Biochemistry ;
+	dbp:id	"Asimov,+Isaac"^^rdf:langString ,
+		"gov.archives.arc.54491"^^rdf:langString ,
+		80 ,
+		68 ;
+	dbo:abstract	"\u0625\u0633\u062D\u0642 \u0639\u0638\u064A\u0645\u0648\u0641 \u0623\u0648 \u0625\u0633\u062D\u0627\u0642 \u0623\u0633\u064A\u0645\u0648\u0641 \u0623\u0648 \u0625\u0633\u062D\u0627\u0642 \u0623\u0632\u064A\u0645\u0648\u0641 (2 \u064A\u0646\u0627\u064A\u0631 1920 - 6 \u0623\u0628\u0631\u064A\u0644 1992) (\u0628\u0627\u0644\u0639\u0628\u0631\u064A\u0629: \u05D0\u05D9\u05D9\u05D6\u05E7 \u05D0\u05E1\u05D9\u05DE\u05D5\u05D1 \u0622\u064A\u0632\u0643 \u0623\u0633\u064A\u0645\u0648\u0641) (\u0628\u0627\u0644\u0631\u0648\u0633\u064A\u0629: \u0410\u0439\u0437\u0435\u043A \u0410\u0437\u0438\u043C\u043E\u0432) (\u0628\u0627\u0644\u0625\u0646\u062C\u0644\u064A\u0632\u064A\u0629: Isaac Asimov) \u0645\u0624\u0644\u0641 \u0623\u0645\u0631\u064A\u0643\u064A \u0631\u0648\u0633\u064A \u0627\u0644\u0645\u0648\u0644\u062F \u0648\u0643\u064A\u0645\u064A\u0627\u0626\u064A \u062D\u064A\u0648\u064A \u0641\u064A \u062A\u062E\u0635\u0635\u0647 \u0627\u0644\u0623\u0635\u0644\u064A. \u0643\u0627\u0646 \u0623\u0633\u064A\u0645\u0648\u0641 \u0645\u0646 \u0623\u0643\u062B\u0631 \u0627\u0644\u0623\u062F\u0628\u0627\u0621 \u063A\u0632\u0627\u0631\u0629 \u0641\u064A \u0627\u0644\u0643\u062A\u0627\u0628\u0629\u060C \u0625\u0630 \u0644\u0647 \u0623\u0643\u062B\u0631 \u0645\u0646 500 \u0643\u062A\u0627\u0628\u060C \u0625\u0636\u0627\u0641\u0629 \u0644\u062D\u0648\u0627\u0644\u064A 90 \u0623\u0644\u0641 \u0631\u0633\u0627\u0644\u0629 \u0648\u0628\u0637\u0627\u0642\u0629.\u0627\u0634\u062A\u0647\u0631 \u0628\u0643\u062A\u0627\u0628\u0627\u062A\u0647 \u0641\u064A \u0631\u0648\u0627\u064A\u0627\u062A \u0627\u0644\u062E\u064A\u0627\u0644 \u0627\u0644\u0639\u0644\u0645\u064A\u060C \u062D\u064A\u062B \u0644\u0627\u0642\u062A \u0631\u0648\u0627\u064A\u0627\u062A\u0647 \u0646\u062C\u0627\u062D\u0627 \u0648\u0627\u0646\u062A\u0634\u0627\u0631\u0627 \u0643\u0628\u064A\u0631\u064A\u0646. \u0648\u0642\u062F \u062A\u0631\u0643\u062A \u0645\u0624\u0644\u0641\u0627\u062A\u0647 \u0623\u062B\u0631\u0627 \u0643\u0628\u064A\u0631\u0627 \u0641\u064A \u0633\u064A\u0646\u0645\u0627 \u0627\u0644\u062E\u064A\u0627\u0644 \u0627\u0644\u0639\u0644\u0645\u064A \u0648\u062D\u062A\u0649 \u0641\u064A \u0639\u0644\u0648\u0645 \u0627\u0644\u0631\u062C\u0644 \u0627\u0644\u0622\u0644\u064A \u0623\u0648 \u0645\u0627 \u064A\u0633\u0645\u0649 \u0628\u0627\u0644\u0631\u0648\u0628\u0648\u062A\u064A\u0643\u060C \u0639\u0646 \u0637\u0631\u064A\u0642 \u0645\u0627 \u064A\u0639\u0631\u0641 \u0628\u0627\u0644\u0642\u0648\u0627\u0646\u064A\u0646 \u0627\u0644\u062B\u0644\u0627\u062B\u0629 \u0644\u0644\u0631\u0648\u0628\u0648\u062A\u0627\u062A. \u0643\u0645\u0627 \u0627\u0634\u062A\u0647\u0631 \u0628\u0633\u0644\u0633\u0644\u0629 \u0627\u0644\u0623\u0633\u0627\u0633 \u0627\u0644\u062A\u064A \u0641\u0627\u0632\u062A \u0639\u0627\u0645 1966 \u0628\u062C\u0627\u0626\u0632\u0629 \u0647\u0648\u063A\u0648 \u0644\u0623\u062D\u0633\u0646 \u0633\u0644\u0633\u0644\u0629 \u062E\u064A\u0627\u0644 \u0639\u0644\u0645\u064A \u0644\u0643\u0644\u0651 \u0627\u0644\u0623\u0648\u0642\u0627\u062A."@ar ,
+		"Isaac Asimov (\u02C8a\u026Az\u0259k \u02C8\u00E6z\u0259m\u0259f; en ruso \u0410\u0301\u0439\u0437\u0435\u043A \u0410\u0437\u0438\u0301\u043C\u043E\u0432 \u2014\u00C1yzek Az\u00EDmov\u2014, nombre original: \u0418\u0441\u0430\u00E1\u043A \u042E\u0301\u0434\u043E\u0432\u0438\u0447 \u041E\u0437\u0438\u0301\u043C\u043E\u0432 \u2014Isaak Y\u00FAdovich Oz\u00EDmov\u2014 Petr\u00F3vichi, RSFS de Rusia, 20 de diciembre de 1919jul./ 2 de enero de 1920greg.-Nueva York, Estados Unidos, 6 de abril de 1992) fue un escritor y profesor de bioqu\u00EDmica en la Facultad de Medicina de la Universidad de Boston de origen ruso, nacionalizado estadounidense, conocido por ser un prol\u00EDfico autor de obras de ciencia ficci\u00F3n, historia y divulgaci\u00F3n cient\u00EDfica. Asimov, as\u00ED mismo, ten\u00EDa un dilatado conocimiento sobre las ciencias naturales en todo su conjunto. La obra m\u00E1s famosa de Asimov es la Saga de la Fundaci\u00F3n, tambi\u00E9n conocida como Trilog\u00EDa o Ciclo de Tr\u00E1ntor, que forma parte de la serie del Imperio Gal\u00E1ctico y que m\u00E1s tarde combin\u00F3 con su otra gran serie sobre los robots. Tambi\u00E9n escribi\u00F3 obras de misterio y fantas\u00EDa, as\u00ED como una gran cantidad de textos de no ficci\u00F3n. En total, firm\u00F3 m\u00E1s de 500 vol\u00FAmenes y unas 9000 cartas o postales. Sus trabajos han sido publicados en 9 de las 10 categor\u00EDas del Sistema Dewey de clasificaci\u00F3n. Asimov, junto con Robert A. Heinlein y Arthur C. Clarke, fue considerado en vida como uno de los \u00ABtres grandes\u00BB escritores de ciencia ficci\u00F3n. La mayor\u00EDa de sus libros de divulgaci\u00F3n explican los conceptos cient\u00EDficos siguiendo una l\u00EDnea hist\u00F3rica, retrotray\u00E9ndose lo m\u00E1s posible a tiempos en que la ciencia en cuesti\u00F3n se encontraba en una etapa elemental. A menudo brinda la nacionalidad, las fechas de nacimiento y muerte de los cient\u00EDficos que menciona, as\u00ED como las etimolog\u00EDas de las palabras t\u00E9cnicas. Asimov fue miembro de Mensa durante mucho tiempo, a cuyos miembros describ\u00EDa como \u00ABintelectualmente combativos\u00BB. Disfrutaba m\u00E1s de la presidencia de la Asociaci\u00F3n Humanista Estadounidense, una organizaci\u00F3n de ideolog\u00EDa atea. En 1981 se nombr\u00F3 a un asteroide, el (5020) Asimov, en su honor."@es ,
+		"Le sue opere sono considerate una pietra miliare sia nel campo della fantascienza sia in quello della divulgazione scientifica.\u00C8 autore di una vastissima e variegata produzione, stimata intorno ai 500 volumi pubblicati, incentrata non solo su argomenti scientifici, ma anche sul romanzo poliziesco, la fantascienza umoristica e la letteratura per ragazzi."@it ,
+		"Isaac Asimov (englisch [\u02C8a\u026Az\u0259k \u02C8\u00E6z\u026Am\u0254v]; * 20. Dezember 1919jul./ 2. Januar 1920greg. in Petrowitschi, Sowjetrussland (heute Russische F\u00F6deration) als \u0418\u0441\u0430\u00E1\u043A \u042E\u0301\u0434\u043E\u0432\u0438\u0447 \u041E\u0437\u0438\u0301\u043C\u043E\u0432; \u2020 6. April 1992 in New York, Vereinigte Staaten) war ein russisch-amerikanischer Biochemiker, Sachbuchautor und einer der bekanntesten sowie produktivsten Science-Fiction-Schriftsteller seiner Zeit."@de ,
+		"Isaac Asimov, geboren als Isaak Judovitsj Ozimov (Russisch: \u0418\u0441\u0430\u0430\u043A \u042E\u0434\u043E\u0432\u0438\u0447 \u041E\u0437\u0438\u043C\u043E\u0432) (Petrovitsji (in de toenmalige Sovjet-Unie), 2 januari 1920 \u2013 New York, 6 april 1992) was een Amerikaans schrijver en biochemicus. Hij was een zeer succesvol en vruchtbaar auteur van sciencefiction en van populairwetenschappelijke boeken voor het grote publiek. Hij heeft ongeveer 500 publicaties op zijn naam. Fans noemen hem nog steeds liefkozend The Good Doctor. Hij behoort samen met Arthur C. Clarke en Robert Heinlein tot de 'Grote Drie' van de sciencefictionschrijvers in de 20e eeuw."@nl ,
+		"\u4EE5\u6492\u00B7\u827E\u897F\u83AB\u592B\uFF08Isaac Asimov\uFF0C\u751F\u540D\uFF1A\u4F0A\u8428\u514B\u00B7\u5C24\u591A\u7EF4\u5947\u00B7\u5965\u6D4E\u83AB\u592B\uFF0C\u0418\u0441\u0430\u0430\u043A \u042E\u0301\u0434\u043E\u0432\u0438\u0447 \u041E\u0437\u0438\u0301\u043C\u043E\u0432\uFF0C1920\u5E741\u67082\u65E5\uFF0D1992\u5E744\u67086\u65E5\uFF09\uFF0C\u51FA\u751F\u65BC\u4FC4\u7F85\u65AF\u7684\u7F8E\u7C4D\u7336\u592A\u4EBA\u4F5C\u5BB6\u8207\u751F\u7269\u5316\u5B78\u6559\u6388\uFF0C\u9580\u85A9\u5B78\u6703\u6703\u54E1\uFF0C\u4ED6\u5275\u4F5C\u529B\u8C50\u6C9B\uFF0C\u7522\u91CF\u9A5A\u4EBA\uFF0C\u4F5C\u54C1\u4EE5\u79D1\u5E7B\u5C0F\u8AAA\u548C\u79D1\u666E\u53E2\u66F8\u6700\u70BA\u4EBA\u7A31\u9053\u3002\u7F8E\u570B\u79D1\u5E7B\u5C0F\u8AAA\u9EC3\u91D1\u6642\u4EE3\u7684\u4EE3\u8868\u4EBA\u7269\u4E4B\u4E00\u3002 \u827E\u897F\u83AB\u592B\u4E00\u751F\u5275\u4F5C\u548C\u7DE8\u8F2F\u904E\u7684\u66F8\u7C4D\u8D85\u904E500\u518A\uFF0C\u64DA\u4F30\u8A08\u4ED6\u81F3\u5C11\u5BEB\u904E9000\u5C01\u7684\u4FE1\u51FD\u548C\u660E\u4FE1\u7247\uFF0C\u8457\u4F5C\u985E\u5225\u9664\u4E86\u54F2\u5B78\u985E\u4EE5\u5916\uFF0C\u5E7E\u4E4E\u6DB5\u84CB\u6574\u500B\u300C\u675C\u5A01\u5341\u9032\u4F4D\u5716\u66F8\u5206\u985E\u6CD5\u300D\u3002\u827E\u897F\u83AB\u592B\u662F\u516C\u8A8D\u7684\u79D1\u5E7B\u5927\u5E2B\uFF0C\u4E0E\u5112\u52D2\u00B7\u51E1\u5C14\u7EB3\u3001H\u00B7G\u00B7\u5A01\u5C14\u65AF\u5E76\u79F0\u4E3A\u79D1\u5E7B\u5386\u53F2\u4E0A\u7684\u4E09\u5DE8\u5934\uFF0C\u540C\u65F6\u8FD8\u4E0E\u7F85\u4F2F\u7279\u00B7\u6D77\u840A\u56E0\u3001\u4E9E\u745F\u00B7\u514B\u62C9\u514B\u4E26\u5217\u70BA\u79D1\u5E7B\u5C0F\u8AAA\u7684\u4E09\u5DE8\u982D\u3002\u827E\u897F\u83AB\u592B\u7684\u4F5C\u54C1\u4E2D\uFF0C\u4EE5\u300C\u57FA\u5730\u7CFB\u5217\u300D\u6700\u70BA\u4EBA\u7A31\u9053\uFF0C\u5176\u5B83\u7684\u4E3B\u8981\u8457\u4F5C\u9084\u6709\u300C\u9280\u6CB3\u5E1D\u570B\u4E09\u90E8\u66F2\u300D\u548C\u300C\u6A5F\u5668\u4EBA\u7CFB\u5217\u300D\uFF0C\u4E09\u5927\u7CFB\u5217\u6700\u5F8C\u5728\u300C\u57FA\u5730\u7CFB\u5217\u300D\u7684\u67B6\u7A7A\u5B87\u5B99\u4E2D\u5408\u6B78\u4E00\u7D71\uFF0C\u88AB\u8A89\u4E3A\u300C\u79D1\u5E7B\u5723\u7ECF\u300D\u3002\u827E\u897F\u83AB\u592B\u7B46\u4E0B\u7522\u51FA\u4E0D\u5C11\u77ED\u7BC7\u5C0F\u8AAA\uFF0C\u5176\u4E2D\u300A\u65E5\u66AE\u300B\uFF08Nightfall\uFF09\u66FE\u7372\u7F8E\u570B\u79D1\u5E7B\u4F5C\u5BB6\u5354\u6703\u7968\u9078\u70BA1964\u5E74\u524D\u7684\u6700\u4F73\u77ED\u7BC7\u5C0F\u8AAA\u3002\u4ED6\u4E5F\u5BEB\u63A8\u7406\u5C0F\u8AAA\u548C\u5947\u5E7B\u5C0F\u8AAA\uFF0C\u4EE5\u53CA\u5927\u91CF\u7684\u975E\u6587\u5B78\u985E\u4F5C\u54C1\uFF0C\u4E26\u66FE\u7528\u7B46\u540D\u4FDD\u7F85\u00B7\u6CD5\u862D\u897F\uFF08Paul French\uFF09\u70BA\u9752\u5C11\u5E74\u64B0\u5BEB\u79D1\u5E7B\u5C0F\u8AAA\u300C\u5E78\u904B\u4E4B\u661F\u7CFB\u5217\u300D\u3002 \u827E\u897F\u83AB\u592B\u6CBB\u5B78\u6709\u65B9\uFF0C\u4ED6\u7684\u79D1\u666E\u8457\u4F5C\u591A\u4EE5\u53F2\u5B78\u624B\u6CD5\u95E1\u8FF0\u79D1\u5B78\u6982\u5FF5\uFF0C\u5118\u53EF\u80FD\u7D30\u6578\u5F9E\u982D\uFF0C\u7406\u6027\u5206\u6790\u79D1\u5B78\u8108\u7D61\u3002\u63D0\u53CA\u67D0\u500B\u79D1\u5B78\u5BB6\u6642\uFF0C\u4E5F\u6703\u4E00\u4F75\u9644\u4E0A\u8A73\u7D30\u7684\u80CC\u666F\u8CC7\u6599\uFF0C\u8AF8\u5982\u570B\u7C4D\u3001\u51FA\u751F\u65E5\u671F\u548C\u6B7B\u4EA1\u65E5\u671F\uFF0C\u4E26\u4EE5\u8A9E\u6E90\u5B78\u548C\u767C\u97F3\u65B9\u5F0F\u4ECB\u7D39\u79D1\u6280\u540D\u8A5E\u3002\u9019\u4E9B\u7279\u9EDE\u5728\u4ED6\u7684\u300A\u667A\u8005\u7684\u79D1\u5B78\u6307\u5357\u300B\u3001\u4E09\u5927\u5377\u7684\u300A\u8A8D\u8B58\u7269\u7406\u5B78\u300B\u548C\u300A\u827E\u897F\u83AB\u592B\u7684\u79D1\u5B78\u63A2\u7D22\u53F2\u7DB1\u300B\uFF08Asimov's Chronology of Science and Discovery\uFF09\u88E1\u8655\u8655\u53EF\u898B\u3002 \u827E\u897F\u83AB\u592B\u53C3\u8207\u9580\u85A9\u5B78\u6703\u591A\u5E74\uFF0C\u5F8C\u4F86\u6709\u9EDE\u4E0D\u7518\u9858\u7684\u88AB\u62F1\u70BA\u526F\u6703\u9577\uFF0C\u4ED6\u8AAA\u9019\u500B\u5B78\u6703\u7684\u6703\u54E1\u90FD\u300C\u597D\u901E\u80FD\u9B25\u667A\u300D\uFF0C\u76F8\u8F03\u4E4B\u4E0B\uFF0C\u4ED6\u66F4\u6A02\u610F\u62C5\u4EFB\u7F8E\u570B\u4EBA\u6587\u4E3B\u7FA9\u8005\u5354\u6703\u7684\u6703\u9577\u3002\u5C0F\u884C\u661F5020\u3001\u300A\u827E\u897F\u83AB\u592B\u79D1\u5E7B\u5C0F\u8AAA\u300B\u96DC\u8A8C\u548C\u5169\u9805\u827E\u897F\u83AB\u592B\u734E\u90FD\u662F\u4EE5\u4ED6\u7684\u540D\u5B57\u547D\u540D\u3002"@zh ,
+		"\u30A2\u30A4\u30B6\u30C3\u30AF\u30FB\u30A2\u30B7\u30E2\u30D5\uFF08Isaac Asimov\u30011920\u5E741\u67082\u65E5 \u2013 1992\u5E744\u67086\u65E5\uFF09\u306F\u3001\u30A2\u30E1\u30EA\u30AB\u306E\u4F5C\u5BB6\u3001\u751F\u5316\u5B66\u8005\u3067\u3042\u308B\u3002\u975E\u5E38\u306B\u6210\u529F\u3057\u305F\u591A\u4F5C\u306E\u4F5C\u5BB6\u3067\u3042\u308A\u3001\u305D\u306E\u8457\u4F5C\u306F500\u518A\u4EE5\u4E0A\u3092\u6570\u3048\u308B\u3002\u5F7C\u304C\u6271\u3046\u30C6\u30FC\u30DE\u306F\u79D1\u5B66\u3001\u8A00\u8A9E\u3001\u6B74\u53F2\u3001\u8056\u66F8\u306A\u3069\u591A\u5C90\u306B\u308F\u305F\u308A\u3001\u30C7\u30E5\u30FC\u30A4\u5341\u9032\u5206\u985E\u6CD5\u306E10\u3042\u308B\u4E3B\u8981\u30AB\u30C6\u30B4\u30EA\u306E\u3046\u30619\u3064\u306B\u308F\u305F\u308B\u304C\u3001\u7279\u306BSF\u3001\u4E00\u822C\u5411\u3051\u79D1\u5B66\u89E3\u8AAC\u66F8\u3001\u63A8\u7406\u5C0F\u8AAC\u306B\u3088\u3063\u3066\u3088\u304F\u77E5\u3089\u308C\u3066\u3044\u308B\u3002 \u65E5\u672C\u8A9E\u3067\u306F\u300C\u30A2\u30B7\u30E2\u30D5\u300D\u3068\u300C\u30A2\u30B8\u30E2\u30D5\u300D\u306A\u3069\u306E\u7247\u4EEE\u540D\u8868\u8A18\u304C\u3042\u308A\u3001\u524D\u8005\u3067\u306E\u8868\u8A18\u304C\u4E00\u822C\u7684\u3067\u3042\u308B\u3002\u672C\u4EBA\u304C\u671B\u3093\u3067\u3044\u305F\u8AAD\u307F\u306F\u5F8C\u8005\u306E\u767A\u97F3\u306B\u6BD4\u8F03\u7684\u8FD1\u3044[\u02C8a\u026Az\u0259k \u02C8\u00E6z\u0268m\u0259v]\u3067\u3042\u308B\u3002 \u30B8\u30E5\u30D6\u30CA\u30A4\u30EB\u4F5C\u54C1\u3067\u306F\u30DD\u30FC\u30EB\u30FB\u30D5\u30EC\u30F3\u30C1\u3068\u3044\u3046\u7B46\u540D\u3092\u7528\u3044\u305F\u30021942\u5E74\u767A\u8868\u306ESF\u77ED\u7DE8 Time Pussy \u3067\u306F George E. Dale \u3068\u3044\u3046\u7B46\u540D\u3092\u7528\u3044\u305F\u30021971\u5E74\u306E\u8457\u66F8 The Sensuous Dirty Old Man \u3067\u306F Dr. A \u3068\u3044\u3046\u7B46\u540D\u3092\u7528\u3044\u305F\u3002"@ja ,
+		"Isaac Asimov (/\u02C8a\u026Az\u1D7Bk \u02C8\u00E6z\u1D7Bm\u0252v/; born Isaak Ozimov; c. January 2, 1920 \u2013 April 6, 1992) was an American author and professor of biochemistry at Boston University. He was known for his works of science fiction and popular science. Asimov was a prolific writer, and wrote or edited more than 500 books and an estimated 90,000 letters and postcards. His books have been published in 9 of the 10 major categories of the Dewey Decimal Classification. Asimov wrote hard science fiction and, along with Robert A. Heinlein and Arthur C. Clarke, he was considered one of the \"Big Three\" science fiction writers during his lifetime. Asimov's most famous work is the Foundation Series; his other major series are the Galactic Empire series and the Robot series. The Galactic Empire novels are explicitly set in earlier history of the same fictional universe as the Foundation series. Later, beginning with Foundation's Edge, he linked this distant future to the Robot and Spacer stories, creating a unified \"future history\" for his stories much like those pioneered by Robert A. Heinlein and previously produced by Cordwainer Smith and Poul Anderson. He wrote hundreds of short stories, including the social science fiction \"Nightfall\", which in 1964 was voted by the Science Fiction Writers of America the best short science fiction story of all time. Asimov wrote the Lucky Starr series of juvenile science-fiction novels using the pen name Paul French. Asimov also wrote mysteries and fantasy, as well as much nonfiction. Most of his popular science books explain scientific concepts in a historical way, going as far back as possible to a time when the science in question was at its simplest stage. He often provides nationalities, birth dates, and death dates for the scientists he mentions, as well as etymologies and pronunciation guides for technical terms. Examples include Guide to Science, the three-volume set Understanding Physics, and Asimov's Chronology of Science and Discovery, as well as works on astronomy, mathematics, history, William Shakespeare's writing, and chemistry. Asimov was a long-time member and vice president of Mensa International, albeit reluctantly; he described some members of that organization as \"brain-proud and aggressive about their IQs\". He took more joy in being president of the American Humanist Association. The asteroid 5020 Asimov, a crater on the planet Mars, a Brooklyn elementary school, and a literary award are named in his honor."@en ,
+		"Isaac Asimov, n\u00E9 vers le 2 janvier 1920 \u00E0 Petrovitchi (en Russie) et mort le 6 avril 1992 \u00E0 New York aux \u00C9tats-Unis, est un \u00E9crivain am\u00E9ricano-russe, naturalis\u00E9 en 1928, surtout connu pour ses \u0153uvres de science-fiction et ses livres de vulgarisation scientifique."@fr ,
+		"Isaac Asimov (em russo: \u0418\u0441\u0430\u0430\u043A \u042E\u0434\u043E\u0432\u0438\u0447 \u041E\u0437\u0438\u043C\u043E\u0432; transl.: Isaak Yudavich Azimov; Petrovichi, R\u00FAssia Sovi\u00E9tica, atual R\u00FAssia, per\u00EDodo entre 4 de outubro de 1919 e 2 de janeiro de 1920 \u2014 Brooklyn, 6 de abril de 1992) foi um escritor e bioqu\u00EDmico americano, nascido na R\u00FAssia, autor de obras de fic\u00E7\u00E3o cient\u00EDfica e divulga\u00E7\u00E3o cient\u00EDfica. Asimov \u00E9 considerado um dos mestres da Fic\u00E7\u00E3o Cient\u00EDfica e, junto com Robert A. Heinlein e Arthur C. Clarke, foi considerado um dos \"tr\u00EAs grandes\" da fic\u00E7\u00E3o cient\u00EDfica. A obra mais famosa de Asimov \u00E9 a S\u00E9rie da Funda\u00E7\u00E3o, tamb\u00E9m conhecida como Trilogia da Funda\u00E7\u00E3o, que faz parte da s\u00E9rie do Imp\u00E9rio Gal\u00E1ctico e que logo combinou com a S\u00E9rie Rob\u00F4s. Tamb\u00E9m escreveu obras de mist\u00E9rio e fantasia, assim como uma grande quantidade de n\u00E3o-fic\u00E7\u00E3o. No total, escreveu ou editou mais de 500 volumes, aproximadamente 90 000 cartas ou postais, e tem obras em cada categoria importante do sistema de classifica\u00E7\u00E3o bibliogr\u00E1fica de Dewey, exceto em filosofia. A maioria de seus livros mais populares sobre ci\u00EAncia, explicam conceitos cient\u00EDficos de uma forma hist\u00F3rica, voltando no tempo o mais longe poss\u00EDvel, quando a ci\u00EAncia em quest\u00E3o estava nos primeiros est\u00E1gios. Ele providencia, muitas vezes, datas de nascimento e falecimento dos cientistas que menciona, tamb\u00E9m etimologias e guias de pronuncia\u00E7\u00E3o para termos t\u00E9cnicos. Alguns exemplos incluem, \"Guide to Science\", os tr\u00EAs volumes de \"Understanding Physics\" e a \"Chronology of Science and Discovery\", e trabalhos sobre Astronomia, Matem\u00E1tica, a B\u00EDblia, escritos de William Shakespeare e Qu\u00EDmica. Asimov foi membro e vice-presidente por muito tempo da Mensa, ainda que com falta: ele os descrevia como \"intelectualmente combalidos\". Exercia, com mais frequ\u00EAncia e assiduidade, a presid\u00EAncia da American Humanist Association (Associa\u00E7\u00E3o Humanista Americana). Em 1981, um asteroide recebeu seu nome em sua homenagem, o 5020 Asimov. O rob\u00F4 human\u00F3ide \"ASIMO\" da Honda, tamb\u00E9m pode ser considerada uma homenagem indireta a Asimov, pois o nome do rob\u00F4 significa, em ingl\u00EAs, Advanced Step in Innovative Mobility, al\u00E9m de tamb\u00E9m significar, em japon\u00EAs, \"tamb\u00E9m com pernas\" (ashi mo), em um trocadilho lingu\u00EDstico em rela\u00E7\u00E3o \u00E0 propriedade inovadora de movimenta\u00E7\u00E3o deste rob\u00F4."@pt ,
+		"\u0410\u0301\u0439\u0437\u0435\u043A \u0410\u0437\u0438\u0301\u043C\u043E\u0432 (Isaac Asimov, \u0438\u043C\u044F \u043F\u0440\u0438 \u0440\u043E\u0436\u0434\u0435\u043D\u0438\u0438 \u0418\u0441\u0430\u00E1\u043A \u042E\u0301\u0434\u043E\u0432\u0438\u0447 \u041E\u0437\u0438\u0301\u043C\u043E\u0432; 2 \u044F\u043D\u0432\u0430\u0440\u044F 1920 \u0433\u043E\u0434\u0430, \u041F\u0435\u0442\u0440\u043E\u0432\u0438\u0447\u0438, \u0428\u0443\u043C\u044F\u0447\u0441\u043A\u0438\u0439 \u0440\u0430\u0439\u043E\u043D, \u0421\u043C\u043E\u043B\u0435\u043D\u0441\u043A\u0430\u044F \u043E\u0431\u043B\u0430\u0441\u0442\u044C, \u0420\u0421\u0424\u0421\u0420 \u2014 6 \u0430\u043F\u0440\u0435\u043B\u044F 1992 \u0433\u043E\u0434\u0430, \u041D\u044C\u044E-\u0419\u043E\u0440\u043A, \u0421\u0428\u0410) \u2014 \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0438\u0439 \u043F\u0438\u0441\u0430\u0442\u0435\u043B\u044C-\u0444\u0430\u043D\u0442\u0430\u0441\u0442, \u043F\u043E\u043F\u0443\u043B\u044F\u0440\u0438\u0437\u0430\u0442\u043E\u0440 \u043D\u0430\u0443\u043A\u0438, \u0431\u0438\u043E\u0445\u0438\u043C\u0438\u043A. \u0410\u0432\u0442\u043E\u0440 \u043E\u043A\u043E\u043B\u043E 500 \u043A\u043D\u0438\u0433, \u0432 \u043E\u0441\u043D\u043E\u0432\u043D\u043E\u043C \u0445\u0443\u0434\u043E\u0436\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0445 (\u043F\u0440\u0435\u0436\u0434\u0435 \u0432\u0441\u0435\u0433\u043E \u0432 \u0436\u0430\u043D\u0440\u0435 \u043D\u0430\u0443\u0447\u043D\u043E\u0439 \u0444\u0430\u043D\u0442\u0430\u0441\u0442\u0438\u043A\u0438, \u043D\u043E \u0442\u0430\u043A\u0436\u0435 \u0438 \u0432 \u0434\u0440\u0443\u0433\u0438\u0445 \u0436\u0430\u043D\u0440\u0430\u0445: \u0444\u044D\u043D\u0442\u0435\u0437\u0438, \u0434\u0435\u0442\u0435\u043A\u0442\u0438\u0432, \u044E\u043C\u043E\u0440) \u0438 \u043D\u0430\u0443\u0447\u043D\u043E-\u043F\u043E\u043F\u0443\u043B\u044F\u0440\u043D\u044B\u0445 (\u0432 \u0441\u0430\u043C\u044B\u0445 \u0440\u0430\u0437\u043D\u044B\u0445 \u043E\u0431\u043B\u0430\u0441\u0442\u044F\u0445 \u2014 \u043E\u0442 \u0430\u0441\u0442\u0440\u043E\u043D\u043E\u043C\u0438\u0438 \u0438 \u0433\u0435\u043D\u0435\u0442\u0438\u043A\u0438 \u0434\u043E \u0438\u0441\u0442\u043E\u0440\u0438\u0438 \u0438 \u043B\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u043E\u0432\u0435\u0434\u0435\u043D\u0438\u044F). \u041C\u043D\u043E\u0433\u043E\u043A\u0440\u0430\u0442\u043D\u044B\u0439 \u043B\u0430\u0443\u0440\u0435\u0430\u0442 \u043F\u0440\u0435\u043C\u0438\u0439 \u0425\u044C\u044E\u0433\u043E \u0438 \u041D\u0435\u0431\u044C\u044E\u043B\u0430. \u041D\u0435\u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0442\u0435\u0440\u043C\u0438\u043D\u044B \u0438\u0437 \u0435\u0433\u043E \u043F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u0439 \u2014 robotics (\u0440\u043E\u0431\u043E\u0442\u0435\u0445\u043D\u0438\u043A\u0430, \u0440\u043E\u0431\u043E\u0442\u0438\u043A\u0430), positronic (\u043F\u043E\u0437\u0438\u0442\u0440\u043E\u043D\u043D\u044B\u0439), psychohistory (\u043F\u0441\u0438\u0445\u043E\u0438\u0441\u0442\u043E\u0440\u0438\u044F, \u043D\u0430\u0443\u043A\u0430 \u043E \u043F\u043E\u0432\u0435\u0434\u0435\u043D\u0438\u0438 \u0431\u043E\u043B\u044C\u0448\u0438\u0445 \u0433\u0440\u0443\u043F\u043F \u043B\u044E\u0434\u0435\u0439) \u2014 \u043F\u0440\u043E\u0447\u043D\u043E \u0432\u043E\u0448\u043B\u0438 \u0432 \u0430\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439 \u0438 \u0434\u0440\u0443\u0433\u0438\u0435 \u044F\u0437\u044B\u043A\u0438. \u0412 \u0430\u043D\u0433\u043B\u043E-\u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u043E\u0439 \u043B\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u043D\u043E\u0439 \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u0438 \u0410\u0437\u0438\u043C\u043E\u0432\u0430 \u0432\u043C\u0435\u0441\u0442\u0435 \u0441 \u0410\u0440\u0442\u0443\u0440\u043E\u043C \u041A\u043B\u0430\u0440\u043A\u043E\u043C \u0438 \u0420\u043E\u0431\u0435\u0440\u0442\u043E\u043C \u0425\u0430\u0439\u043D\u043B\u0430\u0439\u043D\u043E\u043C \u043E\u0442\u043D\u043E\u0441\u044F\u0442 \u043A \u00AB\u0411\u043E\u043B\u044C\u0448\u043E\u0439 \u0442\u0440\u043E\u0439\u043A\u0435\u00BB \u043F\u0438\u0441\u0430\u0442\u0435\u043B\u0435\u0439-\u0444\u0430\u043D\u0442\u0430\u0441\u0442\u043E\u0432. \u0412 \u043E\u0434\u043D\u043E\u043C \u0438\u0437 \u043E\u0431\u0440\u0430\u0449\u0435\u043D\u0438\u0439 \u043A \u0447\u0438\u0442\u0430\u0442\u0435\u043B\u044F\u043C \u0410\u0437\u0438\u043C\u043E\u0432 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u043C \u043E\u0431\u0440\u0430\u0437\u043E\u043C \u0441\u0444\u043E\u0440\u043C\u0443\u043B\u0438\u0440\u043E\u0432\u0430\u043B \u0433\u0443\u043C\u0430\u043D\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043A\u0443\u044E \u0440\u043E\u043B\u044C \u043D\u0430\u0443\u0447\u043D\u043E\u0439 \u0444\u0430\u043D\u0442\u0430\u0441\u0442\u0438\u043A\u0438 \u0432 \u0441\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u043E\u043C \u043C\u0438\u0440\u0435: \u00AB\u0418\u0441\u0442\u043E\u0440\u0438\u044F \u0434\u043E\u0441\u0442\u0438\u0433\u043B\u0430 \u0442\u043E\u0447\u043A\u0438, \u043A\u043E\u0433\u0434\u0430 \u0447\u0435\u043B\u043E\u0432\u0435\u0447\u0435\u0441\u0442\u0432\u0443 \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435 \u0440\u0430\u0437\u0440\u0435\u0448\u0430\u0435\u0442\u0441\u044F \u0432\u0440\u0430\u0436\u0434\u043E\u0432\u0430\u0442\u044C. \u041B\u044E\u0434\u0438 \u043D\u0430 \u0417\u0435\u043C\u043B\u0435 \u0434\u043E\u043B\u0436\u043D\u044B \u0414\u0440\u0443\u0436\u0438\u0442\u044C. \u042F \u0432\u0441\u0435\u0433\u0434\u0430 \u0441\u0442\u0430\u0440\u0430\u043B\u0441\u044F \u044D\u0442\u043E \u043F\u043E\u0434\u0447\u0435\u0440\u043A\u043D\u0443\u0442\u044C \u0432 \u0441\u0432\u043E\u0438\u0445 \u043F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u044F\u0445\u2026 \u041D\u0435 \u0434\u0443\u043C\u0430\u044E, \u0447\u0442\u043E \u043C\u043E\u0436\u043D\u043E \u0437\u0430\u0441\u0442\u0430\u0432\u0438\u0442\u044C \u0432\u0441\u0435\u0445 \u043B\u044E\u0434\u0435\u0439 \u043B\u044E\u0431\u0438\u0442\u044C \u0434\u0440\u0443\u0433 \u0434\u0440\u0443\u0433\u0430, \u043D\u043E \u044F \u0436\u0435\u043B\u0430\u043B \u0431\u044B \u0443\u043D\u0438\u0447\u0442\u043E\u0436\u0438\u0442\u044C \u043D\u0435\u043D\u0430\u0432\u0438\u0441\u0442\u044C \u043C\u0435\u0436\u0434\u0443 \u043B\u044E\u0434\u044C\u043C\u0438. \u0418 \u044F \u0441\u043E\u0432\u0435\u0440\u0448\u0435\u043D\u043D\u043E \u0441\u0435\u0440\u044C\u0451\u0437\u043D\u043E \u043F\u043E\u043B\u0430\u0433\u0430\u044E, \u0447\u0442\u043E \u043D\u0430\u0443\u0447\u043D\u0430\u044F \u0444\u0430\u043D\u0442\u0430\u0441\u0442\u0438\u043A\u0430 \u0435\u0441\u0442\u044C \u043E\u0434\u043D\u043E \u0438\u0437 \u0437\u0432\u0435\u043D\u044C\u0435\u0432, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043F\u043E\u043C\u043E\u0433\u0430\u044E\u0442 \u0441\u043E\u0435\u0434\u0438\u043D\u0438\u0442\u044C \u0447\u0435\u043B\u043E\u0432\u0435\u0447\u0435\u0441\u0442\u0432\u043E. \u041F\u0440\u043E\u0431\u043B\u0435\u043C\u044B, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043C\u044B \u043F\u043E\u0434\u043D\u0438\u043C\u0430\u0435\u043C \u0432 \u0444\u0430\u043D\u0442\u0430\u0441\u0442\u0438\u043A\u0435, \u0441\u0442\u0430\u043D\u043E\u0432\u044F\u0442\u0441\u044F \u043D\u0430\u0441\u0443\u0449\u043D\u044B\u043C\u0438 \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u0430\u043C\u0438 \u0432\u0441\u0435\u0433\u043E \u0447\u0435\u043B\u043E\u0432\u0435\u0447\u0435\u0441\u0442\u0432\u0430\u2026 \u041F\u0438\u0441\u0430\u0442\u0435\u043B\u044C-\u0444\u0430\u043D\u0442\u0430\u0441\u0442, \u0447\u0438\u0442\u0430\u0442\u0435\u043B\u044C \u0444\u0430\u043D\u0442\u0430\u0441\u0442\u0438\u043A\u0438, \u0441\u0430\u043C\u0430 \u0444\u0430\u043D\u0442\u0430\u0441\u0442\u0438\u043A\u0430 \u0441\u043B\u0443\u0436\u0430\u0442 \u0447\u0435\u043B\u043E\u0432\u0435\u0447\u0435\u0441\u0442\u0432\u0443\u00BB."@ru ,
+		"Isaac Asimov (wym. \u02C8a\u026Az\u0259k \u02C8\u00E6z\u026Am\u028Cv, urodzony jako Isaak Judowicz Ozimow (ros. \u0418\u0441\u0430\u0430\u043A \u042E\u0434\u043E\u0432\u0438\u0447 \u041E\u0437\u0438\u043C\u043E\u0432); ur. 2 stycznia 1920 w Pietrowiczach w obwodzie smole\u0144skim, obecnie Rosyjska Federacyjna SRR; zm. 6 kwietnia 1992 w Nowym Jorku, USA) \u2013 ameryka\u0144ski pisarz i profesor biochemii pochodzenia rosyjsko-\u017Cydowskiego. Najwi\u0119kszy sukces osi\u0105gn\u0105\u0142 jako autor ksi\u0105\u017Cek fantastycznonaukowych oraz popularnonaukowych. Wi\u0119kszo\u015B\u0107 prac Asimova z zakresu popularyzacji nauki wyja\u015Bnia koncepcje naukowe w spos\u00F3b historyczny, cofaj\u0105c si\u0119 w czasie w miar\u0119 mo\u017Cliwo\u015Bci jak najdalej, do samych pocz\u0105tk\u00F3w rozwoju danej dziedziny. Cz\u0119sto podaje narodowo\u015Bci, daty urodzenia i \u015Bmierci wspominanych przez siebie naukowc\u00F3w, jak r\u00F3wnie\u017C etymologi\u0119 i sposoby wymawiania termin\u00F3w technicznych. Jako przyk\u0142ady mo\u017Cna wymieni\u0107 Guide to Science, trzytomowy zbi\u00F3r Understanding Physics oraz Asimov\u2019s Chronology of Science and Discovery. Asimov, jako autor i redaktor ponad 500 ksi\u0105\u017Cek, oraz w przybli\u017Ceniu 90000 list\u00F3w i kartek pocztowych, by\u0142 jednym z najbardziej p\u0142odnych pisarzy wszech czas\u00F3w. Jego prace zosta\u0142y opublikowane w dziewi\u0119ciu z dziesi\u0119ciu g\u0142\u00F3wnych kategorii Klasyfikacji Dziesi\u0119tnej Deweya (z wyj\u0105tkiem 100, filozofii). Powszechnie uwa\u017Cany jest za mistrza gatunku fantastyki naukowej. Za \u017Cycia postrzegany by\u0142 jako jeden z \u201EWielkiej Tr\u00F3jki\u201D pisarzy fantastyki naukowej, wraz z Robertem A. Heinleinem oraz Arthurem C. Clarke.Najs\u0142ynniejszym dzie\u0142em Asimova jest cykl Fundacja; inne znane cykle to Galactic Empire oraz Roboty, kt\u00F3re osadzi\u0142 p\u00F3\u017Anej w tym samym \u015Bwiecie fikcyjnym co Fundacja tworz\u0105c sp\u00F3jn\u0105 \u201Ehistori\u0119 przysz\u0142o\u015Bci\u201D dla wszystkich jego ksi\u0105\u017Cek, w podobny spos\u00F3b jak uczynili to wcze\u015Bniej w swojej tw\u00F3rczo\u015Bci Robert A. Heinlein, Cordwainer Smith oraz Poul Anderson. Spod jego pi\u00F3ra wysz\u0142y liczne opowiadania, mi\u0119dzy innymi \u201ENastanie nocy\u201D, kt\u00F3re w roku 1964 g\u0142osami cz\u0142onk\u00F3w stowarzyszenia Science Fiction Writers of America zdoby\u0142o tytu\u0142 opowiadania wszech czas\u00F3w, przez wielu uznawany do dzi\u015B. Pisa\u0142 r\u00F3wnie\u017C ksi\u0105\u017Cki kryminalne i fantasy, a pod pseudonimem \u201EPaul French\u201D stworzy\u0142 m\u0142odzie\u017Cowy cykl Lucky Starr. Asimov by\u0142 wieloletnim cz\u0142onkiem i wiceprezesem Mensy, cho\u0107 funkcj\u0119 t\u0119 pe\u0142ni\u0142 niech\u0119tnie; niekt\u00F3rych cz\u0142onk\u00F3w organizacji opisa\u0142 jako \u201Edumnych i agresywnych w kwestii swojego IQ\u201D. Wi\u0119cej przyjemno\u015Bci sprawia\u0142o mu piastowanie stanowiska prezesa American Humanist Association. Na jego cze\u015B\u0107 nazwane zosta\u0142y asteroida (5020) Asimov, czasopismo Asimov's Science Fiction, szko\u0142a podstawowa na Brooklynie (Nowy Jork), oraz dwie r\u00F3\u017Cne nagrody literackie."@pl ;
+	dbo:thumbnail	<http://commons.wikimedia.org/wiki/Special:FilePath/Isaac.Asimov01.jpg?width=300> ;
+	dbo:birthDate	"1920-1-2"^^xsd:date ,
+		"1919-10-04"^^xsd:date ;
+	dbo:deathDate	"1992-4-6"^^xsd:date ,
+		"1992-04-06"^^xsd:date ;
+	dbo:deathPlace	<http://dbpedia.org/resource/New_York_(state)> ,
+		dbr:New_York_City ,
+		dbr:Brooklyn ;
+	dbo:wikiPageRevisionID	744970050 ;
+	dbo:birthPlace	dbr:Russian_Soviet_Federative_Socialist_Republic ,
+		<http://dbpedia.org/resource/Petrovichi,_Smolensk_Oblast> ;
+	dbo:wikiPageID	14573 .
+@prefix ns36:	<http://www.w3.org/2006/03/wn/wn20/instances/> .
+dbr:Isaac_Asimov	dbp:wordnet_type	ns36:synset-writer-noun-1 ;
+	dbo:activeYearsEndYear	"1992"^^xsd:gYear ;
+	dbp:type	"author"^^rdf:langString ;
+	dbp:name	"Interview with Isaac Asimov"^^rdf:langString ,
+		"Isaac Asimov"^^rdf:langString .
+@prefix ns37:	<http://purl.org/linguistics/gold/> .
+dbr:Isaac_Asimov	ns37:hypernym	dbr:Author ;
+	dbp:nationality	"Russian , American"^^rdf:langString .
+<http://dbpedia.org/resource/Angela_Steinm\u00FCller>	dbo:influencedBy	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Karlheinz_Steinm\u00FCller>	dbo:influenced	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Asimov\u0027s_Biographical_Encyclopedia_of_Science_and_Technology>	dbo:author	dbr:Isaac_Asimov .
+dbr:Understanding_Physics	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Troas_(fictional_planet)>	dbp:creator	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Quasar,_Quasar,_Burning_Bright>	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Left_Hand_of_the_Electron	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/The_Intelligent_Man\u0027s_Guide_to_Science>	dbo:author	dbr:Isaac_Asimov .
+dbr:View_from_a_Height	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Big_Game_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+dbr:Thiotimoline	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Death_Sentence_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/For_the_Birds_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/The_Imaginary_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+dbr:Half-Breeds_on_Venus	dbo:author	dbr:Isaac_Asimov .
+dbr:No_Connection	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Hazing	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Magnificent_Possession	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Weapon_Too_Dreadful_to_Use	dbo:author	dbr:Isaac_Asimov .
+dbr:Eyes_Do_More_Than_See	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/It\u0027s_Such_a_Beautiful_Day>	dbo:author	dbr:Isaac_Asimov .
+dbr:Waterclap	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/What_Is_This_Thing_Called_Love%3F_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/The_Deep_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Old-fashioned_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Half-Breed_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Youth_(Asimov_short_story)>	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Fun_They_Had	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Martian_Way	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/The_Weapon_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/The_Message_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+dbr:Black_Friar_of_the_Flame	dbo:author	dbr:Isaac_Asimov .
+dbr:Green_Patches	dbo:author	dbr:Isaac_Asimov .
+dbr:Kid_Stuff	dbo:author	dbr:Isaac_Asimov .
+dbr:Living_Space	dbo:author	dbr:Isaac_Asimov .
+dbr:Ring_Around_the_Sun	dbo:author	dbr:Isaac_Asimov .
+dbr:Sucker_Bait	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Trends_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/I_Just_Make_Them_Up,_See!>	dbo:author	dbr:Isaac_Asimov .
+dbr:Super-Neutron	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Little_Man_on_the_Subway	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Secret_Sense	dbo:author	dbr:Isaac_Asimov .
+dbr:Rejection_Slips	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Last_Trump	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/The_Red_Queen\u0027s_Race>	dbo:author	dbr:Isaac_Asimov .
+dbr:Homo_Sol	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Strikebreaker_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Profession_(novella)>	dbo:author	dbr:Isaac_Asimov .
+dbr:Spell_My_Name_with_an_S	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Feeling_of_Power	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Gentle_Vultures	dbo:author	dbr:Isaac_Asimov .
+dbr:No_Refuge_Could_Save	dbo:author	dbr:Isaac_Asimov .
+dbr:Dreaming_Is_a_Private_Thing	dbo:author	dbr:Isaac_Asimov .
+dbr:Christmas_on_Ganymede	dbo:author	dbr:Isaac_Asimov .
+dbr:Exile_to_Hell	dbo:author	dbr:Isaac_Asimov .
+dbr:Hell-Fire	dbo:author	dbr:Isaac_Asimov .
+dbr:Marching_In	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Greatest_Asset	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Portable_Star	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Watery_Place	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Winnowing	dbo:author	dbr:Isaac_Asimov .
+dbr:Time_Pussy	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Up-to-Date_Sorcerer	dbo:author	dbr:Isaac_Asimov .
+dbr:Fifty_Short_Science_Fiction_Tales	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Birth_of_a_Notion_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+dbr:Blind_Alley	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Immortal_Bard	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Not_Final!>	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Evitable_Conflict	dbo:author	dbr:Isaac_Asimov .
+dbr:Janet_Asimov	dbo:spouse	dbr:Isaac_Asimov .
+dbr:Alastair_Reynolds	dbo:influencedBy	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Nightfall_(Asimov_novelette_and_novel)>	dbo:author	dbr:Isaac_Asimov .
+dbr:Iain_Banks	dbo:influencedBy	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/David_Mitchell_(author)>	dbo:influencedBy	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/What\u0027s_in_a_Name%3F>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/2430_A.D.>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Liebig\u0027s_law_of_the_minimum>	dbp:sign	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/The_Key_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+dbr:List_of_books_by_Isaac_Asimov	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Asimov\u0027s_work>	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Asimov\u2019s_work>	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Bibliography_of_isaac_asimov	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Isaac_Asimov_works	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Lemuel_Hoskins	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Marmaduke_Tallinn	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Dr_A	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Isacc_Asimov	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Asimov,_Isaac>	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Issac_asimov	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Isaac_Asimov_Complete_Bibliography	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Dr._Isaac_Asimov>	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Isaac_Asimov_complete_bibliography	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Isaac_azimov	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:IsaacAsimov	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Issac_Asimov	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Complete_bibliography_of_books_by_Isaac_Asimov	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/George_E._Dale>	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Isaak_Ozimov	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Izaak_Ozimov	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Isaac_asimov	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Isaac_Azimov	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Isac_Asimof	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Manya_Asimov	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Marcia_Asimov	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:World_Season_Calendar	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:World_Seasonal_Calendar	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Issac_assimov	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Bibliography_of_Isaac_Asimov	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:List_of_Isaac_Asimov_works	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Asimov	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Asimovian	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Aisek_Asimov	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Eyzek_Asimov	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Eyzik_Asimov	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Dr._A>	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Isaak_Yudovich_Ozimov	dbo:wikiPageRedirects	dbr:Isaac_Asimov .
+dbr:Fantastic_Voyage__Fantastic_Voyage__1	dbo:author	dbr:Isaac_Asimov .
+@prefix ns38:	<http://dbpedia.org/resource/Fantastic_Voyage_II:> .
+ns38:_Destination_Brain	dbo:author	dbr:Isaac_Asimov .
+dbr:Norby	dbo:creator	dbr:Isaac_Asimov .
+dbr:Susan_Calvin	dbo:creator	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Science,_Numbers,_and_I>	dbo:author	dbr:Isaac_Asimov .
+dbr:Adding_a_Dimension	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Through_a_Glass,_Clearly>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/A_(disambiguation)>	dbo:wikiPageDisambiguates	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Escape!>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/I,_Robot>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Risk_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Complete_Robot	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Evidence_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Stars_in_their_Courses	dbo:author	dbr:Isaac_Asimov .
+dbr:From_Earth_to_Heaven	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/The_Planet_That_Wasn\u0027t>	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Road_to_Infinity	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Gaia_(Foundation_universe)>	dbp:creator	dbr:Isaac_Asimov .
+dbr:Trantor	dbp:creator	dbr:Isaac_Asimov .
+dbr:The_Bicentennial_Man	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Secret_of_the_Universe	dbo:author	dbr:Isaac_Asimov .
+dbr:Foundation_series	dbp:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Terminus_(planet)>	dbp:creator	dbr:Isaac_Asimov .
+dbr:Counting_the_Eons	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/The_Sun_Shines_Bright_(book)>	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Tragedy_of_the_Moon	dbo:author	dbr:Isaac_Asimov .
+dbr:Far_as_Human_Eye_Could_See	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Subatomic_Monster	dbo:author	dbr:Isaac_Asimov .
+dbr:Lin_Carter	dbo:influencedBy	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/John_M._Ford>	dbo:influencedBy	dbr:Isaac_Asimov .
+dbr:Martin_Livings	dbo:influencedBy	dbr:Isaac_Asimov .
+dbr:Barton_Paul_Levenson	dbo:influencedBy	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Getting_Even_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+dbr:Legal_Rites	dbo:author	dbr:Isaac_Asimov .
+dbr:Gimmicks_Three	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Atlantis_(anthology)>	dbo:author	dbr:Isaac_Asimov .
+dbr:Cosmic_Knights	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Curses_(anthology)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Devils_(anthology)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Faeries_(anthology)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Ghosts_(anthology)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Giants_(anthology)>	dbo:author	dbr:Isaac_Asimov .
+dbr:Magical_Wishes	dbo:author	dbr:Isaac_Asimov .
+dbr:Mythical_Beasties	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Spells_(anthology)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Witches_(anthology)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Wizards_(Asimov_anthology)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Anniversary_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+dbr:Jokester	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Last_Question	dbo:author	dbr:Isaac_Asimov .
+dbr:All_the_Troubles_of_the_World	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Dead_Past	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Question_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Someday_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Life_and_Times_of_Multivac	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Franchise_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+dbr:Massimo_Mongai	dbo:influencedBy	dbr:Isaac_Asimov .
+dbr:Robot_Visions	dbo:author	dbr:Isaac_Asimov .
+dbr:Andrew_Targowski	dbo:influencedBy	dbr:Isaac_Asimov .
+dbr:Charles_Stross	dbo:influencedBy	dbr:Isaac_Asimov .
+dbr:Liu_Cixin	dbo:influencedBy	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/List_of_The_Tonight_Show_Starring_Johnny_Carson_episodes_(1968)>	dbp:guests	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Geoffrey_A._Landis>	dbo:influencedBy	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Galactic_Empire_(Isaac_Asimov)>	dbp:creator	dbr:Isaac_Asimov .
+@prefix ns39:	<http://dbpedia.org/resource/Atom:> .
+ns39:_Journey_Across_the_Subatomic_Cosmos	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Foundation_(Isaac_Asimov_novel)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Reason_(short_story)>	dbo:author	dbr:Isaac_Asimov .
+dbr:Out_of_the_Everywhere	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Relativity_of_Wrong	dbo:author	dbr:Isaac_Asimov .
+dbr:Foundation_and_Empire	dbo:author	dbr:Isaac_Asimov .
+dbr:Only_a_Trillion	dbo:author	dbr:Isaac_Asimov .
+dbr:X_Stands_for_Unknown	dbo:author	dbr:Isaac_Asimov .
+dbr:Robot_Dreams	dbo:author	dbr:Isaac_Asimov .
+dbr:The_Science_Fictional_Olympics	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Comets_(anthology)>	dbo:author	dbr:Isaac_Asimov .
+dbr:Intergalactic_Empires	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Invasions_(anthology)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Monsters_(anthology)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Robots_(Asimov_anthology)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Space_Shuttles_(anthology)>	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Supermen_(anthology)>	dbo:author	dbr:Isaac_Asimov .
+dbr:Tin_Stars	dbo:author	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Harlan_Ellison__Edgar_Allan_Poe,_Theodore_Sturgeon,_Franz_Kafka,_J__1>	dbo:influencedBy	dbr:Isaac_Asimov .
+<http://dbpedia.org/resource/Asimov_(disambiguation)>	dbo:wikiPageDisambiguates	dbr:Isaac_Asimov .
