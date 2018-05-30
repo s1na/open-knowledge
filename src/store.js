@@ -1,5 +1,7 @@
 'use strict'
 
+import _ from 'lodash'
+
 import Dag from './dag'
 
 export default class Store {
@@ -149,10 +151,11 @@ export default class Store {
       path += '/' + fixedEls[fixed[k]]
     }
 
-    return this._loopIndex(path, fixedEls, variable, limit)
+    let res = await this._loopIndex(path, fixedEls, variable)
+    return res.slice(offset, limit)
   }
 
-  async _loopIndex(path, fixed, variable, limit) {
+  async _loopIndex(path, fixed, variable) {
     if (variable.length === 0) {
       return [this._decodeTriple(fixed.s, fixed.p, fixed.o)]
     }
@@ -160,20 +163,17 @@ export default class Store {
     let res = []
     console.log('getting index ', path)
     let index = await this.dag.get(path)
-    for (let k in index) {
+    let keys = Object.keys(index)
+    keys = _.sortBy(keys)
+    for (let i = 0; i < keys.length; i++) {
+      let k = keys[i]
       let r = await this._loopIndex(
         path + '/' + k,
         Object.assign({}, fixed, { [variable[0]]: k }),
         variable.slice(1),
-        limit
       )
 
       res = res.concat(r)
-
-      if (res.length >= limit) {
-        res = res.slice(0, limit)
-        break
-      }
     }
 
     return res
