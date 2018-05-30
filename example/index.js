@@ -43,6 +43,7 @@ ok.init().then(async () => {
 
       console.log('Store size: ', ok.store.size())
       console.log(await ok.store.getTriples(null, 'http://dbpedia.org/ontology/author', null, 'test'))
+      console.log(await ok.store.getTriples(null, null, null, 'test'))
 
       return
     }
