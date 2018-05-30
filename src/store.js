@@ -122,7 +122,7 @@ export default class Store {
     console.log('New root: ', this._repoCid)
   }
 
-  async getTriples(s, p, o, g) {
+  async getTriples(s, p, o, g, offset=0, limit=10) {
     ({ s, p, o, g } = this._sanitizeQuad(s, p, o, g))
 
     if (!(g in this.state.graphs)) {
@@ -149,10 +149,10 @@ export default class Store {
       path += '/' + fixedEls[fixed[k]]
     }
 
-    return this._loopIndex(path, fixedEls, variable)
+    return this._loopIndex(path, fixedEls, variable, limit)
   }
 
-  async _loopIndex(path, fixed, variable) {
+  async _loopIndex(path, fixed, variable, limit) {
     if (variable.length === 0) {
       return [this._decodeTriple(fixed.s, fixed.p, fixed.o)]
     }
@@ -161,7 +161,19 @@ export default class Store {
     console.log('getting index ', path)
     let index = await this.dag.get(path)
     for (let k in index) {
-      res = res.concat(await this._loopIndex(path + '/' + k, Object.assign({}, fixed, { [variable[0]]: k }), variable.slice(1)))
+      let r = await this._loopIndex(
+        path + '/' + k,
+        Object.assign({}, fixed, { [variable[0]]: k }),
+        variable.slice(1),
+        limit
+      )
+
+      res = res.concat(r)
+
+      if (res.length >= limit) {
+        res = res.slice(0, limit)
+        break
+      }
     }
 
     return res

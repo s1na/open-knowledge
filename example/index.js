@@ -42,8 +42,8 @@ ok.init().then(async () => {
       await ok.store.addTriples(quads, 'test')
 
       console.log('Store size: ', ok.store.size())
-      console.log(await ok.store.getTriples(null, 'http://dbpedia.org/ontology/author', null, 'test'))
-      console.log(await ok.store.getTriples(null, null, null, 'test'))
+      console.log(await ok.store.getTriples(null, 'http://dbpedia.org/ontology/author', null, 'test', 0, 1))
+      console.log(await ok.store.getTriples(null, null, null, 'test', 0, 3))
 
       return
     }
