@@ -45,6 +45,8 @@ ok.init().then(async () => {
       console.log(await ok.store.getTriples(null, 'http://dbpedia.org/ontology/author', null, 'test', 0, 1))
       console.log(await ok.store.getTriples(null, null, null, 'test', 0, 3))
 
+      // console.log(JSON.stringify(await ok.store.dag.getState(), null, '  '))
+
       return
     }
 

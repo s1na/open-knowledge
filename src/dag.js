@@ -11,7 +11,6 @@ export default class Store {
   async get(cid) {
     let [val, ok] = this._cacheGet(cid)
     if (ok) {
-      console.log(cid, 'in cache')
       return val
     }
 
@@ -26,6 +25,18 @@ export default class Store {
 
   async put(obj) {
     return (await this.ipfs.dag.put(obj, { format: 'dag-cbor', hashAlg: 'sha2-256' })).toBaseEncodedString()
+  }
+
+  async getState(path=this.root) {
+    let state = await this.get(path)
+
+    for (let k in state) {
+      if (typeof state[k] === 'object') {
+        state[k] = await this.getState(path + '/' + k)
+      }
+    }
+
+    return state
   }
 
   async merge(path, diff) {
