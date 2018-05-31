@@ -2,6 +2,7 @@ import resolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 import json from 'rollup-plugin-json'
 import babel from 'rollup-plugin-babel'
+import replace from 'rollup-plugin-re'
 import pkg from './package.json'
 
 export default [
@@ -16,6 +17,25 @@ export default [
     plugins: [
       resolve({
         preferBuiltins: true,
+      }),
+      replace({
+        patterns: [
+          {
+            include: 'node_modules/ldf-client/ldf-client.js',
+            test: 'require = function (path) { return function () { return require(path); } };',
+            replace: ''
+          },
+          {
+            include: 'node_modules/ldf-client/ldf-client.js',
+            test: 'require = globalRequire;',
+            replace: ''
+          },
+          {
+            include: 'node_modules/n3/N3.js',
+            test: 'require = function () {};',
+            replace: ''
+          }
+        ]
       }),
       commonjs(),
       json(),

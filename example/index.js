@@ -45,6 +45,10 @@ ok.init().then(async () => {
       console.log(await ok.store.getTriples(null, 'http://dbpedia.org/ontology/author', null, 'test', 0, 1))
       console.log(await ok.store.getTriples(null, null, null, 'test', 1, 3))
 
+      await ok.execute('SELECT * {\
+        <http://dbpedia.org/resource/Lucky_Starr_and_the_Big_Sun_of_Mercury> <http://dbpedia.org/ontology/author> ?o.\
+        ?s <http://dbpedia.org/ontology/influenced> ?o } LIMIT 100')
+
       // console.log(JSON.stringify(await ok.store.dag.getState(), null, '  '))
 
       return
