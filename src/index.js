@@ -1,25 +1,22 @@
 'use strict'
 
 import { SparqlIterator } from 'ldf-client'
+import CID from 'cids'
 
 import Store from './store'
 import FragmentsClient from './fragments-client'
 
 export default class OpenKnowledge {
-  constructor(ipfs, repo) {
-    this.store = new Store(ipfs, repo)
+  constructor(ipfs, graphManager) {
+    this.ipfs = ipfs
+    this.graphManager = graphManager
   }
 
   async init() {
+    let rootHex = await this.graphManager.methods.root().call()
+    let rootCid = new CID('f' + rootHex.slice(2))
+    this.store = new Store(this.ipfs, rootCid.toBaseEncodedString())
     await this.store.init()
-  }
-
-  async add(k, v) {
-    return this.store.add(k, v)
-  }
-
-  async get(k) {
-    return this.store.get(k)
   }
 
   addTriple(s, p, o, g) {
