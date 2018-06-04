@@ -20,6 +20,8 @@ export default class FragmentsClient {
         let triple = { subject: res[i][0], predicate: res[i][1], object: res[i][2] }
         fragment._push(triple)
       }
+
+      fragment.close()
     })
 
     return fragment 

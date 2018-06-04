@@ -1,13 +1,13 @@
 'use strict'
 
 export default class Store {
-  constructor(ipfs, repo) {
+  constructor(ipfs, root) {
     this.ipfs = ipfs
-    this.root = repo
+    this.root = root
     this.cache = {}
     this.cacheSize = 256
   }
- 
+
   async get(cid) {
     let [val, ok] = this._cacheGet(cid)
     if (ok) {
