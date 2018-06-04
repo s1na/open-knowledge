@@ -21,6 +21,11 @@ export default class Store {
     console.log('Fetched root state: ', this.state)
   }
 
+  async setRoot(r) {
+    this._repoCid = r
+    await this.init()
+  }
+
   size() {
     return this.state.size
   }

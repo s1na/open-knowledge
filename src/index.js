@@ -10,6 +10,7 @@ export default class OpenKnowledge {
   constructor(ipfs, graphManager) {
     this.ipfs = ipfs
     this.graphManager = graphManager
+    this.rootUpdatedSub = null
   }
 
   async init() {
@@ -17,6 +18,9 @@ export default class OpenKnowledge {
     let rootCid = new CID('f' + rootHex.slice(2))
     this.store = new Store(this.ipfs, rootCid.toBaseEncodedString())
     await this.store.init()
+
+    this.rootUpdatedSub = this.graphManager.events.RootUpdated()
+    this.rootUpdatedSub.on('data', this.setRoot)
   }
 
   addTriple(s, p, o, g) {
@@ -28,5 +32,9 @@ export default class OpenKnowledge {
     //let fragmentsClient = new ldf.FragmentsClient('http://fragments.dbpedia.org/2015/en')
     let results = new SparqlIterator(q, { fragmentsClient })
     results.on('data', (res) => { console.log('here comes res:', res) })
+  }
+
+  async setRoot(ev) {
+    await this.store.setRoot(ev.returnValues.root)
   }
 }

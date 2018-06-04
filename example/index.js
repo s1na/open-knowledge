@@ -24,7 +24,7 @@ const web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:9545'))
 
 //const repo = 'zdpuAyhAEpWMrf8zLS3yMXqnXtamciLq8zNUGmw7LxX91A7aE'
 //const repo = 'zdpuB199RQXfpMoDYEWPfdpyLyivFVZRzfbQACPMpWxU2Q6ws'
-const GMAddr = '0x345ca3e014aaf5dca488057592ee47305d9b3e10'
+const GMAddr = '0xfb88de099e13c3ed21f80a7a1e49f8caecf10df6'
 const GMAbi = [
   {
     "constant": true,
@@ -59,6 +59,18 @@ const GMAbi = [
     "payable": false,
     "stateMutability": "nonpayable",
     "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "root",
+        "type": "bytes"
+      }
+    ],
+    "name": "RootUpdated",
+    "type": "event"
   },
   {
     "constant": false,

@@ -1,6 +1,10 @@
 pragma solidity ^0.4.23;
 
 contract GraphManager {
+  event RootUpdated(
+    bytes root
+  );
+
   address public owner;
   bytes public root;
 
@@ -23,5 +27,6 @@ contract GraphManager {
 
   function setRoot(bytes _root) public restricted {
     root = _root;
+    emit RootUpdated(_root);
   }
 }
