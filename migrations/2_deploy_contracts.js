@@ -1,5 +1,5 @@
-var GraphManager = artifacts.require("./GraphManager.sol");
+var GraphRegistry = artifacts.require("./GraphRegistry.sol");
 
 module.exports = function(deployer) {
-  deployer.deploy(GraphManager);
+  deployer.deploy(GraphRegistry);
 };

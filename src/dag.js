@@ -54,7 +54,6 @@ export default class Store {
     }
 
     let cur = await this.get(path) || {}
-    console.log('entering', path, 'cur', cur, 'obj', obj)
     for (let k in obj) {
       if (typeof obj[k] !== 'object') {
         cur = Object.assign({}, cur, obj)
@@ -69,9 +68,7 @@ export default class Store {
       cur[k] = { '/': ccid }
     }
 
-    console.log('putting', cur)
     let cid = await this.put(cur)
-    console.log('got cid', cid)
     return cid
   }
 

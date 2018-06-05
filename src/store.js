@@ -49,11 +49,18 @@ export default class Store {
 
     let cid = await this.dag.merge(this.root, diff)
     if (cid === null) {
-      return
+      console.log('merge failed')
+      return null
+    }
+
+    if (this.root === cid) {
+      console.log('cid same as root')
+      return null
     }
 
     this.root = cid
     console.log('Updated graph, new root: ', this.root)
+    return this.root
   }
 
   async getTriples(s, p, o, offset=0, limit=10) {
@@ -89,8 +96,13 @@ export default class Store {
     }
 
     let res = []
-    console.log('getting index ', path)
+    console.log('Getting index ', path)
     let index = await this.dag.get(path)
+    if (index === null) {
+      console.log('Index not found')
+      return res
+    }
+
     let keys = Object.keys(index)
     keys = _.sortBy(keys)
     for (let i = 0; i < keys.length; i++) {

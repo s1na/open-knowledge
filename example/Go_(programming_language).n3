@@ -1,0 +1,232 @@
+@prefix dbo:	<http://dbpedia.org/ontology/> .
+@prefix dbr:	<http://dbpedia.org/resource/> .
+dbr:AppScale	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:OpenShift	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+<http://dbpedia.org/resource/Tsuru_(PaaS)>	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix yago:	<http://dbpedia.org/class/yago/> .
+<http://dbpedia.org/resource/Go_(programming_language)>	rdf:type	yago:Abstraction100002137 .
+@prefix wikidata:	<http://www.wikidata.org/entity/> .
+<http://dbpedia.org/resource/Go_(programming_language)>	rdf:type	wikidata:Q9143 ,
+		yago:WikicatProgrammingLanguages ,
+		yago:Communication100033020 ,
+		dbo:Language ,
+		yago:Invention105633385 ,
+		yago:WikicatAmericanInventions ,
+		yago:Cognition100023271 ,
+		yago:Language106282651 ,
+		yago:Creativity105624700 ,
+		yago:Ability105616246 ,
+		yago:ProgrammingLanguage106898352 .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+<http://dbpedia.org/resource/Go_(programming_language)>	rdf:type	owl:Thing ,
+		yago:ArtificialLanguage106894544 ,
+		wikidata:Q315 ,
+		wikidata:Q34770 ,
+		yago:WikicatProgrammingLanguagesCreatedIn2009 ,
+		yago:PsychologicalFeature100023100 ,
+		dbo:ProgrammingLanguage .
+@prefix schema:	<http://schema.org/> .
+<http://dbpedia.org/resource/Go_(programming_language)>	rdf:type	schema:Language .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+<http://dbpedia.org/resource/Go_(programming_language)>	rdfs:label	"Go (lenguaje de programaci\u00F3n)"@es ,
+		"Go (langage)"@fr ,
+		"Go"@ru ,
+		"\u063A\u0648 (\u0644\u063A\u0629 \u0628\u0631\u0645\u062C\u0629)"@ar ,
+		"Go (Programmiersprache)"@de ,
+		"Go (programming language)"@en ,
+		"Go"@zh ,
+		"Go (linguagem de programa\u00E7\u00E3o)"@pt ,
+		"Go (linguaggio di programmazione)"@it ,
+		"Go (j\u0119zyk programowania)"@pl ,
+		"Go (\u30D7\u30ED\u30B0\u30E9\u30DF\u30F3\u30B0\u8A00\u8A9E)"@ja ,
+		"Go (programmeertaal)"@nl ;
+	rdfs:comment	"Go est un langage de programmation compil\u00E9 et concurrent inspir\u00E9 de C et Pascal. Ce langage a \u00E9t\u00E9 d\u00E9velopp\u00E9 par Google \u00E0 partir d'un concept initial de Robert Griesemer, Rob Pike et Ken Thompson. Go poss\u00E8de deux impl\u00E9mentations, la premi\u00E8re utilise gc, le compilateur Go et la seconde utilise gccgo un \u00AB frontend \u00BB GCC \u00E9crit en C++. Go est \u00E9crit en C en utilisant yacc et GNU Bison pour l'analyse syntaxique jusqu'\u00E0 la version 1.4, et en Go lui-m\u00EAme pour les versions suivantes (1.5). Un objectif de Go est donn\u00E9 par Rob Pike, l'un de ses trois cr\u00E9ateurs, qui dit \u00E0 propos des jeunes d\u00E9veloppeurs :"@fr ,
+		"Go es un lenguaje de programaci\u00F3n concurrente y compilado inspirado en la sintaxis de C. Ha sido desarrollado por Google y sus dise\u00F1adores iniciales son Robert Griesemer, Rob Pike y Ken Thompson. Actualmente est\u00E1 disponible en formato binario para los sistemas operativos Windows, GNU/Linux, FreeBSD y Mac OS X, pudiendo tambi\u00E9n ser instalado en estos y en otros sistemas con el c\u00F3digo fuente. Go es un lenguaje de programaci\u00F3n compilado, concurrente, imperativo, estructurado, orientado a objetos \u2014de una manera bastante especial\u2014 y con recolector de basura que de momento est\u00E1 soportado en diferentes tipos de sistemas UNIX, incluidos Linux, FreeBSD y Mac OS X. Tambi\u00E9n est\u00E1 disponible en Plan 9 puesto que parte del compilador est\u00E1 basado en un trabajo previo sobre el sistema operativo Inferno. L"@es ,
+		"Go\uFF0C\u53C8\u7A31golang\uFF0C\u662FGoogle\u958B\u767C\u7684\u4E00\u79CD\u9759\u6001\u5F3A\u7C7B\u578B\u3001\u7DE8\u8B6F\u578B\uFF0C\u5E76\u53D1\u578B\uFF0C\u5E76\u5177\u6709\u5783\u573E\u56DE\u6536\u529F\u80FD\u7684\u7F16\u7A0B\u8BED\u8A00\u3002 \u7F85\u4F2F\u7279\u00B7\u683C\u745E\u53F2\u83AB\uFF0C\u7F85\u52C3\u00B7\u6D3E\u514B\uFF08Rob Pike\uFF09\u53CA\u80AF\u00B7\u6C64\u666E\u900A\u65BC2007\u5E749\u6708\u5F00\u59CB\u8BBE\u8BA1Go\u8A9E\u8A00\uFF0C\uFF0C\u7A0D\u5F8CIan Lance Taylor, Russ Cox\u52A0\u5165\u5C08\u6848\u4E2D\u3002Go\u8A9E\u8A00\u662F\u57FA\u65BCInferno\u4F5C\u696D\u7CFB\u7D71\u6240\u958B\u767C\u7684\u3002Go\u8A9E\u8A00\u65BC2009\u5E7411\u6708\u6B63\u5F0F\u5BA3\u5E03\u63A8\u51FA\uFF0C\u6210\u70BA\u958B\u653E\u539F\u59CB\u78BC\u5C08\u6848\uFF0C\u5E76\u5728Linux\u53CAMac OS X\u5E73\u53F0\u4E0A\u8FDB\u884C\u4E86\u5BE6\u73FE\uFF0C\u540E\u8FFD\u52A0Windows\u7CFB\u7EDF\u4E0B\u7684\u5B9E\u73B0\u3002 \u76EE\u524Dgo\u8BED\u8A00\u57FA\u4E8E1.x\u6BCF\u534A\u5E74\u53D1\u5E03\u4E00\u4E2A\u7248\u672C\u3002"@zh ,
+		"25\u0628\u0643 \u0627\u0644\u0645\u062D\u062A\u0648\u0649 \u0647\u0646\u0627 \u064A\u0646\u0642\u0635\u0647 \u0627\u0644\u0627\u0633\u062A\u0634\u0647\u0627\u062F \u0628\u0645\u0635\u0627\u062F\u0631. \u064A\u0631\u062C\u0649 \u0625\u064A\u0631\u0627\u062F \u0645\u0635\u0627\u062F\u0631 \u0645\u0648\u062B\u0648\u0642 \u0628\u0647\u0627. \u0623\u064A \u0645\u0639\u0644\u0648\u0645\u0627\u062A \u063A\u064A\u0631 \u0645\u0648\u062B\u0642\u0629 \u064A\u0645\u0643\u0646 \u0627\u0644\u062A\u0634\u0643\u064A\u0643 \u0628\u0647\u0627 \u0648\u0625\u0632\u0627\u0644\u062A\u0647\u0627. (\u0645\u0627\u0631\u0633 2016) \u063A\u0648 (\u0628\u0627\u0644\u0625\u0646\u062C\u0644\u064A\u0632\u064A\u0629: GO) \u0647\u064A \u0644\u063A\u0629 \u0628\u0631\u0645\u062C\u0629 \u0645\u0641\u062A\u0648\u062D\u0629 \u0627\u0644\u0645\u0635\u062F\u0631 \u0645\u0646 \u062A\u0637\u0648\u064A\u0631 \u0634\u0631\u0643\u0629 \u062C\u0648\u062C\u0644. \u0627\u0644\u062A\u0635\u0645\u064A\u0645 \u0627\u0644\u0623\u0648\u0644 \u0644\u0644\u063A\u0629 \u0643\u0627\u0646 \u0639\u0627\u0645 2007 \u0639\u0644\u0649 \u064A\u062F \u0631\u0648\u0628\u0631\u062A \u063A\u0631\u064A\u0633\u064A\u0645\u0631 \u0648 \u0631\u0648\u0628 \u0628\u0627\u064A\u0643 \u0648 \u0643\u0650\u0646 \u062B\u0648\u0645\u0628\u0633\u0648\u0646. \u062A\u0645 \u0627\u0644\u0625\u0639\u0644\u0627\u0646 \u0631\u0633\u0645\u064A\u0627\u064B \u0639\u0646 \u0627\u0644\u0644\u063A\u0629 \u0641\u064A \u0646\u0648\u0641\u0645\u0628\u0631 2009\u060C \u0645\u0639 \u062A\u0637\u0628\u064A\u0642\u0627\u062A \u0635\u062F\u0631\u062A \u0644\u0646\u0638\u0627\u0645 \u0627\u0644\u062A\u0634\u063A\u064A\u0644 \u0644\u064A\u0646\u064F\u0643\u0633 \u0648 \u0645\u0627\u0643. \u0648\u0642\u062A \u0635\u062F\u0648\u0631\u0647\u0627\u060C \u0644\u0645 \u062A\u0639\u062A\u0628\u0631 \u062C\u0627\u0647\u0632\u0629 \u0644\u064A\u062A\u0645 \u062A\u0628\u0646\u064A\u0647\u0627 \u0641\u064A \u0628\u064A\u0626\u0627\u062A \u0627\u0644\u0625\u0646\u062A\u0627\u062C. \u0641\u064A \u0645\u0627\u064A\u0648 2010 \u0635\u0631\u062D \u0631\u0648\u0628 \u0628\u0627\u064A\u0643 \u0639\u0644\u0646\u0627\u064B \u0628\u0623\u0646\u0647 \u064A\u062A\u0645 \u0627\u0633\u062A\u062E\u062F\u0627\u0645 \u0627\u0644\u0644\u063A\u0629 \u0644\u0628\u0639\u0636 \u0627\u0644\u0623\u0645\u0648\u0631 \u0627\u0644\u0645\u0647\u0645\u0629 \u0641\u064A \u0623\u0646\u0638\u0645\u0629 \u062C\u0648\u062C\u0644."@ar ,
+		"Go\u306F\u30D7\u30ED\u30B0\u30E9\u30DF\u30F3\u30B0\u8A00\u8A9E\u306E\u3072\u3068\u3064\u3002Google\u306B\u3088\u3063\u3066\u958B\u767A\u3055\u308C\u3066\u304A\u308A\u3001\u8A2D\u8A08\u306B\u30ED\u30D6\u30FB\u30D1\u30A4\u30AF\u3001\u30B1\u30F3\u30FB\u30C8\u30F3\u30D7\u30BD\u30F3\u3089\u304C\u95A2\u308F\u3063\u3066\u3044\u308B\u3002 \u4E3B\u306A\u7279\u5FB4\u3068\u3057\u3066\u3001\u8EFD\u91CF\u30B9\u30EC\u30C3\u30C7\u30A3\u30F3\u30B0\u306E\u305F\u3081\u306E\u6A5F\u80FD\u3001Python\u306E\u3088\u3046\u306A\u52D5\u7684\u578B\u4ED8\u3051\u8A00\u8A9E\u306E\u3088\u3046\u306A\u30D7\u30ED\u30B0\u30E9\u30DF\u30F3\u30B0\u306E\u5BB9\u6613\u6027\u3001\u306A\u3069\u304C\u3042\u308B\u3002Go\u51E6\u7406\u7CFB\u3068\u3057\u3066\u306F\u30B3\u30F3\u30D1\u30A4\u30E9\u306E\u307F\u304C\u958B\u767A\u3055\u308C\u3066\u3044\u308B\u3002 \u767A\u8868\u5F53\u521D\u306FLinux\u3068Mac OS X\u306E\u307F\u3057\u304B\u30B5\u30DD\u30FC\u30C8\u3057\u3066\u3044\u306A\u304B\u3063\u305F\u304C\u30012012\u5E743\u6708\u306B\u30EA\u30EA\u30FC\u30B9\u3055\u308C\u305F\u30D0\u30FC\u30B8\u30E7\u30F31.0\u304B\u3089\u306FWindows\u3082\u30B5\u30DD\u30FC\u30C8\u3055\u308C\u3066\u3044\u308B\u30022014\u5E7412\u6708\u306B\u30EA\u30EA\u30FC\u30B9\u3055\u308C\u305F\u30D0\u30FC\u30B8\u30E7\u30F31.4\u304B\u3089Android\u3092\u30B5\u30DD\u30FC\u30C8\u3057\u30012015\u5E748\u670819\u65E5\u306B\u30EA\u30EA\u30FC\u30B9\u3055\u308C\u305F\u30D0\u30FC\u30B8\u30E7\u30F31.5\u304B\u3089iOS\u3092\u30B5\u30DD\u30FC\u30C8\u3057\u3066\u3044\u308B\u3002\u307E\u305F\u30012011\u5E745\u670810\u65E5\u306B\u516C\u958B\u3055\u308C\u305F Google App Engine 1.5.0 \u3067\u3082\u3001Go\u8A00\u8A9E\u304C\u30B5\u30DD\u30FC\u30C8\u3055\u308C\u3066\u3044\u308B\u3002"@ja ,
+		"Go (\u0447\u0430\u0441\u0442\u043E \u0442\u0430\u043A\u0436\u0435 Golang) \u2014 \u043A\u043E\u043C\u043F\u0438\u043B\u0438\u0440\u0443\u0435\u043C\u044B\u0439 \u043C\u043D\u043E\u0433\u043E\u043F\u043E\u0442\u043E\u0447\u043D\u044B\u0439 \u044F\u0437\u044B\u043A \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F, \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0430\u043D\u043D\u044B\u0439 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0435\u0439 Google. \u041F\u0435\u0440\u0432\u043E\u043D\u0430\u0447\u0430\u043B\u044C\u043D\u0430\u044F \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 Go \u043D\u0430\u0447\u0430\u043B\u0430\u0441\u044C \u0432 \u0441\u0435\u043D\u0442\u044F\u0431\u0440\u0435 2007 \u0433\u043E\u0434\u0430, \u0430 \u0435\u0433\u043E \u043D\u0435\u043F\u043E\u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u043C \u043F\u0440\u043E\u0435\u043A\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0437\u0430\u043D\u0438\u043C\u0430\u043B\u0438\u0441\u044C \u0420\u043E\u0431\u0435\u0440\u0442 \u0413\u0440\u0438\u0437\u043C\u0435\u0440, \u0420\u043E\u0431 \u041F\u0430\u0439\u043A \u0438 \u041A\u0435\u043D \u0422\u043E\u043C\u043F\u0441\u043E\u043D, \u0437\u0430\u043D\u0438\u043C\u0430\u0432\u0448\u0438\u0435\u0441\u044F \u0434\u043E \u044D\u0442\u043E\u0433\u043E \u043F\u0440\u043E\u0435\u043A\u0442\u043E\u043C \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u043E\u043F\u0435\u0440\u0430\u0446\u0438\u043E\u043D\u043D\u043E\u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u044B Inferno. \u041E\u0444\u0438\u0446\u0438\u0430\u043B\u044C\u043D\u043E \u044F\u0437\u044B\u043A \u0431\u044B\u043B \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u0435\u043D \u0432 \u043D\u043E\u044F\u0431\u0440\u0435 2009 \u0433\u043E\u0434\u0430. \u041D\u0430 \u0434\u0430\u043D\u043D\u044B\u0439 \u043C\u043E\u043C\u0435\u043D\u0442 \u0435\u0433\u043E \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0430 \u043E\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0434\u043B\u044F \u043E\u043F\u0435\u0440\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0445 \u0441\u0438\u0441\u0442\u0435\u043C FreeBSD, OpenBSD, Linux, Mac OS X, Windows, \u043D\u0430\u0447\u0438\u043D\u0430\u044F \u0441 \u0432\u0435\u0440\u0441\u0438\u0438 1.3 \u0432 \u044F\u0437\u044B\u043A Go \u0432\u043A\u043B\u044E\u0447\u0435\u043D\u0430 \u044D\u043A\u0441\u043F\u0435\u0440\u0438\u043C\u0435\u043D\u0442\u0430\u043B\u044C\u043D\u0430\u044F \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0430 DragonFly BSD, Plan 9 \u0438 Solaris, \u043D\u0430\u0447\u0438\u043D\u0430\u044F \u0441 \u0432\u0435\u0440\u0441\u0438\u0438 1.4 \u2014 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0430 \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u044B Android."@ru ,
+		"Go \u2013 j\u0119zyk programowania opracowany przez pracownik\u00F3w Google: Roberta Griesemera, Roba Pikea oraz Kena Thompsona. \u0141\u0105czy w sobie \u0142atwo\u015B\u0107 pisania aplikacji charakterystyczn\u0105 dla j\u0119zyk\u00F3w dynamicznych (np. Python, Lisp), jak r\u00F3wnie\u017C wydajno\u015B\u0107 j\u0119zyk\u00F3w kompilowanych (np. C, C++). Dost\u0119pny jest kompilator na platform\u0119 x86, x64 i ARM o nazwie go. Zosta\u0142 r\u00F3wnie\u017C stworzony kompilator na bazie GNU Compiler Collection \u2013 Gccgo. Przyk\u0142adowy program (Hello world): package mainimport \"fmt\"func main() {   fmt.Println(\"Hello World\")}"@pl ,
+		"Go (often referred to as golang) is a free and open source programming language created at Google in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson. It is a compiled, statically typed language in the tradition of Algol and C, with garbage collection, limited structural typing, memory safety features and CSP-style concurrent programming features added."@en ,
+		"Go ist eine kompilierbare Programmiersprache, die Nebenl\u00E4ufigkeit unterst\u00FCtzt und \u00FCber eine automatische Speicherbereinigung verf\u00FCgt. Entwickelt wurde Go von Mitarbeitern des Unternehmens Google Inc. Die Entw\u00FCrfe stammen von Robert Griesemer, Rob Pike und Ken Thompson."@de ,
+		"Go \u00E8 un linguaggio di programmazione open source sviluppato da Google.Il lavoro su Go nacque nel settembre 2007 da Robert Griesemer, Rob Pike e Ken Thompson basandosi su un precedente lavoro correlato con il sistema operativo Inferno.Secondo gli autori, l'esigenza di creare un nuovo linguaggio di programmazione nasce dal fatto che non esiste un linguaggio di programmazione che soddisfi le esigenze di una compilazione efficiente, di un'esecuzione veloce e di una facilit\u00E0 di programmazione.Go viene annunciato ufficialmente nel novembre 2009."@it ,
+		"Go \u00E9 uma linguagem de programa\u00E7\u00E3o criada pela Google e lan\u00E7ada em c\u00F3digo livre em novembro de 2009. \u00C9 uma linguagem compilada e programa\u00E7\u00E3o concorrente, baseada em trabalhos feitos no sistema operacional chamado Inferno. O projeto inicial da linguagem foi feito em setembro de 2007 por Robert Griesemer, Rob Pike e Ken Thompson. Atualmente, h\u00E1 implementa\u00E7\u00F5es para Windows, Linux, Mac OS X e FreeBSD."@pt ,
+		"Go is een programmeertaal die sinds 2007 ontwikkeld wordt door Google. De taal werd aangekondigd in 2009 en wordt onder andere door Google intern gebruikt. De ontwikkelaars van de taal zijn Robert Griesemer, Ken Thompson en Rob Pike. De laatste is ook een van de grondleggers van Unix. Go-code kan worden gecompileerd voor onder andere Linux, OS X, FreeBSD en Microsoft Windows en voor i386-, amd64- en ARM-processorarchitecturen.Ondersteuning voor Android is toegevoegd in versie 1.4."@nl ;
+	owl:sameAs	<http://nl.dbpedia.org/resource/Go_(programmeertaal)> ,
+		<http://dbpedia.org/resource/Go_(programming_language)> ,
+		<http://fr.dbpedia.org/resource/Go_(langage)> ,
+		<http://de.dbpedia.org/resource/Go_(Programmiersprache)> ,
+		<http://d-nb.info/gnd/7725033-3> ,
+		<http://es.dbpedia.org/resource/Go_(lenguaje_de_programaci\u00F3n)> ,
+		<http://pl.dbpedia.org/resource/Go_(j\u0119zyk_programowania)> .
+@prefix dbpedia-wikidata:	<http://wikidata.dbpedia.org/resource/> .
+<http://dbpedia.org/resource/Go_(programming_language)>	owl:sameAs	dbpedia-wikidata:Q37227 ,
+		wikidata:Q37227 ,
+		<http://cs.dbpedia.org/resource/Go_(programovac\u00ED_jazyk)> ,
+		<http://rdf.freebase.com/ns/m.09gbxjr> ,
+		<http://yago-knowledge.org/resource/Go_(programming_language)> ,
+		<http://ja.dbpedia.org/resource/Go_(\u30D7\u30ED\u30B0\u30E9\u30DF\u30F3\u30B0\u8A00\u8A9E)> ,
+		<http://pt.dbpedia.org/resource/Go_(linguagem_de_programa\u00E7\u00E3o)> ,
+		<http://it.dbpedia.org/resource/Go_(linguaggio_di_programmazione)> ,
+		<http://ko.dbpedia.org/resource/Go_(\uD504\uB85C\uADF8\uB798\uBC0D_\uC5B8\uC5B4)> .
+@prefix dct:	<http://purl.org/dc/terms/> .
+@prefix dbc:	<http://dbpedia.org/resource/Category:> .
+<http://dbpedia.org/resource/Go_(programming_language)>	dct:subject	dbc:C_programming_language_family ,
+		dbc:Software_using_the_BSD_license ,
+		dbc:Systems_programming_languages ,
+		dbc:Cross-platform_software ,
+		dbc:Programming_languages_created_in_2009 ,
+		dbc:Procedural_programming_languages ,
+		dbc:American_inventions ,
+		dbc:Free_compilers_and_interpreters ,
+		dbc:Statically_typed_programming_languages ,
+		dbc:Google_software ,
+		dbc:Concurrent_programming_languages .
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+<http://dbpedia.org/resource/Go_(programming_language)>	foaf:name	"Go"@en ;
+	foaf:homepage	<https://tour.golang.org/> ;
+	foaf:depiction	<http://commons.wikimedia.org/wiki/Special:FilePath/Golang.png> ;
+	foaf:isPrimaryTopicOf	<http://en.wikipedia.org/wiki/Go_(programming_language)> ;
+	dbo:developer	dbr:Google .
+@prefix dbp:	<http://dbpedia.org/property/> .
+<http://dbpedia.org/resource/Go_(programming_language)>	dbp:logoCaption	"Go's mascot is a gopher, designed by Ren\u00E9e French."^^rdf:langString ;
+	dbo:license	dbr:BSD_licenses .
+@prefix prov:	<http://www.w3.org/ns/prov#> .
+<http://dbpedia.org/resource/Go_(programming_language)>	prov:wasDerivedFrom	<http://en.wikipedia.org/wiki/Go_(programming_language)?oldid=745216852> ;
+	dbp:implementations	"gc, gccgo"^^rdf:langString ;
+	dbp:paradigm	dbr:Structured_programming ,
+		dbr:Imperative_programming ,
+		dbr:Compiled_language ,
+		dbr:Concurrent_programming ;
+	dbp:logo	"File:golang.png"^^rdf:langString ;
+	dbp:logoSize	"frameless"^^rdf:langString ;
+	dbo:latestReleaseVersion	"1.7.3" ;
+	dbp:operatingSystem	dbr:Windows ,
+		dbr:OpenBSD ,
+		<http://dbpedia.org/resource/Solaris_(operating_system)> ,
+		dbr:Linux ,
+		dbr:Plan_9_from_Bell_Labs ,
+		dbr:OS_X ,
+		dbr:DragonFly_BSD ,
+		dbr:NetBSD ,
+		dbr:FreeBSD ;
+	dbp:programmingLanguage	"Go, assembly language, previously C ; C++"^^rdf:langString ;
+	dbo:wikiPageExternalLink	<https://golang.com.ar/> .
+@prefix ns14:	<http://blog.golang.org/> .
+<http://dbpedia.org/resource/Go_(programming_language)>	dbo:wikiPageExternalLink	ns14:errors-are-values .
+@prefix ns15:	<https://github.com/golang/go/wiki/> .
+<http://dbpedia.org/resource/Go_(programming_language)>	dbo:wikiPageExternalLink	ns15:CodeReviewComments ,
+		<http://www.dotgo.eu/> ,
+		<https://tour.golang.org/> ,
+		<http://golangprojects.com/> ,
+		<http://www.golanguk.com/> ,
+		<https://golang.org/doc/effective_go.html> ,
+		<http://gopheracademy.com/> ,
+		<http://www.gophercon.com/> ,
+		<http://www.gophercon.in/> ,
+		<http://go-lang.cat-v.org/> ,
+		<http://www.gophergala.com> .
+@prefix ns16:	<http://golang.org/ref/> .
+<http://dbpedia.org/resource/Go_(programming_language)>	dbo:wikiPageExternalLink	ns16:mem ,
+		<https://talks.golang.org/> ,
+		<http://golang.org/doc/go_tutorial.html> ,
+		<https://golangshow.com> ;
+	dbo:influenced	<http://dbpedia.org/resource/Crystal_(programming_language)> ;
+	dbo:influencedBy	<http://dbpedia.org/resource/Oberon_(programming_language)> ,
+		dbr:Modula ,
+		<http://dbpedia.org/resource/Occam_(programming_language)> ,
+		<http://dbpedia.org/resource/Pascal_(programming_language)> ,
+		dbr:Communicating_sequential_processes ,
+		<http://dbpedia.org/resource/Limbo_(programming_language)> ,
+		dbr:Newsqueak ,
+		<http://dbpedia.org/resource/APL_(programming_language)> ,
+		<http://dbpedia.org/resource/Python_(programming_language)> ,
+		<http://dbpedia.org/resource/Alef_(programming_language)> ,
+		dbr:BCPL ,
+		dbr:Smalltalk ,
+		<http://dbpedia.org/resource/C_(programming_language)> ;
+	dbo:abstract	"Go\uFF0C\u53C8\u7A31golang\uFF0C\u662FGoogle\u958B\u767C\u7684\u4E00\u79CD\u9759\u6001\u5F3A\u7C7B\u578B\u3001\u7DE8\u8B6F\u578B\uFF0C\u5E76\u53D1\u578B\uFF0C\u5E76\u5177\u6709\u5783\u573E\u56DE\u6536\u529F\u80FD\u7684\u7F16\u7A0B\u8BED\u8A00\u3002 \u7F85\u4F2F\u7279\u00B7\u683C\u745E\u53F2\u83AB\uFF0C\u7F85\u52C3\u00B7\u6D3E\u514B\uFF08Rob Pike\uFF09\u53CA\u80AF\u00B7\u6C64\u666E\u900A\u65BC2007\u5E749\u6708\u5F00\u59CB\u8BBE\u8BA1Go\u8A9E\u8A00\uFF0C\uFF0C\u7A0D\u5F8CIan Lance Taylor, Russ Cox\u52A0\u5165\u5C08\u6848\u4E2D\u3002Go\u8A9E\u8A00\u662F\u57FA\u65BCInferno\u4F5C\u696D\u7CFB\u7D71\u6240\u958B\u767C\u7684\u3002Go\u8A9E\u8A00\u65BC2009\u5E7411\u6708\u6B63\u5F0F\u5BA3\u5E03\u63A8\u51FA\uFF0C\u6210\u70BA\u958B\u653E\u539F\u59CB\u78BC\u5C08\u6848\uFF0C\u5E76\u5728Linux\u53CAMac OS X\u5E73\u53F0\u4E0A\u8FDB\u884C\u4E86\u5BE6\u73FE\uFF0C\u540E\u8FFD\u52A0Windows\u7CFB\u7EDF\u4E0B\u7684\u5B9E\u73B0\u3002 \u76EE\u524Dgo\u8BED\u8A00\u57FA\u4E8E1.x\u6BCF\u534A\u5E74\u53D1\u5E03\u4E00\u4E2A\u7248\u672C\u3002"@zh ,
+		"Go \u00E8 un linguaggio di programmazione open source sviluppato da Google.Il lavoro su Go nacque nel settembre 2007 da Robert Griesemer, Rob Pike e Ken Thompson basandosi su un precedente lavoro correlato con il sistema operativo Inferno.Secondo gli autori, l'esigenza di creare un nuovo linguaggio di programmazione nasce dal fatto che non esiste un linguaggio di programmazione che soddisfi le esigenze di una compilazione efficiente, di un'esecuzione veloce e di una facilit\u00E0 di programmazione.Go viene annunciato ufficialmente nel novembre 2009."@it ,
+		"25\u0628\u0643 \u0627\u0644\u0645\u062D\u062A\u0648\u0649 \u0647\u0646\u0627 \u064A\u0646\u0642\u0635\u0647 \u0627\u0644\u0627\u0633\u062A\u0634\u0647\u0627\u062F \u0628\u0645\u0635\u0627\u062F\u0631. \u064A\u0631\u062C\u0649 \u0625\u064A\u0631\u0627\u062F \u0645\u0635\u0627\u062F\u0631 \u0645\u0648\u062B\u0648\u0642 \u0628\u0647\u0627. \u0623\u064A \u0645\u0639\u0644\u0648\u0645\u0627\u062A \u063A\u064A\u0631 \u0645\u0648\u062B\u0642\u0629 \u064A\u0645\u0643\u0646 \u0627\u0644\u062A\u0634\u0643\u064A\u0643 \u0628\u0647\u0627 \u0648\u0625\u0632\u0627\u0644\u062A\u0647\u0627. (\u0645\u0627\u0631\u0633 2016) \u063A\u0648 (\u0628\u0627\u0644\u0625\u0646\u062C\u0644\u064A\u0632\u064A\u0629: GO) \u0647\u064A \u0644\u063A\u0629 \u0628\u0631\u0645\u062C\u0629 \u0645\u0641\u062A\u0648\u062D\u0629 \u0627\u0644\u0645\u0635\u062F\u0631 \u0645\u0646 \u062A\u0637\u0648\u064A\u0631 \u0634\u0631\u0643\u0629 \u062C\u0648\u062C\u0644. \u0627\u0644\u062A\u0635\u0645\u064A\u0645 \u0627\u0644\u0623\u0648\u0644 \u0644\u0644\u063A\u0629 \u0643\u0627\u0646 \u0639\u0627\u0645 2007 \u0639\u0644\u0649 \u064A\u062F \u0631\u0648\u0628\u0631\u062A \u063A\u0631\u064A\u0633\u064A\u0645\u0631 \u0648 \u0631\u0648\u0628 \u0628\u0627\u064A\u0643 \u0648 \u0643\u0650\u0646 \u062B\u0648\u0645\u0628\u0633\u0648\u0646. \u062A\u0645 \u0627\u0644\u0625\u0639\u0644\u0627\u0646 \u0631\u0633\u0645\u064A\u0627\u064B \u0639\u0646 \u0627\u0644\u0644\u063A\u0629 \u0641\u064A \u0646\u0648\u0641\u0645\u0628\u0631 2009\u060C \u0645\u0639 \u062A\u0637\u0628\u064A\u0642\u0627\u062A \u0635\u062F\u0631\u062A \u0644\u0646\u0638\u0627\u0645 \u0627\u0644\u062A\u0634\u063A\u064A\u0644 \u0644\u064A\u0646\u064F\u0643\u0633 \u0648 \u0645\u0627\u0643. \u0648\u0642\u062A \u0635\u062F\u0648\u0631\u0647\u0627\u060C \u0644\u0645 \u062A\u0639\u062A\u0628\u0631 \u062C\u0627\u0647\u0632\u0629 \u0644\u064A\u062A\u0645 \u062A\u0628\u0646\u064A\u0647\u0627 \u0641\u064A \u0628\u064A\u0626\u0627\u062A \u0627\u0644\u0625\u0646\u062A\u0627\u062C. \u0641\u064A \u0645\u0627\u064A\u0648 2010 \u0635\u0631\u062D \u0631\u0648\u0628 \u0628\u0627\u064A\u0643 \u0639\u0644\u0646\u0627\u064B \u0628\u0623\u0646\u0647 \u064A\u062A\u0645 \u0627\u0633\u062A\u062E\u062F\u0627\u0645 \u0627\u0644\u0644\u063A\u0629 \u0644\u0628\u0639\u0636 \u0627\u0644\u0623\u0645\u0648\u0631 \u0627\u0644\u0645\u0647\u0645\u0629 \u0641\u064A \u0623\u0646\u0638\u0645\u0629 \u062C\u0648\u062C\u0644."@ar ,
+		"Go (often referred to as golang) is a free and open source programming language created at Google in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson. It is a compiled, statically typed language in the tradition of Algol and C, with garbage collection, limited structural typing, memory safety features and CSP-style concurrent programming features added. The language was announced in November 2009; it is used in some of Google's production systems, as well as by other firms. Two major implementations exist: Google's Go compiler, \"gc\", is developed as open source software and targets various platforms including Linux, OS X, Windows, various BSD and Unix versions, and since 2015 also mobile devices, including smartphones. A second compiler, gccgo, is a GCC frontend. The \"gc\" toolchain is self-hosting since version 1.5."@en ,
+		"Go ist eine kompilierbare Programmiersprache, die Nebenl\u00E4ufigkeit unterst\u00FCtzt und \u00FCber eine automatische Speicherbereinigung verf\u00FCgt. Entwickelt wurde Go von Mitarbeitern des Unternehmens Google Inc. Die Entw\u00FCrfe stammen von Robert Griesemer, Rob Pike und Ken Thompson."@de ,
+		"Go es un lenguaje de programaci\u00F3n concurrente y compilado inspirado en la sintaxis de C. Ha sido desarrollado por Google y sus dise\u00F1adores iniciales son Robert Griesemer, Rob Pike y Ken Thompson. Actualmente est\u00E1 disponible en formato binario para los sistemas operativos Windows, GNU/Linux, FreeBSD y Mac OS X, pudiendo tambi\u00E9n ser instalado en estos y en otros sistemas con el c\u00F3digo fuente. Go es un lenguaje de programaci\u00F3n compilado, concurrente, imperativo, estructurado, orientado a objetos \u2014de una manera bastante especial\u2014 y con recolector de basura que de momento est\u00E1 soportado en diferentes tipos de sistemas UNIX, incluidos Linux, FreeBSD y Mac OS X. Tambi\u00E9n est\u00E1 disponible en Plan 9 puesto que parte del compilador est\u00E1 basado en un trabajo previo sobre el sistema operativo Inferno. Las arquitecturas soportadas son i386, amd64 y ARM."@es ,
+		"Go is een programmeertaal die sinds 2007 ontwikkeld wordt door Google. De taal werd aangekondigd in 2009 en wordt onder andere door Google intern gebruikt. De ontwikkelaars van de taal zijn Robert Griesemer, Ken Thompson en Rob Pike. De laatste is ook een van de grondleggers van Unix. Go-code kan worden gecompileerd voor onder andere Linux, OS X, FreeBSD en Microsoft Windows en voor i386-, amd64- en ARM-processorarchitecturen.Ondersteuning voor Android is toegevoegd in versie 1.4. De taal is statisch getypeerd met een syntaxis die los op C is gebaseerd. Go bevat garbage collection, typebeveiliging, mogelijkheden voor dynamische types, een grote ingebouwde bibliotheek en extra ingebouwde typen zoals arrays met een variabele lengte en maps."@nl ,
+		"Go \u2013 j\u0119zyk programowania opracowany przez pracownik\u00F3w Google: Roberta Griesemera, Roba Pikea oraz Kena Thompsona. \u0141\u0105czy w sobie \u0142atwo\u015B\u0107 pisania aplikacji charakterystyczn\u0105 dla j\u0119zyk\u00F3w dynamicznych (np. Python, Lisp), jak r\u00F3wnie\u017C wydajno\u015B\u0107 j\u0119zyk\u00F3w kompilowanych (np. C, C++). Dost\u0119pny jest kompilator na platform\u0119 x86, x64 i ARM o nazwie go. Zosta\u0142 r\u00F3wnie\u017C stworzony kompilator na bazie GNU Compiler Collection \u2013 Gccgo. Przyk\u0142adowy program (Hello world): package mainimport \"fmt\"func main() {   fmt.Println(\"Hello World\")}"@pl ,
+		"Go \u00E9 uma linguagem de programa\u00E7\u00E3o criada pela Google e lan\u00E7ada em c\u00F3digo livre em novembro de 2009. \u00C9 uma linguagem compilada e programa\u00E7\u00E3o concorrente, baseada em trabalhos feitos no sistema operacional chamado Inferno. O projeto inicial da linguagem foi feito em setembro de 2007 por Robert Griesemer, Rob Pike e Ken Thompson. Atualmente, h\u00E1 implementa\u00E7\u00F5es para Windows, Linux, Mac OS X e FreeBSD."@pt ,
+		"Go est un langage de programmation compil\u00E9 et concurrent inspir\u00E9 de C et Pascal. Ce langage a \u00E9t\u00E9 d\u00E9velopp\u00E9 par Google \u00E0 partir d'un concept initial de Robert Griesemer, Rob Pike et Ken Thompson. Go poss\u00E8de deux impl\u00E9mentations, la premi\u00E8re utilise gc, le compilateur Go et la seconde utilise gccgo un \u00AB frontend \u00BB GCC \u00E9crit en C++. Go est \u00E9crit en C en utilisant yacc et GNU Bison pour l'analyse syntaxique jusqu'\u00E0 la version 1.4, et en Go lui-m\u00EAme pour les versions suivantes (1.5). Un objectif de Go est donn\u00E9 par Rob Pike, l'un de ses trois cr\u00E9ateurs, qui dit \u00E0 propos des jeunes d\u00E9veloppeurs : \u00AB Ils ne sont pas capables de comprendre un langage brillant, mais nous voulons les amener \u00E0 r\u00E9aliser de bons programmes. Ainsi, le langage que nous leur donnons doit \u00EAtre facile \u00E0 comprendre et facile \u00E0 adopter \u00BB Go veut faciliter et acc\u00E9l\u00E9rer la programmation \u00E0 grande \u00E9chelle : en raison de sa simplicit\u00E9, sa compilation serait de 80 % \u00E0 90 % plus rapide que la compilation classique du C, et il est donc concevable de l'utiliser aussi bien pour \u00E9crire des applications, des scripts ou de grands syst\u00E8mes. Cette simplicit\u00E9 est n\u00E9cessaire aussi pour assurer la maintenance et l'\u00E9volution des programmes sur plusieurs g\u00E9n\u00E9rations de d\u00E9veloppeurs. S'il vise aussi la rapidit\u00E9 d'ex\u00E9cution, indispensable \u00E0 la programmation syst\u00E8me, il consid\u00E8re le multithreading comme le moyen le plus robuste d'assurer sur les processeurs actuels cette rapidit\u00E9 tout en rendant la maintenance facile par s\u00E9paration de t\u00E2ches simples ex\u00E9cut\u00E9es ind\u00E9pendamment afin d'\u00E9viter de cr\u00E9er des \u00AB usines \u00E0 gaz \u00BB. Cette conception permet \u00E9galement le fonctionnement sans r\u00E9\u00E9criture sur des architectures multi-c\u0153urs en exploitant imm\u00E9diatement l'augmentation de puissance correspondante."@fr ,
+		"Go\u306F\u30D7\u30ED\u30B0\u30E9\u30DF\u30F3\u30B0\u8A00\u8A9E\u306E\u3072\u3068\u3064\u3002Google\u306B\u3088\u3063\u3066\u958B\u767A\u3055\u308C\u3066\u304A\u308A\u3001\u8A2D\u8A08\u306B\u30ED\u30D6\u30FB\u30D1\u30A4\u30AF\u3001\u30B1\u30F3\u30FB\u30C8\u30F3\u30D7\u30BD\u30F3\u3089\u304C\u95A2\u308F\u3063\u3066\u3044\u308B\u3002 \u4E3B\u306A\u7279\u5FB4\u3068\u3057\u3066\u3001\u8EFD\u91CF\u30B9\u30EC\u30C3\u30C7\u30A3\u30F3\u30B0\u306E\u305F\u3081\u306E\u6A5F\u80FD\u3001Python\u306E\u3088\u3046\u306A\u52D5\u7684\u578B\u4ED8\u3051\u8A00\u8A9E\u306E\u3088\u3046\u306A\u30D7\u30ED\u30B0\u30E9\u30DF\u30F3\u30B0\u306E\u5BB9\u6613\u6027\u3001\u306A\u3069\u304C\u3042\u308B\u3002Go\u51E6\u7406\u7CFB\u3068\u3057\u3066\u306F\u30B3\u30F3\u30D1\u30A4\u30E9\u306E\u307F\u304C\u958B\u767A\u3055\u308C\u3066\u3044\u308B\u3002 \u767A\u8868\u5F53\u521D\u306FLinux\u3068Mac OS X\u306E\u307F\u3057\u304B\u30B5\u30DD\u30FC\u30C8\u3057\u3066\u3044\u306A\u304B\u3063\u305F\u304C\u30012012\u5E743\u6708\u306B\u30EA\u30EA\u30FC\u30B9\u3055\u308C\u305F\u30D0\u30FC\u30B8\u30E7\u30F31.0\u304B\u3089\u306FWindows\u3082\u30B5\u30DD\u30FC\u30C8\u3055\u308C\u3066\u3044\u308B\u30022014\u5E7412\u6708\u306B\u30EA\u30EA\u30FC\u30B9\u3055\u308C\u305F\u30D0\u30FC\u30B8\u30E7\u30F31.4\u304B\u3089Android\u3092\u30B5\u30DD\u30FC\u30C8\u3057\u30012015\u5E748\u670819\u65E5\u306B\u30EA\u30EA\u30FC\u30B9\u3055\u308C\u305F\u30D0\u30FC\u30B8\u30E7\u30F31.5\u304B\u3089iOS\u3092\u30B5\u30DD\u30FC\u30C8\u3057\u3066\u3044\u308B\u3002\u307E\u305F\u30012011\u5E745\u670810\u65E5\u306B\u516C\u958B\u3055\u308C\u305F Google App Engine 1.5.0 \u3067\u3082\u3001Go\u8A00\u8A9E\u304C\u30B5\u30DD\u30FC\u30C8\u3055\u308C\u3066\u3044\u308B\u3002"@ja ,
+		"Go (\u0447\u0430\u0441\u0442\u043E \u0442\u0430\u043A\u0436\u0435 Golang) \u2014 \u043A\u043E\u043C\u043F\u0438\u043B\u0438\u0440\u0443\u0435\u043C\u044B\u0439 \u043C\u043D\u043E\u0433\u043E\u043F\u043E\u0442\u043E\u0447\u043D\u044B\u0439 \u044F\u0437\u044B\u043A \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F, \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0430\u043D\u043D\u044B\u0439 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0435\u0439 Google. \u041F\u0435\u0440\u0432\u043E\u043D\u0430\u0447\u0430\u043B\u044C\u043D\u0430\u044F \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 Go \u043D\u0430\u0447\u0430\u043B\u0430\u0441\u044C \u0432 \u0441\u0435\u043D\u0442\u044F\u0431\u0440\u0435 2007 \u0433\u043E\u0434\u0430, \u0430 \u0435\u0433\u043E \u043D\u0435\u043F\u043E\u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u043C \u043F\u0440\u043E\u0435\u043A\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\u043C \u0437\u0430\u043D\u0438\u043C\u0430\u043B\u0438\u0441\u044C \u0420\u043E\u0431\u0435\u0440\u0442 \u0413\u0440\u0438\u0437\u043C\u0435\u0440, \u0420\u043E\u0431 \u041F\u0430\u0439\u043A \u0438 \u041A\u0435\u043D \u0422\u043E\u043C\u043F\u0441\u043E\u043D, \u0437\u0430\u043D\u0438\u043C\u0430\u0432\u0448\u0438\u0435\u0441\u044F \u0434\u043E \u044D\u0442\u043E\u0433\u043E \u043F\u0440\u043E\u0435\u043A\u0442\u043E\u043C \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u043E\u043F\u0435\u0440\u0430\u0446\u0438\u043E\u043D\u043D\u043E\u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u044B Inferno. \u041E\u0444\u0438\u0446\u0438\u0430\u043B\u044C\u043D\u043E \u044F\u0437\u044B\u043A \u0431\u044B\u043B \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u0435\u043D \u0432 \u043D\u043E\u044F\u0431\u0440\u0435 2009 \u0433\u043E\u0434\u0430. \u041D\u0430 \u0434\u0430\u043D\u043D\u044B\u0439 \u043C\u043E\u043C\u0435\u043D\u0442 \u0435\u0433\u043E \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0430 \u043E\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0434\u043B\u044F \u043E\u043F\u0435\u0440\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0445 \u0441\u0438\u0441\u0442\u0435\u043C FreeBSD, OpenBSD, Linux, Mac OS X, Windows, \u043D\u0430\u0447\u0438\u043D\u0430\u044F \u0441 \u0432\u0435\u0440\u0441\u0438\u0438 1.3 \u0432 \u044F\u0437\u044B\u043A Go \u0432\u043A\u043B\u044E\u0447\u0435\u043D\u0430 \u044D\u043A\u0441\u043F\u0435\u0440\u0438\u043C\u0435\u043D\u0442\u0430\u043B\u044C\u043D\u0430\u044F \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0430 DragonFly BSD, Plan 9 \u0438 Solaris, \u043D\u0430\u0447\u0438\u043D\u0430\u044F \u0441 \u0432\u0435\u0440\u0441\u0438\u0438 1.4 \u2014 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0430 \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u044B Android."@ru ;
+	dbo:thumbnail	<http://commons.wikimedia.org/wiki/Special:FilePath/Golang.png?width=300> ;
+	dbo:wikiPageRevisionID	745216852 ;
+	dbo:wikiPageID	25039021 ;
+	dbp:fileExt	".go"^^rdf:langString ;
+	dbp:typing	dbr:Structural_typing ,
+		dbr:Type_inference ,
+		dbr:Static_typing ,
+		dbr:Strong_typing ;
+	dbo:designer	dbr:Ken_Thompson ,
+		dbr:Robert_Griesemer ,
+		dbr:Rob_Pike .
+@prefix ns17:	<http://purl.org/linguistics/gold/> .
+<http://dbpedia.org/resource/Go_(programming_language)>	ns17:hypernym	dbr:Language .
+dbr:Google_App_Engine	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Bigtable	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Google_Kythe	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Google_Cloud_Platform	dbp:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:NATS_Messaging	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+<http://dbpedia.org/resource/APL_(programming_language)>	dbo:influenced	<http://dbpedia.org/resource/Go_(programming_language)> .
+<http://dbpedia.org/resource/Harrow_(software)>	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+<http://dbpedia.org/resource/Alef_(programming_language)>	dbo:influenced	<http://dbpedia.org/resource/Go_(programming_language)> .
+<http://dbpedia.org/resource/Occam_(programming_language)>	dbo:influenced	<http://dbpedia.org/resource/Go_(programming_language)> .
+<http://dbpedia.org/resource/Docker_(software)>	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Telehash	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:InfluxDB	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+<http://dbpedia.org/resource/Dropbox_(service)>	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+<http://dbpedia.org/resource/Periscope_(app)>	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+<http://dbpedia.org/resource/Packer_(software)>	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Syncthing	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+<http://dbpedia.org/resource/Lantern_(software)>	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Blackfire_Profiler	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Smalltalk	dbo:influenced	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Go_language	dbo:wikiPageRedirects	<http://dbpedia.org/resource/Go_(programming_language)> .
+<http://dbpedia.org/resource/Python_(programming_language)>	dbo:influenced	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Golang	dbo:wikiPageRedirects	<http://dbpedia.org/resource/Go_(programming_language)> .
+<http://dbpedia.org/resource/Limbo_(programming_language)>	dbo:influenced	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Newsqueak	dbo:influenced	<http://dbpedia.org/resource/Go_(programming_language)> .
+<http://dbpedia.org/resource/Caddy_(web_server)>	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+<http://dbpedia.org/resource/Crystal_(programming_language)>	dbo:influencedBy	<http://dbpedia.org/resource/Go_(programming_language)> .
+<http://en.wikipedia.org/wiki/Go_(programming_language)>	foaf:primaryTopic	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Go	dbo:wikiPageDisambiguates	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Couchbase_Server	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+<http://dbpedia.org/resource/C_(programming_language)>	dbo:influenced	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:DNSimple	dbp:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Camlistore	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Kubernetes	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Minio	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Go_programming_language	dbo:wikiPageRedirects	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Go_google	dbo:wikiPageRedirects	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Google_Go	dbo:wikiPageRedirects	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Go_Programming_Language	dbo:wikiPageRedirects	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Google_go	dbo:wikiPageRedirects	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Issue9	dbo:wikiPageRedirects	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Issue_9	dbo:wikiPageRedirects	<http://dbpedia.org/resource/Go_(programming_language)> .
+<http://dbpedia.org/resource/Go_(Programming_language)>	dbo:wikiPageRedirects	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Go_statement	dbo:wikiPageRedirects	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Goroutine	dbo:wikiPageRedirects	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Gccgo	dbo:wikiPageRedirects	<http://dbpedia.org/resource/Go_(programming_language)> .
+<http://dbpedia.org/resource/Go_(language)>	dbo:wikiPageRedirects	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:GoLang	dbo:wikiPageRedirects	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Frinkiac	dbp:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+<http://dbpedia.org/resource/Snappy_(package_manager)>	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+<http://dbpedia.org/resource/Gauge_(software)>	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+<http://dbpedia.org/resource/Pascal_(programming_language)>	dbo:influenced	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Gearman	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Elliptics	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+<http://dbpedia.org/resource/Splice_(platform)>	dbp:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .
+<http://dbpedia.org/resource/Oberon_(programming_language)>	dbo:influenced	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Modula	dbo:influenced	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:Oberon-2	dbo:influenced	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:BCPL	dbo:influenced	<http://dbpedia.org/resource/Go_(programming_language)> .
+dbr:InfraKit	dbo:programmingLanguage	<http://dbpedia.org/resource/Go_(programming_language)> .

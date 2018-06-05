@@ -17,6 +17,8 @@ export default [
     plugins: [
       resolve({
         preferBuiltins: true,
+        browser: true,
+        extensions: ['.js', '.json', '.node']
       }),
       replace({
         patterns: [
@@ -34,7 +36,7 @@ export default [
             include: 'node_modules/n3/N3.js',
             test: 'require = function () {};',
             replace: ''
-          }
+          },
         ]
       }),
       commonjs(),
@@ -59,6 +61,7 @@ export default [
       { file: pkg.module, format: 'es' }
     ],
     plugins: [
+      json(),
       babel({
         runtimeHelpers: true,
         exclude: ['node_modules/**']
