@@ -19,8 +19,6 @@ export default class OpenKnowledge {
 
   async init() {
     this.graphManagers.default = await this.getGraphManager('default')
-    this.defaultGM = this.graphManagers.default
-    await this.graphManagers.default.init()
   }
 
   async getGraphManager(name) {

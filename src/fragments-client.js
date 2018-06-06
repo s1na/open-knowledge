@@ -8,7 +8,6 @@ export default class FragmentsClient {
   }
 
   getFragmentByPattern(pattern) {
-    console.log('get by pattern', pattern)
     let fragment = new Fragment()    
     let s = pattern.subject === '?s' ? null : pattern.subject
     let p = pattern.predicate === '?p' ? null : pattern.predicate

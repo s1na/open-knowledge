@@ -20,8 +20,8 @@ const graphRegistry = new web3.eth.Contract(GRAbi, GRAddr)
 
 const ok = new OpenKnowledge(ipfs, graphRegistry)
 ok.init().then(async () => {
-  publishFile('Isaac_Asimov.n3', 'default')
-  publishFile('Go_(programming_language).n3', 'test')
+  publishFile('Isaac_Asimov.n3', 'default', -1)
+  publishFile('Go_(programming_language).n3', 'test', -1)
 })
 
 async function publishFile(path, g, n=10) {
@@ -35,7 +35,9 @@ async function publishFile(path, g, n=10) {
 
     if (quad === null) {
       console.log('Finished parsing quads, attemping batch insert')
-      triples = triples.slice(0, 5)
+      if (n >= 0) {
+        triples = triples.slice(0, 5)
+      }
       let tx = await ok.addTriples(triples, g)
       console.log('TX:', tx)
 

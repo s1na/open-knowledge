@@ -40,7 +40,6 @@ export default class Store {
   }
 
   async merge(path, diff) {
-    console.log(path, JSON.stringify(diff, null, '\t'))
     if (Object.keys(diff).length === 0) {
       return null
     }

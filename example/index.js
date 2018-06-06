@@ -15,26 +15,31 @@ const graphRegistry = new web3.eth.Contract(GRAbi, GRAddr)
 
 const ok = new OpenKnowledge(ipfs, graphRegistry)
 ok.init().then(async () => {
-//  console.log(await ok.defaultGM.store.getTriples(null, 'http://dbpedia.org/ontology/author', null, 0, 1))
-//  console.log(await ok.defaultGM.store.getTriples(null, null, null, 1, 3))
+//  console.log(await ok.graphManagers.default.store.getTriples(null, 'http://dbpedia.org/ontology/author', null, 0, 1))
+//  console.log(await ok.graphManagers.default.store.getTriples(null, null, null, 1, 3))
 
   let res = await ok.execute(`
+        PREFIX dbr: <http://dbpedia.org/resource/>
+        PREFIX dbo: <http://dbpedia.org/ontology/>
         SELECT *
         FROM <http://example.com/test>
         {
-          <http://dbpedia.org/resource/Lucky_Starr_and_the_Big_Sun_of_Mercury> <http://dbpedia.org/ontology/author> ?o.
-          ?s <http://dbpedia.org/ontology/influenced> ?o
-        } LIMIT 100
+          dbr:Lucky_Starr_and_the_Big_Sun_of_Mercury dbo:author ?o.
+          ?s dbo:influenced ?o
+        } LIMIT 15
       `, 'default')
 
   console.log('Query finished: ', res)
 
   res = await ok.execute(`
-        SELECT *
+        PREFIX dbr: <http://dbpedia.org/resource/>
+        PREFIX dbo: <http://dbpedia.org/ontology/>
+        SELECT ?s
         FROM <http://example.com/test>
         {
-          <http://dbpedia.org/resource/OpenShift> <http://dbpedia.org/ontology/programmingLanguage> ?o.
-        } LIMIT 100
+          dbr:OpenShift dbo:programmingLanguage ?o.
+          ?s dbo:programmingLanguage ?o
+        } LIMIT 15
       `, 'test')
 
   console.log('Query finished: ', res)

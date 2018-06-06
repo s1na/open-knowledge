@@ -28,7 +28,7 @@ export default class GraphManager {
   async addTriples(triples) {
     let newRoot = await this.store.addTriples(triples)
     if (newRoot === null) {
-      return
+      return null
     }
 
     console.log(newRoot)
