@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     onSubmit(event) {
-      this.$emit('input', this.form)
+      this.$emit('query-submit', this.form)
     }
   }
 }

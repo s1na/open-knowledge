@@ -9,7 +9,9 @@
   "dependencies": {
     "element-ui": "^2.4.0",
     "ipfs-api": "^22.0.1",
+    "n3": "^1.0.0-beta.1",
     "vue": "^2.5.16",
+    "vue-router": "^3.0.1",
     "web3": "^1.0.0-beta.34"
   },
   "devDependencies": {
