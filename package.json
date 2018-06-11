@@ -23,6 +23,7 @@
     "cids": "^0.5.3",
     "ldf-client": "^2.0.5",
     "lodash": "^4.17.10",
+    "sparqljs": "^2.0.3",
     "web3": "^1.0.0-beta.34"
   },
   "devDependencies": {

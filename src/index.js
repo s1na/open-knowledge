@@ -1,6 +1,7 @@
 'use strict'
 
 import Web3 from 'web3'
+import { Parser as SparqlParser } from 'sparqljs'
 
 import GraphManager from './graph-manager'
 import { abi as GMAbi } from '../build/contracts/GraphManager.json'
@@ -37,7 +38,7 @@ export default class OpenKnowledge {
     this.graphManagers[name] = manager
     await manager.init()
 
-    return manager 
+    return manager
   }
 
   async addTriples(triples, graph='default') {
@@ -50,7 +51,23 @@ export default class OpenKnowledge {
     return g.addTriples(triples)
   }
 
-  async execute(query, graph='default') {
+  async execute(query) {
+    let graph = 'default'
+    let parser = new SparqlParser();
+    let q = parser.parse(query)
+    if ('from' in q) {
+      if (q.from.default.length === 0) {
+        throw new Error('Invalid from in query')
+      }
+
+      let def = q.from.default[0]
+      if (!def.startsWith('openknowledge:')) {
+        throw new Error('Only from clauses with openknowledge scheme are allowed')
+      }
+
+      graph = def.substr('openknowledge:'.length)
+    }
+
     let g = await this.getGraphManager(graph)
     if (g === null) {
       console.log('Graph', g, 'not found')

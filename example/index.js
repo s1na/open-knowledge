@@ -22,12 +22,11 @@ ok.init().then(async () => {
         PREFIX dbr: <http://dbpedia.org/resource/>
         PREFIX dbo: <http://dbpedia.org/ontology/>
         SELECT *
-        FROM <http://example.com/test>
         {
           dbr:Lucky_Starr_and_the_Big_Sun_of_Mercury dbo:author ?o.
           ?s dbo:influenced ?o
         } LIMIT 15
-      `, 'default')
+      `)
 
   console.log('Query finished: ', res)
 
@@ -35,12 +34,12 @@ ok.init().then(async () => {
         PREFIX dbr: <http://dbpedia.org/resource/>
         PREFIX dbo: <http://dbpedia.org/ontology/>
         SELECT ?s
-        FROM <http://example.com/test>
+        FROM <openknowledge:test>
         {
           dbr:OpenShift dbo:programmingLanguage ?o.
           ?s dbo:programmingLanguage ?o
         } LIMIT 15
-      `, 'test')
+      `)
 
   console.log('Query finished: ', res)
 })

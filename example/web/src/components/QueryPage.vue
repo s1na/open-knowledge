@@ -25,10 +25,7 @@ export default {
   ],
   data: function() {
     return {
-      query: {
-        graph: 'default',
-        query: ''
-      },
+      query: '',
       res
     }
   },
@@ -37,8 +34,8 @@ export default {
     QueryRes,
   },
   methods: {
-    onQuerySubmit: async function (form) {
-      this.res = await this.ok.execute(form.query, form.graph)
+    onQuerySubmit: async function (query) {
+      this.res = await this.ok.execute(query)
     }
   }
 }
