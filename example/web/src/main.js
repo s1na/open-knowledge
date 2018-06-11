@@ -6,6 +6,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import App from './App.vue'
 import QueryPage from './components/QueryPage.vue'
 import PublishPage from './components/PublishPage.vue'
+import GraphPage from './components/GraphPage.vue'
 
 import ipfsAPI from 'ipfs-api'
 import Web3 from 'web3'
@@ -14,7 +15,13 @@ import OpenKnowledge from '../../../dist/open-knowledge.esm.js'
 import GraphRegistry from '../../../build/contracts/GraphRegistry.json'
 
 const ipfs = ipfsAPI('/ip4/127.0.0.1/tcp/5001')
-const web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:9545'))
+
+if (typeof web3 !== 'undefined') {
+  web3 = new Web3(web3.currentProvider)
+} else {
+  console.log('No MetaMask, connecting to local provider')
+  web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:9545'))
+}
 
 const GRAddr = GraphRegistry.networks['4447'].address
 const GRAbi = GraphRegistry.abi
@@ -29,6 +36,7 @@ ok.init().then(async () => {
   const routes = [
     { path: '/query', component: QueryPage, props: { ok } },
     { path: '/publish', component: PublishPage, props: { ok } },
+    { path: '/graph', component: GraphPage, props: { ok } },
     { path: '/', component: QueryPage, props: { ok } },
   ]
 

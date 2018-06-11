@@ -39,6 +39,31 @@ export default class OpenKnowledge {
     return manager
   }
 
+  async newGraphManager(name) {
+    let manager = this.getGraphManager(name)
+    if (manager !== null) {
+      return manager
+    }
+
+    let coinbase = await this.web3.eth.getCoinbase()
+    let hex = this.web3.utils.asciiToHex(name)
+    let tx
+    try {
+      tx = await this.registry.methods.newGraphManager(hex).send({ from: coinbase })
+    } catch (e) {
+      console.log(e)
+      return null
+    }
+
+    let addr = tx.events.NewGraphManager.returnValues.addr
+    let contract = new this.web3.eth.Contract(GMAbi, addr)
+    manager = new GraphManager(this.ipfs, this.web3, contract)
+    this.graphManagers[name] = manager
+    await manager.init()
+
+    return manager
+  }
+
   async addTriples(triples, graph='default') {
     let g = await this.getGraphManager(graph)
     if (g === null) {

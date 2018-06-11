@@ -36,7 +36,7 @@ async function publishFile(path, g, n=10) {
     if (quad === null) {
       console.log('Finished parsing quads, attemping batch insert')
       if (n >= 0) {
-        triples = triples.slice(0, 5)
+        triples = triples.slice(0, n)
       }
       let tx = await ok.addTriples(triples, g)
       console.log('TX:', tx)
