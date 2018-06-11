@@ -18,7 +18,7 @@ const GRAddr = GraphRegistry.networks['4447'].address
 const GRAbi = GraphRegistry.abi
 const graphRegistry = new web3.eth.Contract(GRAbi, GRAddr)
 
-const ok = new OpenKnowledge(ipfs, graphRegistry)
+const ok = new OpenKnowledge(ipfs, web3, graphRegistry)
 ok.init().then(async () => {
   publishFile('Isaac_Asimov.n3', 'default', -1)
   publishFile('Go_(programming_language).n3', 'test', -1)

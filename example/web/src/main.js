@@ -19,7 +19,7 @@ const web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:9545'))
 const GRAddr = GraphRegistry.networks['4447'].address
 const GRAbi = GraphRegistry.abi
 const graphRegistry = new web3.eth.Contract(GRAbi, GRAddr)
-const ok = new OpenKnowledge(ipfs, graphRegistry)
+const ok = new OpenKnowledge(ipfs, web3, graphRegistry)
 
 ok.init().then(async () => {
   Vue.config.productionTip = false

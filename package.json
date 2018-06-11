@@ -23,8 +23,7 @@
     "cids": "^0.5.3",
     "ldf-client": "^2.0.5",
     "lodash": "^4.17.10",
-    "sparqljs": "^2.0.3",
-    "web3": "^1.0.0-beta.34"
+    "sparqljs": "^2.0.3"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -40,6 +39,7 @@
   },
   "peerDependencies": {
     "ipfs": "^0.28.2",
-    "orbit-db": "^0.19.7"
+    "orbit-db": "^0.19.7",
+    "web3": "^1.0.0-beta.34"
   }
 }

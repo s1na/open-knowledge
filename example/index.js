@@ -13,7 +13,7 @@ const GRAddr = GraphRegistry.networks['4447'].address
 const GRAbi = GraphRegistry.abi
 const graphRegistry = new web3.eth.Contract(GRAbi, GRAddr)
 
-const ok = new OpenKnowledge(ipfs, graphRegistry)
+const ok = new OpenKnowledge(ipfs, web3, graphRegistry)
 ok.init().then(async () => {
 //  console.log(await ok.graphManagers.default.store.getTriples(null, 'http://dbpedia.org/ontology/author', null, 0, 1))
 //  console.log(await ok.graphManagers.default.store.getTriples(null, null, null, 1, 3))

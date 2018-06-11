@@ -2,16 +2,14 @@
 
 import { SparqlIterator } from 'ldf-client'
 import CID from 'cids'
-import Web3 from 'web3'
 
 import Store from './store'
 import FragmentsClient from './fragments-client'
 
-const web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:9545'))
-
 export default class GraphManager {
-  constructor(ipfs, contract) {
+  constructor(ipfs, web3, contract) {
     this.ipfs = ipfs
+    this.web3 = web3
     this.contract = contract
     this.rootUpdatedSub = null
   }
@@ -34,7 +32,7 @@ export default class GraphManager {
     console.log(newRoot)
     let tx = null
     let hex = this._cidToHex(newRoot)
-    let coinbase = await web3.eth.getCoinbase()
+    let coinbase = await this.web3.eth.getCoinbase()
     try {
       tx = await this.contract.methods.setRoot(hex).send({ from: coinbase })
     } catch (e) {

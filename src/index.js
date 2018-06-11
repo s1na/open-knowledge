@@ -1,16 +1,14 @@
 'use strict'
 
-import Web3 from 'web3'
 import { Parser as SparqlParser } from 'sparqljs'
 
 import GraphManager from './graph-manager'
 import { abi as GMAbi } from '../build/contracts/GraphManager.json'
 
-const web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:9545'))
-
 export default class OpenKnowledge {
-  constructor(ipfs, registry) {
+  constructor(ipfs, web3, registry) {
     this.ipfs = ipfs
+    this.web3 = web3
     this.registry = registry
     this.graphManagers = {}
     this.emptyGraphCid = 'zdpuAmKRXTRNSgwSgXqPDP2FuxVeduNMtM113oGDeUDEoKuA1'
@@ -27,14 +25,14 @@ export default class OpenKnowledge {
       return this.graphManagers[name]
     }
 
-    let hex = web3.utils.asciiToHex(name)
+    let hex = this.web3.utils.asciiToHex(name)
     let addr = await this.registry.methods.contracts(hex).call()
     if (addr === this.zeroAddr) {
       return null
     }
 
-    let contract = new web3.eth.Contract(GMAbi, addr)
-    let manager = new GraphManager(this.ipfs, contract)
+    let contract = new this.web3.eth.Contract(GMAbi, addr)
+    let manager = new GraphManager(this.ipfs, this.web3, contract)
     this.graphManagers[name] = manager
     await manager.init()
 
