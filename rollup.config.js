@@ -15,31 +15,6 @@ export default [
       name: 'OpenKnowledge',
     },
     plugins: [
-      resolve({
-        preferBuiltins: true,
-        browser: true,
-        extensions: ['.js', '.json', '.node']
-      }),
-      replace({
-        patterns: [
-          {
-            include: 'node_modules/ldf-client/ldf-client.js',
-            test: 'require = function (path) { return function () { return require(path); } };',
-            replace: ''
-          },
-          {
-            include: 'node_modules/ldf-client/ldf-client.js',
-            test: 'require = globalRequire;',
-            replace: ''
-          },
-          {
-            include: 'node_modules/n3/N3.js',
-            test: 'require = function () {};',
-            replace: ''
-          },
-        ]
-      }),
-      commonjs(),
       json(),
       babel({
         runtimeHelpers: true,

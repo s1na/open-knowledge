@@ -1,6 +1,6 @@
 'use strict'
 
-import { SparqlIterator } from 'ldf-client'
+import SparqlIterator from './ldf/sparql/SparqlIterator'
 import CID from 'cids'
 
 import Store from './store'
