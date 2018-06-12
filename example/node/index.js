@@ -3,8 +3,8 @@
 const ipfsAPI = require('ipfs-api')
 const Web3 = require('web3')
 
-const OpenKnowledge = require('../dist/open-knowledge.cjs.js')
-const GraphRegistry = require('../build/contracts/GraphRegistry.json')
+const OpenKnowledge = require('../../dist/open-knowledge.cjs.js')
+const GraphRegistry = require('../../build/contracts/GraphRegistry.json')
 
 const ipfs = ipfsAPI('/ip4/0.0.0.0/tcp/5001')
 const web3 = new Web3(new Web3.providers.WebsocketProvider('ws://localhost:8545'))
