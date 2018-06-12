@@ -12,7 +12,7 @@ const OpenKnowledge = require('../dist/open-knowledge.cjs.js')
 const GraphRegistry = require('../build/contracts/GraphRegistry.json')
 
 const ipfs = ipfsAPI('/ip4/0.0.0.0/tcp/5001')
-const web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:9545'))
+const web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'))
 
 const GRAddr = GraphRegistry.networks['4447'].address
 const GRAbi = GraphRegistry.abi

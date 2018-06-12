@@ -17,13 +17,21 @@ export default class GraphManager {
   async init() {
     let root = await this._fetchRoot()
     this.store = new Store(this.ipfs, root)
-    await this.store.init()
 
     this.rootUpdatedSub = this.contract.events.RootUpdated()
-    this.rootUpdatedSub.on('data', this._rootUpdated)
+    this.rootUpdatedSub.on('data', (ev) => {
+      this.store.setRoot(this._rootCIDFromHex(ev.returnValues.root))
+    })
   }
 
   async addTriples(triples) {
+    let coinbase = await this.web3.eth.getCoinbase()
+    let owner = await this.contract.methods.owner().call()
+    if (coinbase.toLowerCase() !== owner.toLowerCase()) {
+      console.log('Coinbase account does not own GraphManager contract')
+      return null
+    }
+
     let newRoot = await this.store.addTriples(triples)
     if (newRoot === null) {
       return null
@@ -32,7 +40,6 @@ export default class GraphManager {
     console.log(newRoot)
     let tx = null
     let hex = this._cidToHex(newRoot)
-    let coinbase = await this.web3.eth.getCoinbase()
     try {
       tx = await this.contract.methods.setRoot(hex).send({ from: coinbase })
     } catch (e) {
@@ -58,10 +65,6 @@ export default class GraphManager {
   async _fetchRoot() {
     let rootHex = await this.contract.methods.root().call()
     return this._rootCIDFromHex(rootHex)
-  }
-
-  _rootUpdated(ev) {
-    this.store.setRoot(this._rootCIDFromHex(ev.returnValues.root))
   }
 
   _rootCIDFromHex(h) {

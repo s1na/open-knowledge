@@ -12,11 +12,12 @@ contract GraphManager {
     owner = _owner;
   }
 
-  modifier restricted() {
-    if (msg.sender == owner) _;
+  modifier onlyOwner() {
+    require(msg.sender == owner);
+    _;
   }
 
-  function setRoot(bytes _root) public restricted {
+  function setRoot(bytes _root) public onlyOwner {
     root = _root;
     emit RootUpdated(_root);
   }

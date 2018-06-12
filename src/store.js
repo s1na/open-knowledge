@@ -8,22 +8,11 @@ export default class Store {
   constructor(ipfs, root) {
     this.ipfs = ipfs
     this.root = root
-    this.state = null
     this.dag = new Dag(ipfs, root)
   }
 
-  async init() {
-    this.state = await this.dag.get(this.root)
-    if (!this.state) {
-      throw new Error('Failed to fetch root state')
-    }
-
-    console.log('Fetched root state: ', this.state)
-  }
-
-  async setRoot(r) {
+  setRoot(r) {
     this.root = r
-    await this.init()
   }
 
   async addTriples(triples) {
@@ -58,9 +47,7 @@ export default class Store {
       return null
     }
 
-    this.root = cid
-    console.log('Updated graph, new root: ', this.root)
-    return this.root
+    return cid
   }
 
   async getTriples(s, p, o, offset=0, limit=10) {

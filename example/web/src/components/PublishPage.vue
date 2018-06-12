@@ -48,7 +48,7 @@ export default {
           if (n >= 0) {
             triples = triples.slice(0, 5)
           }
-          let tx = await this.ok.addTriples(triples, this.graph)
+          let tx = await this.ok.addTriples(triples, this.form.graph)
           console.log('TX:', tx)
 
           return

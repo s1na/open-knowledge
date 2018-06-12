@@ -16,14 +16,14 @@ import GraphRegistry from '../../../build/contracts/GraphRegistry.json'
 
 const ipfs = ipfsAPI('/ip4/127.0.0.1/tcp/5001')
 
-if (typeof web3 !== 'undefined') {
+/*if (typeof web3 !== 'undefined') {
   web3 = new Web3(web3.currentProvider)
 } else {
   console.log('No MetaMask, connecting to local provider')
-  web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:9545'))
-}
+}*/
 
-const GRAddr = GraphRegistry.networks['4447'].address
+const web3 = new Web3(new Web3.providers.WebsocketProvider('ws://localhost:8545'))
+const GRAddr = GraphRegistry.networks['dev'].address
 const GRAbi = GraphRegistry.abi
 const graphRegistry = new web3.eth.Contract(GRAbi, GRAddr)
 const ok = new OpenKnowledge(ipfs, web3, graphRegistry)

@@ -40,7 +40,7 @@ export default class OpenKnowledge {
   }
 
   async newGraphManager(name) {
-    let manager = this.getGraphManager(name)
+    let manager = await this.getGraphManager(name)
     if (manager !== null) {
       return manager
     }
@@ -49,7 +49,8 @@ export default class OpenKnowledge {
     let hex = this.web3.utils.asciiToHex(name)
     let tx
     try {
-      tx = await this.registry.methods.newGraphManager(hex).send({ from: coinbase })
+      let gas = await this.registry.methods.newGraphManager(hex).estimateGas({ from: coinbase })
+      tx = await this.registry.methods.newGraphManager(hex).send({ from: coinbase, gas })
     } catch (e) {
       console.log(e)
       return null
@@ -65,6 +66,7 @@ export default class OpenKnowledge {
   }
 
   async addTriples(triples, graph='default') {
+    console.log(graph)
     let g = await this.getGraphManager(graph)
     if (g === null) {
       console.log('Graph', g, 'not found')
