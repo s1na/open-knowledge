@@ -10,5 +10,10 @@
   "plugins": [
     "external-helpers",
     "transform-runtime"
-   ]
+  ],
+  "env": {
+    "test": {
+      "presets": [["env"]]
+    }
+  }
 }

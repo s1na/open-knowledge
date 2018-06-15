@@ -10,7 +10,7 @@ var genidMatcher = /^https?:\/\/[^\/]+\/\.well-known\/genid\/([^]+)$/;
  * @exports RdfUtil
  * @extends N3.Util
  */
-var util = new N3.Util({});
+var util = Object.assign({}, N3.Util);
 
 /* Methods for URIs */
 
