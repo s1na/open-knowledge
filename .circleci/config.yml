@@ -1,4 +1,5 @@
 version: 2
+
 jobs:
   unit-test:
     docker:
@@ -32,3 +33,9 @@ jobs:
           yarn build-contracts
 
       - run: yarn test
+
+workflows:
+  version: 2
+  commit:
+    jobs:
+      - unit-test
