@@ -1,7 +1,11 @@
 Open Knowledge
 ==============
 
+[![CircleCI](https://circleci.com/gh/s1na/open-knowledge.svg?style=svg)](https://circleci.com/gh/s1na/open-knowledge)
+
 Decentralized open linked data for your (decentralized) applications.
+
+*Note:* This library is in early development phase, and therefore not suitable for production use.
 
 Usage
 -----
