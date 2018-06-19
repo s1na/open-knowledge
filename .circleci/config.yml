@@ -16,9 +16,9 @@ jobs:
           - node-modules-
 
       - run:
-        name: "Install global packages"
-        command: |
-          yarn global add truffle
+          name: "Install global packages"
+          command: |
+            yarn global add truffle
 
       - run: yarn install
 
@@ -28,9 +28,9 @@ jobs:
           key: node-modules-{{ checksum "yarn.lock" }}
         
       - run:
-        name: "Compile contracts"
-        command: |
-          yarn build-contracts
+          name: "Compile contracts"
+          command: |
+            yarn build-contracts
 
       - run: yarn test
 
