@@ -17,7 +17,8 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -w -c",
-    "test": "jest"
+    "test": "jest",
+    "build-contracts": "truffle compile"
   },
   "dependencies": {
     "asynciterator": "^1.1.1",
