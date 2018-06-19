@@ -30,9 +30,17 @@ jobs:
       - run:
           name: "Compile contracts"
           command: |
-            yarn build-contracts
+            yarn contracts:compile
 
-      - run: yarn test
+      - run:
+          name: "Test contracts"
+          command: |
+            yarn contracts:test
+
+      - run:
+          name: "Test js code"
+          command: |
+            yarn test
 
 workflows:
   version: 2

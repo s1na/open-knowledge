@@ -5,7 +5,7 @@ Open Knowledge
 
 Decentralized open linked data for your (decentralized) applications.
 
-*Note:* This library is in early development phase, and therefore not suitable for production use.
+**Note:** This library is in early development phase, and therefore not suitable for production use.
 
 Usage
 -----
