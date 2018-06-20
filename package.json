@@ -19,7 +19,8 @@
     "dev": "rollup -w -c",
     "test": "jest",
     "contracts:compile": "truffle compile",
-    "contracts:test": "truffle test"
+    "contracts:test": "truffle test",
+    "contracts:deploy": "truffle migrate --reset --compile-all"
   },
   "dependencies": {
     "asynciterator": "^1.1.1",
