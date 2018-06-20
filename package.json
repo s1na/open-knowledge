@@ -1,7 +1,7 @@
 {
   "name": "open-knowledge",
-  "version": "0.0.1",
-  "description": "Decentralized open linked data on IPFS",
+  "version": "0.1.0",
+  "description": "Decentralized linked open data on IPFS",
   "author": "Sina Mahmoodi",
   "license": "MIT",
   "main": "dist/open-knowledge.cjs.js",
