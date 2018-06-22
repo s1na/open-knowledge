@@ -3,7 +3,7 @@
 import { Parser as SparqlParser } from 'sparqljs'
 
 import GraphManager from './graph-manager'
-import { abi as GMAbi } from '../build/contracts/GraphManager.json'
+import { abi as GraphAbi } from '../build/contracts/Graph.json'
 
 export default class OpenKnowledge {
   constructor(ipfs, web3, registry) {
@@ -26,12 +26,12 @@ export default class OpenKnowledge {
     }
 
     let hex = this.web3.utils.asciiToHex(name)
-    let addr = await this.registry.methods.contracts(hex).call()
+    let addr = await this.registry.methods.graphs(hex).call()
     if (addr === this.zeroAddr) {
       return null
     }
 
-    let contract = new this.web3.eth.Contract(GMAbi, addr)
+    let contract = new this.web3.eth.Contract(GraphAbi, addr)
     let manager = new GraphManager(this.ipfs, this.web3, contract)
     this.graphManagers[name] = manager
     await manager.init()
@@ -49,15 +49,15 @@ export default class OpenKnowledge {
     let hex = this.web3.utils.asciiToHex(name)
     let tx
     try {
-      let gas = await this.registry.methods.newGraphManager(hex).estimateGas({ from: coinbase })
-      tx = await this.registry.methods.newGraphManager(hex).send({ from: coinbase, gas })
+      let gas = await this.registry.methods.newGraph(hex).estimateGas({ from: coinbase })
+      tx = await this.registry.methods.newGraph(hex).send({ from: coinbase, gas })
     } catch (e) {
       console.log(e)
       return null
     }
 
-    let addr = tx.events.NewGraphManager.returnValues.addr
-    let contract = new this.web3.eth.Contract(GMAbi, addr)
+    let addr = tx.events.NewGraph.returnValues.addr
+    let contract = new this.web3.eth.Contract(GraphAbi, addr)
     manager = new GraphManager(this.ipfs, this.web3, contract)
     this.graphManagers[name] = manager
     await manager.init()

@@ -28,7 +28,7 @@ export default class GraphManager {
     let coinbase = await this.web3.eth.getCoinbase()
     let owner = await this.contract.methods.owner().call()
     if (coinbase.toLowerCase() !== owner.toLowerCase()) {
-      console.log('Coinbase account does not own GraphManager contract')
+      console.log('Coinbase account does not own Graph contract')
       return null
     }
 
