@@ -3,6 +3,7 @@
     <el-menu-item index="/query">Query</el-menu-item>
     <el-menu-item index="/publish">Publish</el-menu-item>
     <el-menu-item index="/graph">Graph</el-menu-item>
+    <el-menu-item index="/Catalog">Catalog</el-menu-item>
   </el-menu>
 </template>
 

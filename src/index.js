@@ -101,4 +101,16 @@ export default class OpenKnowledge {
 
     return g.execute(query)
   }
+
+  async getGraphs() {
+    let res = []
+    let len = await this.registry.methods.getGraphsCount().call()
+    for (let i = 0; i < len; i++) {
+      let hex = await this.registry.methods.getGraphName(i).call()
+      let name = this.web3.utils.hexToUtf8(hex)
+      res.push(name)
+    }
+
+    return res
+  }
 }

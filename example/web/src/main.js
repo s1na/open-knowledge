@@ -7,6 +7,7 @@ import App from './App.vue'
 import QueryPage from './components/QueryPage.vue'
 import PublishPage from './components/PublishPage.vue'
 import GraphPage from './components/GraphPage.vue'
+import CatalogPage from './components/CatalogPage.vue'
 
 import ipfsAPI from 'ipfs-api'
 import Web3 from 'web3'
@@ -37,6 +38,7 @@ ok.init().then(async () => {
     { path: '/query', component: QueryPage, props: { ok } },
     { path: '/publish', component: PublishPage, props: { ok } },
     { path: '/graph', component: GraphPage, props: { ok } },
+    { path: '/catalog', component: CatalogPage, props: { ok } },
     { path: '/', component: QueryPage, props: { ok } },
   ]
 
