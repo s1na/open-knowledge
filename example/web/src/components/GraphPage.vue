@@ -29,7 +29,7 @@ export default {
   },
   methods: {
     onSubmit: async function () {
-      await this.ok.newGraph(this.form.name)
+      await this.ok.newGraphManager(this.form.name)
     },
   }
 }

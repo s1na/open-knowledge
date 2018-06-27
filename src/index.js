@@ -103,12 +103,14 @@ export default class OpenKnowledge {
   }
 
   async getGraphs() {
-    let res = []
+    let res = {}
     let len = await this.registry.methods.getGraphsCount().call()
+
     for (let i = 0; i < len; i++) {
       let hex = await this.registry.methods.getGraphName(i).call()
       let name = this.web3.utils.hexToUtf8(hex)
-      res.push(name)
+      let g = await this.getGraphManager(name)
+      res[name] = g
     }
 
     return res
