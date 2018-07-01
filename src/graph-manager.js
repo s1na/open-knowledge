@@ -1,33 +1,25 @@
 'use strict'
 
 import SparqlIterator from './ldf/sparql/SparqlIterator'
-import CID from 'cids'
 
 import Store from './store'
+import Graph from './graph'
 import FragmentsClient from './fragments-client'
 
 export default class GraphManager {
   constructor(ipfs, web3, contract) {
     this.ipfs = ipfs
-    this.web3 = web3
-    this.contract = contract
-    this.rootUpdatedSub = null
+    this.graph = new Graph(web3, contract)
   }
 
   async init() {
-    let root = await this._fetchRoot()
+    let root = await this.graph.root()
     this.store = new Store(this.ipfs, root)
-
-    this.rootUpdatedSub = this.contract.events.RootUpdated()
-    this.rootUpdatedSub.on('data', (ev) => {
-      this.store.setRoot(this._rootCIDFromHex(ev.returnValues.root))
-    })
+    this.graph.onRootUpdated((r) => this.store.setRoot(r))
   }
 
   async addTriples(triples) {
-    let coinbase = await this.web3.eth.getCoinbase()
-    let owner = await this.contract.methods.owner().call()
-    if (coinbase.toLowerCase() !== owner.toLowerCase()) {
+    if (!this.graph.isOwner()) {
       console.log('Coinbase account does not own Graph contract')
       return null
     }
@@ -37,16 +29,7 @@ export default class GraphManager {
       return null
     }
 
-    console.log(newRoot)
-    let tx = null
-    let hex = this._cidToHex(newRoot)
-    try {
-      tx = await this.contract.methods.setRoot(hex).send({ from: coinbase })
-    } catch (e) {
-      console.log(e)
-      return null
-    }
-
+    let tx = await this.graph.setRoot(newRoot)
     return tx
   }
 
@@ -60,21 +43,5 @@ export default class GraphManager {
       stream.on('end', () => { resolve(results) })
       stream.on('error', (err) => { reject(err) })
     })
-  }
-
-  async _fetchRoot() {
-    let rootHex = await this.contract.methods.root().call()
-    return this._rootCIDFromHex(rootHex)
-  }
-
-  _rootCIDFromHex(h) {
-    let c = new CID('f' + h.slice(2))
-    return c.toBaseEncodedString()
-  }
-
-  _cidToHex(s) {
-    let c = new CID(s)
-    let h = c.toBaseEncodedString('base16')
-    return '0x' + h.slice(1)
   }
 }
