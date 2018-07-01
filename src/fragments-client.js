@@ -3,12 +3,12 @@
 import AsyncIterator from 'asynciterator'
 
 export default class FragmentsClient {
-  constructor(store) {
+  constructor (store) {
     this.store = store
   }
 
-  getFragmentByPattern(pattern) {
-    let fragment = new Fragment()    
+  getFragmentByPattern (pattern) {
+    let fragment = new Fragment()
     let s = pattern.subject === '?s' ? null : pattern.subject
     let p = pattern.predicate === '?p' ? null : pattern.predicate
     let o = pattern.object === '?o' ? null : pattern.object
@@ -23,7 +23,7 @@ export default class FragmentsClient {
       fragment.close()
     })
 
-    return fragment 
+    return fragment
   }
 }
 

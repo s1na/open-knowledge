@@ -1,8 +1,5 @@
-import resolve from 'rollup-plugin-node-resolve'
-import commonjs from 'rollup-plugin-commonjs'
 import json from 'rollup-plugin-json'
 import babel from 'rollup-plugin-babel'
-import replace from 'rollup-plugin-re'
 import pkg from './package.json'
 
 export default [
@@ -12,7 +9,7 @@ export default [
     output: {
       file: pkg.browser,
       format: 'umd',
-      name: 'OpenKnowledge',
+      name: 'OpenKnowledge'
     },
     plugins: [
       json(),

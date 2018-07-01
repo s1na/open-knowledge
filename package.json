@@ -18,8 +18,10 @@
     "build": "rollup -c",
     "dev": "rollup -w -c",
     "test": "jest",
+    "lint": "standard",
     "contracts:compile": "truffle compile",
     "contracts:test": "truffle test",
+    "contracts:lint": "solium -d contracts/",
     "contracts:deploy": "truffle migrate --reset --compile-all"
   },
   "dependencies": {
@@ -42,10 +44,26 @@
     "rollup-plugin-json": "^2.3.0",
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-re": "^1.0.7",
+    "solium": "^1.1.7",
+    "standard": "^11.0.1",
     "web3": "^1.0.0-beta.34"
   },
   "peerDependencies": {
     "ipfs": "^0.28.2",
     "web3": "^1.0.0-beta.34"
+  },
+  "standard": {
+    "ignore": [
+      "src/ldf"
+    ],
+    "envs": [
+      "mocha",
+      "jest"
+    ],
+    "globals": [
+      "artifacts",
+      "contract",
+      "assert"
+    ]
   }
 }

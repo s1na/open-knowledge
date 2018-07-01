@@ -26,11 +26,11 @@ ok.init().then(async () => {
   publishFile('Go_(programming_language).n3', 'test', -1)
 })
 
-async function publishFile(path, g, n=10) {
+async function publishFile (path, g, n = 10) {
   let doc = await readFile(path, 'utf8')
   let triples = []
   const parser = N3.Parser()
-  let res = parser.parse(doc, async (err, quad, prefixes) => {
+  parser.parse(doc, async (err, quad, prefixes) => {
     if (err) {
       throw new Error(err)
     }

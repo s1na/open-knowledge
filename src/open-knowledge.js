@@ -2,11 +2,10 @@
 
 import { Parser as SparqlParser } from 'sparqljs'
 
-import Graph from './graph'
 import GraphManager from './graph-manager'
 
 export default class OpenKnowledge {
-  constructor(ipfs, registry) {
+  constructor (ipfs, registry) {
     this.ipfs = ipfs
     this.registry = registry
     this.graphManagers = {}
@@ -14,11 +13,11 @@ export default class OpenKnowledge {
     this.emptyObjCid = 'zdpuAyTBnYSugBZhqJuLsNpzjmAjSmxDqBbtAqXMtsvxiN2v3'
   }
 
-  async init() {
+  async init () {
     this.graphManagers.default = await this.getGraphManager('default')
   }
 
-  async getGraphManager(name) {
+  async getGraphManager (name) {
     if (name in this.graphManagers) {
       return this.graphManagers[name]
     }
@@ -35,7 +34,7 @@ export default class OpenKnowledge {
     return manager
   }
 
-  async newGraphManager(name) {
+  async newGraphManager (name) {
     let manager = await this.getGraphManager(name)
     if (manager !== null) {
       return manager
@@ -53,7 +52,7 @@ export default class OpenKnowledge {
     return manager
   }
 
-  async addTriples(triples, graph='default') {
+  async addTriples (triples, graph = 'default') {
     let g = await this.getGraphManager(graph)
     if (g === null) {
       console.log('Graph', g, 'not found')
@@ -63,9 +62,9 @@ export default class OpenKnowledge {
     return g.addTriples(triples)
   }
 
-  async execute(query) {
+  async execute (query) {
     let graph = 'default'
-    let parser = new SparqlParser();
+    let parser = new SparqlParser()
     let q = parser.parse(query)
     if ('from' in q) {
       if (q.from.default.length === 0) {
@@ -89,7 +88,7 @@ export default class OpenKnowledge {
     return g.execute(query)
   }
 
-  async getGraphs() {
+  async getGraphs () {
     let res = {}
     let names = await this.registry.getGraphs()
 

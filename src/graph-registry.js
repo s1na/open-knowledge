@@ -4,24 +4,24 @@ import Graph from './graph'
 import { abi as GraphAbi } from '../build/contracts/Graph.json'
 
 export default class GraphRegistry {
-  constructor(web3, contract) {
+  constructor (web3, contract) {
     this.web3 = web3
     this.contract = contract
     this.zeroAddr = '0x0000000000000000000000000000000000000000'
   }
 
-  async getGraphsCount() {
+  async getGraphsCount () {
     let c = await this.contract.methods.getGraphsCount().call()
     return c
   }
 
-  async getGraphName(i) {
+  async getGraphName (i) {
     let hex = await this.contract.methods.getGraphName(i).call()
     let name = this.web3.utils.hexToUtf8(hex)
     return name
   }
 
-  async getGraphs() {
+  async getGraphs () {
     let res = []
     let len = await this.getGraphsCount()
 
@@ -33,7 +33,7 @@ export default class GraphRegistry {
     return res
   }
 
-  async getGraph(name) {
+  async getGraph (name) {
     let hex = this.web3.utils.utf8ToHex(name)
     let addr = await this.contract.methods.graphs(hex).call()
     if (addr === this.zeroAddr) {
@@ -45,7 +45,7 @@ export default class GraphRegistry {
     return g
   }
 
-  async newGraph(name) {
+  async newGraph (name) {
     let coinbase = await this.web3.eth.getCoinbase()
     let hex = this.web3.utils.utf8ToHex(name)
     let tx

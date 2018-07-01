@@ -3,22 +3,21 @@
 import SparqlIterator from './ldf/sparql/SparqlIterator'
 
 import Store from './store'
-import Graph from './graph'
 import FragmentsClient from './fragments-client'
 
 export default class GraphManager {
-  constructor(ipfs, graph) {
+  constructor (ipfs, graph) {
     this.ipfs = ipfs
     this.graph = graph
   }
 
-  async init() {
+  async init () {
     let root = await this.graph.root()
     this.store = new Store(this.ipfs, root)
     this.graph.onRootUpdated((r) => this.store.setRoot(r))
   }
 
-  async addTriples(triples) {
+  async addTriples (triples) {
     if (!this.graph.isOwner()) {
       console.log('Coinbase account does not own Graph contract')
       return null
@@ -33,7 +32,7 @@ export default class GraphManager {
     return tx
   }
 
-  execute(q) {
+  execute (q) {
     return new Promise((resolve, reject) => {
       let fragmentsClient = new FragmentsClient(this.store)
       let stream = new SparqlIterator(q, { fragmentsClient })

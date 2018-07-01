@@ -17,11 +17,11 @@ import GraphRegistryContract from '../../../build/contracts/GraphRegistry.json'
 
 const ipfs = ipfsAPI('/ip4/127.0.0.1/tcp/5001')
 
-/*if (typeof web3 !== 'undefined') {
+/* if (typeof web3 !== 'undefined') {
   web3 = new Web3(web3.currentProvider)
 } else {
   console.log('No MetaMask, connecting to local provider')
-}*/
+} */
 
 const web3 = new Web3(new Web3.providers.WebsocketProvider('ws://localhost:8545'))
 const GRAddr = GraphRegistryContract.networks['dev'].address
@@ -40,7 +40,7 @@ ok.init().then(async () => {
     { path: '/publish', component: PublishPage, props: { ok } },
     { path: '/graph', component: GraphPage, props: { ok } },
     { path: '/catalog', component: CatalogPage, props: { ok } },
-    { path: '/', component: QueryPage, props: { ok } },
+    { path: '/', component: QueryPage, props: { ok } }
   ]
 
   const router = new VueRouter({

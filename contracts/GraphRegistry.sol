@@ -4,6 +4,7 @@ import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
 
 import "./Graph.sol";
 
+
 contract GraphRegistry is Ownable {
   event NewGraph(
     address addr
@@ -13,7 +14,7 @@ contract GraphRegistry is Ownable {
   mapping(bytes32 => address) public graphs;
 
   constructor() public {
-    newGraph('default');
+    newGraph("default");
   }
 
   function newGraph(bytes32 _name) public returns(address addr) {
@@ -27,11 +28,11 @@ contract GraphRegistry is Ownable {
     return g;
   }
 
-  function getGraphsCount() public constant returns(uint) {
+  function getGraphsCount() public view returns(uint) {
     return graphIndices.length;
   }
 
-  function getGraphName(uint _i) public constant returns(bytes32) {
+  function getGraphName(uint _i) public view returns(bytes32) {
     require(_i < graphIndices.length);
     return graphIndices[_i];
   }

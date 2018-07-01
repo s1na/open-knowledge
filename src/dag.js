@@ -1,14 +1,14 @@
 'use strict'
 
 export default class Store {
-  constructor(ipfs, root) {
+  constructor (ipfs, root) {
     this.ipfs = ipfs
     this.root = root
     this.cache = {}
     this.cacheSize = 256
   }
 
-  async get(cid) {
+  async get (cid) {
     let [val, ok] = this._cacheGet(cid)
     if (ok) {
       return val
@@ -23,11 +23,11 @@ export default class Store {
     }
   }
 
-  async put(obj) {
+  async put (obj) {
     return (await this.ipfs.dag.put(obj, { format: 'dag-cbor', hashAlg: 'sha2-256' })).toBaseEncodedString()
   }
 
-  async getState(path=this.root) {
+  async getState (path = this.root) {
     let state = await this.get(path)
 
     for (let k in state) {
@@ -39,7 +39,7 @@ export default class Store {
     return state
   }
 
-  async merge(path, diff) {
+  async merge (path, diff) {
     if (Object.keys(diff).length === 0) {
       return null
     }
@@ -47,7 +47,7 @@ export default class Store {
     return this._traverse(path, diff)
   }
 
-  async _traverse(path, obj) {
+  async _traverse (path, obj) {
     if (Object.keys(obj).length === 0) {
       return null
     }
@@ -71,7 +71,7 @@ export default class Store {
     return cid
   }
 
-  _cacheGet(cid) {
+  _cacheGet (cid) {
     if (cid in this.cache) {
       return [this.cache[cid], true]
     }
@@ -79,7 +79,7 @@ export default class Store {
     return [null, false]
   }
 
-  _cacheSet(cid, v) {
+  _cacheSet (cid, v) {
     // TODO: Round-robin like cache expiration
     if (this.cache.length >= this.cacheSize) {
       this.cache = {}

@@ -47,7 +47,7 @@ contract('GraphRegistry', async (accounts) => {
 
   it('shouldnt overwrite existing', async () => {
     try {
-      let tx = await inst.newGraph('test', { from: accounts[1] })
+      await inst.newGraph('test', { from: accounts[1] })
       assert.fail('Expected revert not received')
     } catch (e) {
       const revertFound = e.message.search('revert') >= 0
@@ -56,7 +56,7 @@ contract('GraphRegistry', async (accounts) => {
   })
 
   it('should be able to transfer ownership', async () => {
-    let tx = await inst.transferOwnership(accounts[1])
+    await inst.transferOwnership(accounts[1])
     let o = await inst.owner()
     assert.equal(o, accounts[1])
   })

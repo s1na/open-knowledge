@@ -39,9 +39,19 @@ jobs:
             yarn contracts:test
 
       - run:
+          name: "Lint contracts"
+          command: |
+            yarn contracts:lint
+
+      - run:
           name: "Test js code"
           command: |
             yarn test
+
+      - run:
+          name: "Lint js code"
+          command: |
+            yarn lint
 
 workflows:
   version: 2

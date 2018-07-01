@@ -1,0 +1,197 @@
+@prefix dbo:	<http://dbpedia.org/ontology/> .
+@prefix dbr:	<http://dbpedia.org/resource/> .
+dbr:Campbellian	dbo:wikiPageRedirects	<http://dbpedia.org/resource/John_W._Campbell> .
+<http://dbpedia.org/resource/Arcot,_Wade,_and_Morey_stories_by_John_W._Campbell>	dbo:wikiPageRedirects	<http://dbpedia.org/resource/John_W._Campbell> .
+<http://dbpedia.org/resource/John_W._Campbell,_jr.>	dbo:wikiPageRedirects	<http://dbpedia.org/resource/John_W._Campbell> .
+<http://dbpedia.org/resource/Campbell,_John_Wood_Jr.>	dbo:wikiPageRedirects	<http://dbpedia.org/resource/John_W._Campbell> .
+<http://dbpedia.org/resource/John_Wood_Campbell,_Jr.>	dbo:wikiPageRedirects	<http://dbpedia.org/resource/John_W._Campbell> .
+<http://dbpedia.org/resource/John_Wood_Campbell_Jr.>	dbo:wikiPageRedirects	<http://dbpedia.org/resource/John_W._Campbell> .
+<http://dbpedia.org/resource/John_Wood_Jr._Campbell>	dbo:wikiPageRedirects	<http://dbpedia.org/resource/John_W._Campbell> .
+<http://dbpedia.org/resource/Don_A._Stuart>	dbo:wikiPageRedirects	<http://dbpedia.org/resource/John_W._Campbell> .
+<http://dbpedia.org/resource/John_W._Campbell,_Jr>	dbo:wikiPageRedirects	<http://dbpedia.org/resource/John_W._Campbell> .
+<http://dbpedia.org/resource/John_W._Campbell_Jr.>	dbo:wikiPageRedirects	<http://dbpedia.org/resource/John_W._Campbell> .
+dbr:John_W_Campbell	dbo:wikiPageRedirects	<http://dbpedia.org/resource/John_W._Campbell> .
+dbr:John_Wood_Campbell	dbo:wikiPageRedirects	<http://dbpedia.org/resource/John_W._Campbell> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix yago:	<http://dbpedia.org/class/yago/> .
+<http://dbpedia.org/resource/John_W._Campbell>	rdf:type	yago:WikicatWriters .
+@prefix wikidata:	<http://www.wikidata.org/entity/> .
+<http://dbpedia.org/resource/John_W._Campbell>	rdf:type	wikidata:Q36180 ,
+		yago:Novelist110363573 ,
+		yago:Organism100004475 ,
+		dbo:Person ,
+		yago:WikicatAmericanShortStoryWriters ,
+		yago:CausalAgent100007347 ,
+		yago:Whole100003553 ,
+		yago:WikicatEnglish-languageWriters ,
+		yago:LivingThing100004258 ,
+		yago:WikicatWorldconGuestsOfHonor ,
+		yago:Visitor110757193 ,
+		yago:GuestOfHonor110151261 ,
+		yago:Guest110150940 ,
+		dbo:Writer ,
+		yago:WikicatAmericanEditors .
+@prefix umbel-rc:	<http://umbel.org/umbel/rc/> .
+<http://dbpedia.org/resource/John_W._Campbell>	rdf:type	umbel-rc:PersonWithOccupation ,
+		yago:WikicatAmericanScienceFictionWriters ,
+		dbo:Agent .
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+<http://dbpedia.org/resource/John_W._Campbell>	rdf:type	foaf:Person ,
+		yago:WikicatAmericanNovelists ,
+		yago:WikicatDukeUniversityAlumni ,
+		yago:Scholar110557854 ,
+		yago:Intellectual109621545 ,
+		yago:Alumnus109786338 ,
+		umbel-rc:Writer ,
+		yago:Writer110794014 ,
+		yago:Editor110044879 ,
+		yago:Communicator109610660 ,
+		yago:Wikicat20th-centuryAmericanNovelists ,
+		yago:Person100007846 ,
+		yago:Object100002684 ,
+		yago:Traveler109629752 ,
+		yago:WikicatAmericanPeople ,
+		yago:YagoLegalActor ,
+		yago:YagoLegalActorGeo ,
+		yago:PhysicalEntity100001930 .
+@prefix schema:	<http://schema.org/> .
+<http://dbpedia.org/resource/John_W._Campbell>	rdf:type	schema:Person ,
+		umbel-rc:Artist .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+<http://dbpedia.org/resource/John_W._Campbell>	rdf:type	owl:Thing ,
+		yago:WikicatEditors ,
+		yago:WikicatScienceFictionEditors ,
+		yago:WikicatPeopleFromNewJersey ,
+		wikidata:Q24229398 ,
+		yago:Worker109632518 ,
+		wikidata:Q215627 ,
+		wikidata:Q5 ,
+		yago:WikicatScienceFictionWriters ,
+		yago:SkilledWorker110605985 ,
+		<http://dbpedia.org/class/yago/WikicatPeopleFromNewark,NewJersey> .
+@prefix ns9:	<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+<http://dbpedia.org/resource/John_W._Campbell>	rdf:type	ns9:NaturalPerson ,
+		ns9:Agent .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+<http://dbpedia.org/resource/John_W._Campbell>	rdfs:label	"\u30B8\u30E7\u30F3\u30FBW\u30FB\u30AD\u30E3\u30F3\u30D9\u30EB"@ja ,
+		"John W. Campbell"@de ,
+		"John W. Campbell"@es ,
+		"John W. Campbell"@pt ,
+		"John W. Campbell"@fr ,
+		"John W. Campbell"@pl ,
+		"John W. Campbell"@nl ,
+		"\u041A\u044D\u043C\u043F\u0431\u0435\u043B\u043B, \u0414\u0436\u043E\u043D \u0412\u0443\u0434"@ru ,
+		"\u7D04\u7FF0\u00B7W\u00B7\u574E\u8C9D\u723E"@zh ,
+		"John W. Campbell"@it ,
+		"John W. Campbell"@en ;
+	rdfs:comment	"John Wood Campbell, Jr. (Newark, Nueva Jersey, 8 de junio de 1910 \u2013 Mountainside, Nueva Jersey, 11 de julio de 1971) editor y escritor de ciencia ficci\u00F3n. Como escritor, public\u00F3 varios relatos en las revistas de ciencia ficci\u00F3n en los a\u00F1os 30, con su nombre o con varios pseud\u00F3nimos, entre los que destaca el de Don A. Stuart. Su obra m\u00E1s importante es la novela corta Who Goes There? (1948), la cual relata el descubrimiento en la Ant\u00E1rtida de una nave estrellada hace miles de a\u00F1os y, a tres metros del extra\u00F1o aparato, el cad\u00E1ver de un extraterrestre, el cual es descongelado para estudiar su biolog\u00EDa con fatales consecuencias. Este texto fue llevado al cine en 1951 bajo el t\u00EDtulo The Thing from Another World, dirigida por Christian Nyby, y en 1982 The Thing, dirigida por John Carpenter. En lo"@es ,
+		"John Wood Campbell Jr. (June 8, 1910 \u2013 July 11, 1971) was an American science fiction writer and editor. As editor of Astounding Science Fiction (later called Analog Science Fiction and Fact) from late 1937 until his death, he is generally credited with shaping the Golden Age of Science Fiction. Isaac Asimov called Campbell \"the most powerful force in science fiction ever, and for the first ten years of his editorship he dominated the field completely.\""@en ,
+		"John Wood Campbell, Jr. (Newark (New Jersey), 8 juni 1910 - Mountainside (New Jersey), 11 juli 1971) was de meest invloedrijke redacteur in de geschiedenis van de sciencefiction. Vanaf 1938 tot zijn dood leidde hij het SF-tijdschrift Astounding Science Fiction, hernoemd naar Analog Science Fiction in 1960. Hij ontdekte niet alleen nieuwe schrijvers, maar voorzag hen ook vaak met idee\u00EBn voor verhalen. Hij publiceerde de eerste verhalen van Robert A. Heinlein, A.E. van Vogt, L. Sprague de Camp en vele anderen en ondersteunde Isaac Asimov sterk. Hij was ook redacteur van het fantasy tijdschrift Unknown (later Unknown Worlds) van 1939 tot 1943."@nl ,
+		"La sua fama \u00E8 legata soprattutto alla rivista Astounding Science Fiction, che diresse dalla fine del 1937 alla propria morte, inaugurando la cosiddetta \"epoca d'oro\" della fantascienza che caratterizz\u00F2 gli anni quaranta e cinquanta del Novecento."@it ,
+		"John Wood Campbell Jr., publikuj\u0105cy tak\u017Ce pod pseudonimem Don A. Stuart (ur. 8 czerwca 1910 w Newark, zm. 11 lipca 1971 w Mountainside) \u2013 ameryka\u0144ski wydawca i pisarz science fiction, jedna z wa\u017Cniejszych postaci w historii gatunku. W latach 1937-1971, b\u0119d\u0105c redaktorem pisma Astounding Science Fiction, walnie przyczyni\u0142 si\u0119 do rozkwitu s-f. Krytycy uwa\u017Caj\u0105, \u017Ce w du\u017Cej mierze dzi\u0119ki Campbellowi i jego pismu gatunek mia\u0142 wtedy sw\u00F3j z\u0142oty wiek."@pl ,
+		"\u0414\u0436\u043E\u043D \u0412\u0443\u0434 \u041A\u044D\u0301\u043C\u043F\u0431\u0435\u043B\u043B-\u043C\u043B\u0430\u0434\u0448\u0438\u0439 (\u0430\u043D\u0433\u043B. John Wood Campbell, Jr.; 8 \u0438\u044E\u043D\u044F 1910 \u0433\u043E\u0434\u0430, \u041D\u044C\u044E\u0430\u0440\u043A, \u041D\u044C\u044E-\u0414\u0436\u0435\u0440\u0441\u0438, \u0421\u0428\u0410 \u2014 11 \u0438\u044E\u043B\u044F 1971 \u0433\u043E\u0434\u0430, \u041C\u0430\u0443\u043D\u0442\u0438\u043D\u0441\u0430\u0439\u0434\u0440\u0443\u0441\u0441\u043A., \u041D\u044C\u044E-\u0414\u0436\u0435\u0440\u0441\u0438, \u0421\u0428\u0410) \u2014 \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0438\u0439 \u043F\u0438\u0441\u0430\u0442\u0435\u043B\u044C \u0438 \u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440, \u0432\u043E \u043C\u043D\u043E\u0433\u043E\u043C \u0441\u043F\u043E\u0441\u043E\u0431\u0441\u0442\u0432\u043E\u0432\u0430\u0432\u0448\u0438\u0439 \u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044E \u00AB\u0417\u043E\u043B\u043E\u0442\u043E\u0433\u043E \u0432\u0435\u043A\u0430 \u043D\u0430\u0443\u0447\u043D\u043E\u0439 \u0444\u0430\u043D\u0442\u0430\u0441\u0442\u0438\u043A\u0438\u00BB."@ru ,
+		"\u7D04\u7FF0\u00B7W\u00B7\u574E\u8C9D\u723E\uFF08John Wood Campbell\uFF09\uFF081910\u5E746\u67088\u65E5- 1971\u5E747\u670811\u65E5\uFF09\u662F\u7F8E\u570B\u79D1\u5E7B\u5C0F\u8AAA\u4F5C\u5BB6\u548C\u7DE8\u8F2F\u3002\u5F9E1937\u5E74\u5E95\u76F4\u5230\u4ED6\u53BB\u4E16\uFF0C\u7D04\u7FF0\u00B7W\u00B7\u574E\u8C9D\u723E\u70BA\u300A\u9A5A\u4EBA\u7684\u79D1\u5E7B\u300B\uFF08\u5F8C\u4F86\u88AB\u7A31\u70BA\u300A\u6A21\u64EC\u79D1\u5E7B\u5C0F\u8AAA\u548C\u4E8B\u5BE6\u300B\uFF09\u4E3B\u7DE8\uFF0C\u4ED6\u5851\u9020\u6240\u8B02\u7684\u79D1\u5E7B\u5C0F\u8AAA\u9EC3\u91D1\u6642\u4EE3\u3002 \u827E\u85A9\u514B\u00B7\u963F\u897F\u83AB\u592B\u7A31\u574E\u8C9D\u723E\u70BA\u201C\u6709\u53F2\u4EE5\u4F86\u6700\u5F37\u5927\u7684\u79D1\u5E7B\u5C0F\u8AAA\u529B\u91CF\uFF0C\u4ED6\u4E3B\u7DE8\u7684\u7B2C\u4E00\u500B\u5341\u5E74\uFF0C\u5B8C\u5168\u4F54\u4E3B\u5C0E\u8A72\u9818\u57DF\u3002\u201D"@zh ,
+		"\u30B8\u30E7\u30F3\u30FB\u30A6\u30C3\u30C9\u30FB\u30AD\u30E3\u30F3\u30D9\u30EB\u30FB\u30B8\u30E5\u30CB\u30A2\uFF08John Wood Campbell Jr., 1910\u5E746\u67088\u65E5 - 1971\u5E747\u670811\u65E5\uFF09\u306F\u3001\u30A2\u30E1\u30EA\u30AB\u5408\u8846\u56FD\u306E\u5C0F\u8AAC\u5BB6\u3001SF\u4F5C\u5BB6\u3001\u7DE8\u96C6\u8005\u3002SF\u96D1\u8A8C\u300E\u30A2\u30B9\u30BF\u30A6\u30F3\u30C7\u30A3\u30F3\u30B0\u30FB\u30B5\u30A4\u30A8\u30F3\u30B9\u30D5\u30A3\u30AF\u30B7\u30E7\u30F3\u300F\uFF08\u5F8C\u306E\u300E\u30A2\u30CA\u30ED\u30B0\u300F\u8A8C\uFF09\u306E\u7DE8\u96C6\u9577\u30921937\u5E74\u304B\u3089\u4EA1\u304F\u306A\u308B\u76F4\u524D\u307E\u3067\u52D9\u3081\u3001\u3044\u308F\u3086\u308BSF\u9EC4\u91D1\u6642\u4EE3\u3092\u7BC9\u3044\u305F\u7ACB\u5F79\u8005\u306E1\u4EBA\u3068\u3055\u308C\u3066\u3044\u308B\u3002 \u30A2\u30A4\u30B6\u30C3\u30AF\u30FB\u30A2\u30B7\u30E2\u30D5\u306F\u30AD\u30E3\u30F3\u30D9\u30EB\u306B\u3064\u3044\u3066\u300CSF\u754C\u3067\u6700\u3082\u5F37\u529B\u306A\u529B\u3092\u632F\u308B\u3063\u305F\u4EBA\u7269\u3067\u3001\u7279\u306B\u7DE8\u96C6\u9577\u3068\u3057\u3066\u306E\u6700\u521D\u306E10\u5E74\u9593\u306F\u5B8C\u5168\u306BSF\u754C\u3092\u652F\u914D\u3057\u305F\u300D\u3068\u8A55\u3057\u305F\u3002 \u4F5C\u5BB6\u3068\u3057\u3066\u306F\u3001\u30B9\u30DA\u30FC\u30B9\u30AA\u30DA\u30E9\u3092\u672C\u540D\u3067\u767A\u8868\u3057\u3001\u30D1\u30EB\u30D7\u30FB\u30DE\u30AC\u30B8\u30F3\u7684\u3067\u306A\u3044\u5C0F\u8AAC\u306F\u30C9\u30F3\u30FBA\u30FB\u30B9\u30C1\u30E5\u30A2\u30FC\u30C8 (Don A. Stuart) \u306E\u540D\u3067\u767A\u8868\u3057\u305F\u3002\u3057\u304B\u3057\u3001\u300E\u30A2\u30B9\u30BF\u30A6\u30F3\u30C7\u30A3\u30F3\u30B0\u300F\u8A8C\u306E\u7DE8\u96C6\u9577\u3068\u306A\u3063\u3066\u304B\u3089\u306F\u5275\u4F5C\u3092\u307B\u3068\u3093\u3069\u3084\u3081\u3066\u3044\u308B\u3002"@ja ,
+		"John Wood Campbell Jr. (* 8. Juni 1910 in Newark, New Jersey; \u2020 11. Juli 1971) war ein US-amerikanischer Science-Fiction-Schriftsteller und -Herausgeber."@de ,
+		"John Wood Campbell, Jr. (Newark, 8 de junho de 1910 \u2014 Mountainside, 11 de julho de 1971) foi um escritor e editor de fic\u00E7\u00E3o cient\u00EDfica estadunidense. Como escritor, utilizou seu pr\u00F3prio nome para escrever space operas e, sob o pseud\u00F4nimo de Don A. Stuart, hist\u00F3rias de conte\u00FAdo menos pulp. Todavia, a principal contribui\u00E7\u00E3o de Campbell para o campo da fic\u00E7\u00E3o cient\u00EDfica foi seu trabalho como editor da Astounding Science Fiction, posto que ele reteve de fins de 1937 at\u00E9 a data de sua morte. Neste papel, ele \u00E9 geralmente creditado como tendo ajudado a criar a chamada Idade de Ouro da Fic\u00E7\u00E3o Cient\u00EDfica, a qual teria come\u00E7ado com o n\u00FAmero de julho de 1939 da Astounding. Isaac Asimov, em sua autobiografia, chama Campbell de \"a mais poderosa for\u00E7a de toda a fic\u00E7\u00E3o cient\u00EDfica, e em seus primeiros de"@pt ,
+		"John Wood Campbell, Jr, n\u00E9 le 8 juin 1910 \u00E0 Newark dans le New Jersey et mort le 11 juillet 1971 (\u00E0 61 ans) \u00E0 Mountainside dans le New Jersey, est un \u00E9crivain am\u00E9ricain et un r\u00E9dacteur en chef de magazines de science-fiction."@fr .
+@prefix dbpedia-wikidata:	<http://wikidata.dbpedia.org/resource/> .
+<http://dbpedia.org/resource/John_W._Campbell>	owl:sameAs	dbpedia-wikidata:Q435056 ,
+		<http://pt.dbpedia.org/resource/John_W._Campbell> ,
+		<http://ja.dbpedia.org/resource/\u30B8\u30E7\u30F3\u30FBW\u30FB\u30AD\u30E3\u30F3\u30D9\u30EB> ,
+		<http://fr.dbpedia.org/resource/John_W._Campbell> ,
+		<http://viaf.org/viaf/44296334> ,
+		<http://es.dbpedia.org/resource/John_W._Campbell> ,
+		<http://nl.dbpedia.org/resource/John_W._Campbell> .
+@prefix dbpedia-cs:	<http://cs.dbpedia.org/resource/> .
+<http://dbpedia.org/resource/John_W._Campbell>	owl:sameAs	dbpedia-cs:John_Wood_Campbell ,
+		wikidata:Q435056 .
+@prefix ns13:	<http://www4.wiwiss.fu-berlin.de/gutendata/resource/people/> .
+<http://dbpedia.org/resource/John_W._Campbell>	owl:sameAs	ns13:Campbell_John_Wood_1910-1971 ,
+		<http://it.dbpedia.org/resource/John_W._Campbell> ,
+		<http://d-nb.info/gnd/119375192> ,
+		<http://pl.dbpedia.org/resource/John_W._Campbell> ,
+		<http://dbpedia.org/resource/John_W._Campbell> ,
+		<http://rdf.freebase.com/ns/m.0456j> ,
+		<http://de.dbpedia.org/resource/John_W._Campbell> ,
+		<http://yago-knowledge.org/resource/John_W._Campbell> .
+@prefix dct:	<http://purl.org/dc/terms/> .
+@prefix dbc:	<http://dbpedia.org/resource/Category:> .
+<http://dbpedia.org/resource/John_W._Campbell>	dct:subject	dbc:American_science_fiction_writers ,
+		dbc:Hugo_Award-winning_editors ,
+		<http://dbpedia.org/resource/Category:Writers_from_Newark,_New_Jersey> ,
+		<http://dbpedia.org/resource/Category:20th-century_American_short_story_writers> ,
+		<http://dbpedia.org/resource/Category:1971_deaths> ,
+		dbc:American_male_short_story_writers ,
+		dbc:American_male_novelists ,
+		<http://dbpedia.org/resource/Category:1910_births> ,
+		dbc:Science_fiction_editors ,
+		dbc:Analog_Science_Fiction_and_Fact_people ,
+		<http://dbpedia.org/resource/Category:Street_&_Smith> ,
+		<http://dbpedia.org/resource/Category:Unknown_(magazine)> ,
+		dbc:Science_Fiction_Hall_of_Fame_inductees ,
+		dbc:Duke_University_alumni ,
+		<http://dbpedia.org/resource/Category:20th-century_American_novelists> ;
+	foaf:name	"John W. Campbell"@en ;
+	foaf:depiction	<http://commons.wikimedia.org/wiki/Special:FilePath/Firma_Campbell.png> ;
+	dct:description	"American science fiction writer and editor"@en ;
+	foaf:givenName	"John"@en ;
+	foaf:gender	"male"@en ;
+	foaf:isPrimaryTopicOf	<http://en.wikipedia.org/wiki/John_W._Campbell> ;
+	foaf:surname	"Campbell"@en ;
+	dbo:nationality	dbr:Americans .
+@prefix dbp:	<http://dbpedia.org/property/> .
+<http://dbpedia.org/resource/John_W._Campbell>	dbp:signature	"Firma_Campbell.png"^^rdf:langString ;
+	dbo:pseudonym	"Don A. Stuart"@en .
+@prefix prov:	<http://www.w3.org/ns/prov#> .
+<http://dbpedia.org/resource/John_W._Campbell>	prov:wasDerivedFrom	<http://en.wikipedia.org/wiki/John_W._Campbell?oldid=742291580> ;
+	dbo:birthName	"John Wood Campbell Jr."@en ;
+	dbp:sname	"John Wood Campbell"^^rdf:langString ;
+	dbp:sopt	"t"^^rdf:langString .
+@prefix ns18:	<http://www.thewaythefutureblogs.com/2009/12/> .
+<http://dbpedia.org/resource/John_W._Campbell>	dbo:wikiPageExternalLink	ns18:astounding-campbell-years .
+@prefix ns19:	<https://archive.org/details/> .
+<http://dbpedia.org/resource/John_W._Campbell>	dbo:wikiPageExternalLink	ns19:Exploring_Tomorrow ,
+		<http://www.catch22.com/SF/ARB/SFC/Campbell,JW.php3> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+<http://dbpedia.org/resource/John_W._Campbell>	dbo:activeYearsStartYear	"1930"^^xsd:gYear ;
+	dbo:genre	dbr:Science_fiction ;
+	dbp:caption	"Campbell in 1965."^^rdf:langString ;
+	dbp:id	4602 ;
+	dbo:influenced	dbr:Isaac_Asimov ;
+	dbo:abstract	"\u30B8\u30E7\u30F3\u30FB\u30A6\u30C3\u30C9\u30FB\u30AD\u30E3\u30F3\u30D9\u30EB\u30FB\u30B8\u30E5\u30CB\u30A2\uFF08John Wood Campbell Jr., 1910\u5E746\u67088\u65E5 - 1971\u5E747\u670811\u65E5\uFF09\u306F\u3001\u30A2\u30E1\u30EA\u30AB\u5408\u8846\u56FD\u306E\u5C0F\u8AAC\u5BB6\u3001SF\u4F5C\u5BB6\u3001\u7DE8\u96C6\u8005\u3002SF\u96D1\u8A8C\u300E\u30A2\u30B9\u30BF\u30A6\u30F3\u30C7\u30A3\u30F3\u30B0\u30FB\u30B5\u30A4\u30A8\u30F3\u30B9\u30D5\u30A3\u30AF\u30B7\u30E7\u30F3\u300F\uFF08\u5F8C\u306E\u300E\u30A2\u30CA\u30ED\u30B0\u300F\u8A8C\uFF09\u306E\u7DE8\u96C6\u9577\u30921937\u5E74\u304B\u3089\u4EA1\u304F\u306A\u308B\u76F4\u524D\u307E\u3067\u52D9\u3081\u3001\u3044\u308F\u3086\u308BSF\u9EC4\u91D1\u6642\u4EE3\u3092\u7BC9\u3044\u305F\u7ACB\u5F79\u8005\u306E1\u4EBA\u3068\u3055\u308C\u3066\u3044\u308B\u3002 \u30A2\u30A4\u30B6\u30C3\u30AF\u30FB\u30A2\u30B7\u30E2\u30D5\u306F\u30AD\u30E3\u30F3\u30D9\u30EB\u306B\u3064\u3044\u3066\u300CSF\u754C\u3067\u6700\u3082\u5F37\u529B\u306A\u529B\u3092\u632F\u308B\u3063\u305F\u4EBA\u7269\u3067\u3001\u7279\u306B\u7DE8\u96C6\u9577\u3068\u3057\u3066\u306E\u6700\u521D\u306E10\u5E74\u9593\u306F\u5B8C\u5168\u306BSF\u754C\u3092\u652F\u914D\u3057\u305F\u300D\u3068\u8A55\u3057\u305F\u3002 \u4F5C\u5BB6\u3068\u3057\u3066\u306F\u3001\u30B9\u30DA\u30FC\u30B9\u30AA\u30DA\u30E9\u3092\u672C\u540D\u3067\u767A\u8868\u3057\u3001\u30D1\u30EB\u30D7\u30FB\u30DE\u30AC\u30B8\u30F3\u7684\u3067\u306A\u3044\u5C0F\u8AAC\u306F\u30C9\u30F3\u30FBA\u30FB\u30B9\u30C1\u30E5\u30A2\u30FC\u30C8 (Don A. Stuart) \u306E\u540D\u3067\u767A\u8868\u3057\u305F\u3002\u3057\u304B\u3057\u3001\u300E\u30A2\u30B9\u30BF\u30A6\u30F3\u30C7\u30A3\u30F3\u30B0\u300F\u8A8C\u306E\u7DE8\u96C6\u9577\u3068\u306A\u3063\u3066\u304B\u3089\u306F\u5275\u4F5C\u3092\u307B\u3068\u3093\u3069\u3084\u3081\u3066\u3044\u308B\u3002"@ja ,
+		"John Wood Campbell Jr., publikuj\u0105cy tak\u017Ce pod pseudonimem Don A. Stuart (ur. 8 czerwca 1910 w Newark, zm. 11 lipca 1971 w Mountainside) \u2013 ameryka\u0144ski wydawca i pisarz science fiction, jedna z wa\u017Cniejszych postaci w historii gatunku. W latach 1937-1971, b\u0119d\u0105c redaktorem pisma Astounding Science Fiction, walnie przyczyni\u0142 si\u0119 do rozkwitu s-f. Krytycy uwa\u017Caj\u0105, \u017Ce w du\u017Cej mierze dzi\u0119ki Campbellowi i jego pismu gatunek mia\u0142 wtedy sw\u00F3j z\u0142oty wiek."@pl ,
+		"John Wood Campbell Jr. (June 8, 1910 \u2013 July 11, 1971) was an American science fiction writer and editor. As editor of Astounding Science Fiction (later called Analog Science Fiction and Fact) from late 1937 until his death, he is generally credited with shaping the Golden Age of Science Fiction. Isaac Asimov called Campbell \"the most powerful force in science fiction ever, and for the first ten years of his editorship he dominated the field completely.\" As a writer, Campbell published super-science space opera under his own name and moody stories under his primary and most famous pseudonym, Don A. Stuart. Campbell also wrote under the pen names Karl Van Kampen and Arthur McCann. He stopped writing fiction after he became editor of Astounding."@en ,
+		"John Wood Campbell, Jr. (Newark, Nueva Jersey, 8 de junio de 1910 \u2013 Mountainside, Nueva Jersey, 11 de julio de 1971) editor y escritor de ciencia ficci\u00F3n. Como escritor, public\u00F3 varios relatos en las revistas de ciencia ficci\u00F3n en los a\u00F1os 30, con su nombre o con varios pseud\u00F3nimos, entre los que destaca el de Don A. Stuart. Su obra m\u00E1s importante es la novela corta Who Goes There? (1948), la cual relata el descubrimiento en la Ant\u00E1rtida de una nave estrellada hace miles de a\u00F1os y, a tres metros del extra\u00F1o aparato, el cad\u00E1ver de un extraterrestre, el cual es descongelado para estudiar su biolog\u00EDa con fatales consecuencias. Este texto fue llevado al cine en 1951 bajo el t\u00EDtulo The Thing from Another World, dirigida por Christian Nyby, y en 1982 The Thing, dirigida por John Carpenter. En los pa\u00EDses de habla espa\u00F1ola estas pel\u00EDculas se conocen con diversos nombres, como La cosa o El enigma de otro mundo. Pero la principal aportaci\u00F3n de Campbell al g\u00E9nero no iba a estar en la escritura, sino en la edici\u00F3n. En 1938 Orlan B. Tremaine elige a Campbell para sustituirlo como editor de la revista Astounding Science Fiction. Desde su puesto de editor, Campbell auspiciar\u00EDa una aut\u00E9ntica revoluci\u00F3n en la ciencia ficci\u00F3n de la \u00E9poca: nuevos temas, nuevos autores, y sobre todo un tratamiento mucho m\u00E1s riguroso de la ciencia, as\u00ED como una mayor calidad literaria en la historia. En general, Campbell propici\u00F3 un tratamiento mucho m\u00E1s adulto de las historias de ciencia ficci\u00F3n, alej\u00E1ndolas del hasta entonces extendido clich\u00E9 de aventuras para adolescentes. El p\u00FAblico de las revistas de ciencia ficci\u00F3n respondi\u00F3 favorablemente a esta nueva l\u00EDnea y fruto de ello es el absoluto predominio de Astounding durante esa \u00E9poca denominada la Edad de Oro de la ciencia ficci\u00F3n."@es ,
+		"John Wood Campbell, Jr, n\u00E9 le 8 juin 1910 \u00E0 Newark dans le New Jersey et mort le 11 juillet 1971 (\u00E0 61 ans) \u00E0 Mountainside dans le New Jersey, est un \u00E9crivain am\u00E9ricain et un r\u00E9dacteur en chef de magazines de science-fiction. Comme \u00E9crivain, il s'est illustr\u00E9 principalement dans le genre du space opera, utilisant parfois le pseudonyme de Don A. Stuart qu'il a r\u00E9serv\u00E9 pour ses histoires les plus novatrices publi\u00E9es dans les Pulps magazines. Cependant, c'est en dirigeant le magazine Astounding Stories, fonction qu'il a occup\u00E9 de la fin de l'ann\u00E9e 1937 jusqu'\u00E0 son d\u00E9c\u00E8s en 1971, qu'il a exerc\u00E9 une influence d\u00E9terminante sur l'\u00E9volution du genre. John W. Campbell est en effet g\u00E9n\u00E9ralement reconnu comme \u00E9tant l'une des figures majeures de l'\u00C2ge d'or de la science-fiction que l'on fait commun\u00E9ment d\u00E9buter avec la publication du num\u00E9ro de juillet 1939 d' Astounding Stories. \u00C0 son sujet, Isaac Asimov dit de lui dans son autobiographie qu\u2019il a constitu\u00E9e \u00AB la principale force que la science-fiction ait jamais connue et que, pendant les dix premi\u00E8res ann\u00E9es de sa fonction de r\u00E9dacteur en chef, il a domin\u00E9 compl\u00E8tement le domaine. \u00BB Toutefois, au moment de son d\u00E9c\u00E8s, soudain et inattendu, apr\u00E8s trente-quatre ann\u00E9es \u00E0 la direction d'Astounding Stories, son temp\u00E9rament curieux et ses exigences parfois excentriques lui avaient valu l'inimiti\u00E9 de certains auteurs parmi les plus illustres, notamment Isaac Asimov et Robert A. Heinlein, ce dernier ayant pr\u00E9f\u00E9r\u00E9 cesser de travailler avec lui d\u00E8s la fin des ann\u00E9es 1940, bien que faisant partie de ses proches."@fr ,
+		"\u0414\u0436\u043E\u043D \u0412\u0443\u0434 \u041A\u044D\u0301\u043C\u043F\u0431\u0435\u043B\u043B-\u043C\u043B\u0430\u0434\u0448\u0438\u0439 (\u0430\u043D\u0433\u043B. John Wood Campbell, Jr.; 8 \u0438\u044E\u043D\u044F 1910 \u0433\u043E\u0434\u0430, \u041D\u044C\u044E\u0430\u0440\u043A, \u041D\u044C\u044E-\u0414\u0436\u0435\u0440\u0441\u0438, \u0421\u0428\u0410 \u2014 11 \u0438\u044E\u043B\u044F 1971 \u0433\u043E\u0434\u0430, \u041C\u0430\u0443\u043D\u0442\u0438\u043D\u0441\u0430\u0439\u0434\u0440\u0443\u0441\u0441\u043A., \u041D\u044C\u044E-\u0414\u0436\u0435\u0440\u0441\u0438, \u0421\u0428\u0410) \u2014 \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0438\u0439 \u043F\u0438\u0441\u0430\u0442\u0435\u043B\u044C \u0438 \u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440, \u0432\u043E \u043C\u043D\u043E\u0433\u043E\u043C \u0441\u043F\u043E\u0441\u043E\u0431\u0441\u0442\u0432\u043E\u0432\u0430\u0432\u0448\u0438\u0439 \u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044E \u00AB\u0417\u043E\u043B\u043E\u0442\u043E\u0433\u043E \u0432\u0435\u043A\u0430 \u043D\u0430\u0443\u0447\u043D\u043E\u0439 \u0444\u0430\u043D\u0442\u0430\u0441\u0442\u0438\u043A\u0438\u00BB."@ru ,
+		"John Wood Campbell, Jr. (Newark (New Jersey), 8 juni 1910 - Mountainside (New Jersey), 11 juli 1971) was de meest invloedrijke redacteur in de geschiedenis van de sciencefiction. Vanaf 1938 tot zijn dood leidde hij het SF-tijdschrift Astounding Science Fiction, hernoemd naar Analog Science Fiction in 1960. Hij ontdekte niet alleen nieuwe schrijvers, maar voorzag hen ook vaak met idee\u00EBn voor verhalen. Hij publiceerde de eerste verhalen van Robert A. Heinlein, A.E. van Vogt, L. Sprague de Camp en vele anderen en ondersteunde Isaac Asimov sterk. Hij was ook redacteur van het fantasy tijdschrift Unknown (later Unknown Worlds) van 1939 tot 1943. Campbell schreef ook zelf SF. In het begin van de jaren dertig van de twintigste eeuw betrof dat voornamelijk space opera romans. Later schreef hij wat meer genuanceerde verhalen, zoals Twilight en Forgetfulness onder het pseudoniem \"Don A. Stuart\" (naar de naam van zijn toenmalige vrouw, Dona Stuart). Zijn bekendste korte verhaal is Who Goes There? over een groep Antarcticaonderzoekers die een buitenaards ruimtevoertuig ontdekken. Dit verhaal werd verfilmd als The Thing From Another World (1951), als The Thing in 1982 en als The Thing in 2011. In 1949 liet hij de invloedrijke roman The Incredible Planet het licht zien. De John W. Campbell Memorial Award for Best Science Fiction Novel en de John W. Campbell Award for Best New Writer werden ingesteld om hem te eren."@nl ,
+		"La sua fama \u00E8 legata soprattutto alla rivista Astounding Science Fiction, che diresse dalla fine del 1937 alla propria morte, inaugurando la cosiddetta \"epoca d'oro\" della fantascienza che caratterizz\u00F2 gli anni quaranta e cinquanta del Novecento."@it ,
+		"\u7D04\u7FF0\u00B7W\u00B7\u574E\u8C9D\u723E\uFF08John Wood Campbell\uFF09\uFF081910\u5E746\u67088\u65E5- 1971\u5E747\u670811\u65E5\uFF09\u662F\u7F8E\u570B\u79D1\u5E7B\u5C0F\u8AAA\u4F5C\u5BB6\u548C\u7DE8\u8F2F\u3002\u5F9E1937\u5E74\u5E95\u76F4\u5230\u4ED6\u53BB\u4E16\uFF0C\u7D04\u7FF0\u00B7W\u00B7\u574E\u8C9D\u723E\u70BA\u300A\u9A5A\u4EBA\u7684\u79D1\u5E7B\u300B\uFF08\u5F8C\u4F86\u88AB\u7A31\u70BA\u300A\u6A21\u64EC\u79D1\u5E7B\u5C0F\u8AAA\u548C\u4E8B\u5BE6\u300B\uFF09\u4E3B\u7DE8\uFF0C\u4ED6\u5851\u9020\u6240\u8B02\u7684\u79D1\u5E7B\u5C0F\u8AAA\u9EC3\u91D1\u6642\u4EE3\u3002 \u827E\u85A9\u514B\u00B7\u963F\u897F\u83AB\u592B\u7A31\u574E\u8C9D\u723E\u70BA\u201C\u6709\u53F2\u4EE5\u4F86\u6700\u5F37\u5927\u7684\u79D1\u5E7B\u5C0F\u8AAA\u529B\u91CF\uFF0C\u4ED6\u4E3B\u7DE8\u7684\u7B2C\u4E00\u500B\u5341\u5E74\uFF0C\u5B8C\u5168\u4F54\u4E3B\u5C0E\u8A72\u9818\u57DF\u3002\u201D"@zh ,
+		"John Wood Campbell, Jr. (Newark, 8 de junho de 1910 \u2014 Mountainside, 11 de julho de 1971) foi um escritor e editor de fic\u00E7\u00E3o cient\u00EDfica estadunidense. Como escritor, utilizou seu pr\u00F3prio nome para escrever space operas e, sob o pseud\u00F4nimo de Don A. Stuart, hist\u00F3rias de conte\u00FAdo menos pulp. Todavia, a principal contribui\u00E7\u00E3o de Campbell para o campo da fic\u00E7\u00E3o cient\u00EDfica foi seu trabalho como editor da Astounding Science Fiction, posto que ele reteve de fins de 1937 at\u00E9 a data de sua morte. Neste papel, ele \u00E9 geralmente creditado como tendo ajudado a criar a chamada Idade de Ouro da Fic\u00E7\u00E3o Cient\u00EDfica, a qual teria come\u00E7ado com o n\u00FAmero de julho de 1939 da Astounding. Isaac Asimov, em sua autobiografia, chama Campbell de \"a mais poderosa for\u00E7a de toda a fic\u00E7\u00E3o cient\u00EDfica, e em seus primeiros dez anos de editoria, dominou completamente o campo\". Todavia, na \u00E9poca de sua s\u00FAbita e inesperada morte, ap\u00F3s 34 anos ao leme da Astounding, sua personalidade bizarra e suas exig\u00EAncias editoriais ocasionalmente exc\u00EAntricas haviam provocado tal estranhamento entre um bom n\u00FAmero de seus mais ilustres escritores, como Asimov e Robert A. Heinlein, que h\u00E1 muito eles j\u00E1 haviam deixado de lhe submeter novos trabalhos."@pt ,
+		"John Wood Campbell Jr. (* 8. Juni 1910 in Newark, New Jersey; \u2020 11. Juli 1971) war ein US-amerikanischer Science-Fiction-Schriftsteller und -Herausgeber."@de ;
+	dbo:thumbnail	<http://commons.wikimedia.org/wiki/Special:FilePath/Firma_Campbell.png?width=300> ;
+	dbo:birthDate	"1910-06-08"^^xsd:date ,
+		"1910-6-8"^^xsd:date ;
+	dbo:deathDate	"1971-7-11"^^xsd:date ,
+		"1971-07-11"^^xsd:date ;
+	dbo:deathPlace	<http://dbpedia.org/resource/Mountainside,_New_Jersey> ;
+	dbo:wikiPageRevisionID	742291580 ;
+	dbo:birthPlace	<http://dbpedia.org/resource/Newark,_New_Jersey> ;
+	dbo:wikiPageID	16326 .
+@prefix ns21:	<http://www.w3.org/2006/03/wn/wn20/instances/> .
+<http://dbpedia.org/resource/John_W._Campbell>	dbp:wordnet_type	ns21:synset-writer-noun-1 ;
+	dbo:activeYearsEndYear	"1971"^^xsd:gYear ;
+	dbp:occupation	"Magazine editor, writer"^^rdf:langString ;
+	dbp:type	"author"^^rdf:langString ;
+	dbo:almaMater	dbr:MIT ,
+		dbr:Duke_University ;
+	dbp:name	"John W. Campbell"^^rdf:langString .
+<http://dbpedia.org/resource/John_W._Campbell,_Jr.>	dbo:wikiPageRedirects	<http://dbpedia.org/resource/John_W._Campbell> .
+<http://en.wikipedia.org/wiki/John_W._Campbell>	foaf:primaryTopic	<http://dbpedia.org/resource/John_W._Campbell> .
+dbr:Jerry_Pournelle	dbo:influencedBy	<http://dbpedia.org/resource/John_W._Campbell> .
+dbr:The_Ultimate_Weapon	dbo:author	<http://dbpedia.org/resource/John_W._Campbell> .
+<http://dbpedia.org/resource/Unknown_(magazine)>	dbo:editor	<http://dbpedia.org/resource/John_W._Campbell> .
+<http://dbpedia.org/resource/Twilight_(Campbell_short_story)>	dbo:author	<http://dbpedia.org/resource/John_W._Campbell> .
+dbr:From_Unknown_Worlds	dbo:author	<http://dbpedia.org/resource/John_W._Campbell> .
+<http://dbpedia.org/resource/Who_Goes_There%3F_and_Other_Stories>	dbo:author	<http://dbpedia.org/resource/John_W._Campbell> .

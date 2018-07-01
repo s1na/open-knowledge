@@ -23,7 +23,7 @@ contract('Graph', async (accounts) => {
 
   it('should set root correctly', async () => {
     let hex = '0x01711220c19a797fa1fd590cd2e5b42d1cf5f246e29b91684e2f87404b81dc345c7a56a0'
-    let tx = await defaultG.setRoot(hex)
+    await defaultG.setRoot(hex)
     let root = await defaultG.root.call()
     assert.equal(root, hex)
   })
@@ -31,7 +31,7 @@ contract('Graph', async (accounts) => {
   it('should check owner when setting root', async () => {
     let hex = '0x017112200d511ee9a3ab4e52e8e2bc40fd2669d9c44b89164107e9898cd9698c1506c5aa'
     try {
-      let tx = await defaultG.setRoot(hex, { from: accounts[1] })
+      await defaultG.setRoot(hex, { from: accounts[1] })
       assert.fail('Expected revert not received')
     } catch (e) {
       const revertFound = e.message.search('revert') >= 0
@@ -40,7 +40,7 @@ contract('Graph', async (accounts) => {
   })
 
   it('should be able to transfer ownership', async () => {
-    let tx = await defaultG.transferOwnership(accounts[1])
+    await defaultG.transferOwnership(accounts[1])
     let o = await defaultG.owner()
     assert.equal(o, accounts[1])
   })

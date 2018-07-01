@@ -5,17 +5,17 @@ import _ from 'lodash'
 import Dag from './dag'
 
 export default class Store {
-  constructor(ipfs, root) {
+  constructor (ipfs, root) {
     this.ipfs = ipfs
     this.root = root
     this.dag = new Dag(ipfs, root)
   }
 
-  setRoot(r) {
+  setRoot (r) {
     this.root = r
   }
 
-  async addTriples(triples) {
+  async addTriples (triples) {
     let diff = { spo: {}, sop: {}, pso: {}, pos: {}, osp: {}, ops: {} }
     for (let i in triples) {
       let triple = triples[i]
@@ -50,7 +50,7 @@ export default class Store {
     return cid
   }
 
-  async getTriples(s, p, o, offset=0, limit=10) {
+  async getTriples (s, p, o, offset = 0, limit = 10) {
     ({ s, p, o } = this._sanitizeTriple(s, p, o))
 
     let els = { s, p, o }
@@ -77,7 +77,7 @@ export default class Store {
     return res.slice(offset, limit)
   }
 
-  async _loopIndex(path, fixed, variable) {
+  async _loopIndex (path, fixed, variable) {
     if (variable.length === 0) {
       return [this._decodeTriple(fixed.s, fixed.p, fixed.o)]
     }
@@ -97,7 +97,7 @@ export default class Store {
       let r = await this._loopIndex(
         path + '/' + k,
         Object.assign({}, fixed, { [variable[0]]: k }),
-        variable.slice(1),
+        variable.slice(1)
       )
 
       res = res.concat(r)
@@ -106,13 +106,13 @@ export default class Store {
     return res
   }
 
-  _addToDiff(i0, k0, k1, k2) {
+  _addToDiff (i0, k0, k1, k2) {
     let i1 = i0[k0] || (i0[k0] = {})
     let i2 = i1[k1] || (i1[k1] = {})
     i2[k2] = true
   }
 
-  _sanitizeTriple(s, p, o) {
+  _sanitizeTriple (s, p, o) {
     s = typeof s === 'string' ? encodeURIComponent(s) : s
     p = typeof p === 'string' ? encodeURIComponent(p) : p
     o = typeof o === 'string' ? encodeURIComponent(o) : o
@@ -120,7 +120,7 @@ export default class Store {
     return { s, p, o }
   }
 
-  _decodeTriple(s, p, o) {
+  _decodeTriple (s, p, o) {
     s = decodeURIComponent(s)
     p = decodeURIComponent(p)
     o = decodeURIComponent(o)
