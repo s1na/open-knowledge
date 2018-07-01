@@ -3,17 +3,19 @@
 const ipfsAPI = require('ipfs-api')
 const Web3 = require('web3')
 
-const OpenKnowledge = require('../../dist/open-knowledge.cjs.js')
-const GraphRegistry = require('../../build/contracts/GraphRegistry.json')
+const OpenKnowledge = require('../../dist/open-knowledge.cjs.js').OpenKnowledge
+const GraphRegistry = require('../../dist/open-knowledge.cjs.js').GraphRegistry
+const GraphRegistryContract = require('../../build/contracts/GraphRegistry.json')
 
 const ipfs = ipfsAPI('/ip4/0.0.0.0/tcp/5001')
 const web3 = new Web3(new Web3.providers.WebsocketProvider('ws://localhost:8545'))
 
-const GRAddr = GraphRegistry.networks['dev'].address
-const GRAbi = GraphRegistry.abi
-const graphRegistry = new web3.eth.Contract(GRAbi, GRAddr)
+const GRAddr = GraphRegistryContract.networks['dev'].address
+const GRAbi = GraphRegistryContract.abi
+const contract = new web3.eth.Contract(GRAbi, GRAddr)
+const registry = new GraphRegistry(web3, contract)
 
-const ok = new OpenKnowledge(ipfs, web3, graphRegistry)
+const ok = new OpenKnowledge(ipfs, registry)
 ok.init().then(async () => {
 //  console.log(await ok.graphManagers.default.store.getTriples(null, 'http://dbpedia.org/ontology/author', null, 0, 1))
 //  console.log(await ok.graphManagers.default.store.getTriples(null, null, null, 1, 3))
@@ -36,7 +38,7 @@ ok.init().then(async () => {
         SELECT ?s
         FROM <openknowledge:test>
         {
-          dbr:OpenShift dbo:programmingLanguage ?o.
+          { dbr:OpenShift dbo:programmingLanguage ?o } UNION { dbr:OpenStack dbo:programmingLanguage ?o }
           ?s dbo:programmingLanguage ?o
         } LIMIT 15
       `)

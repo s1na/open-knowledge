@@ -12,8 +12,8 @@ import CatalogPage from './components/CatalogPage.vue'
 import ipfsAPI from 'ipfs-api'
 import Web3 from 'web3'
 
-import OpenKnowledge from '../../../dist/open-knowledge.esm.js'
-import GraphRegistry from '../../../build/contracts/GraphRegistry.json'
+import { OpenKnowledge, GraphRegistry } from '../../../dist/open-knowledge.esm.js'
+import GraphRegistryContract from '../../../build/contracts/GraphRegistry.json'
 
 const ipfs = ipfsAPI('/ip4/127.0.0.1/tcp/5001')
 
@@ -24,10 +24,11 @@ const ipfs = ipfsAPI('/ip4/127.0.0.1/tcp/5001')
 }*/
 
 const web3 = new Web3(new Web3.providers.WebsocketProvider('ws://localhost:8545'))
-const GRAddr = GraphRegistry.networks['dev'].address
-const GRAbi = GraphRegistry.abi
-const graphRegistry = new web3.eth.Contract(GRAbi, GRAddr)
-const ok = new OpenKnowledge(ipfs, web3, graphRegistry)
+const GRAddr = GraphRegistryContract.networks['dev'].address
+const GRAbi = GraphRegistryContract.abi
+const contract = new web3.eth.Contract(GRAbi, GRAddr)
+const registry = new GraphRegistry(web3, contract)
+const ok = new OpenKnowledge(ipfs, registry)
 
 ok.init().then(async () => {
   Vue.config.productionTip = false

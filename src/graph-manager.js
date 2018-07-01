@@ -7,9 +7,9 @@ import Graph from './graph'
 import FragmentsClient from './fragments-client'
 
 export default class GraphManager {
-  constructor(ipfs, web3, contract) {
+  constructor(ipfs, graph) {
     this.ipfs = ipfs
-    this.graph = new Graph(web3, contract)
+    this.graph = graph
   }
 
   async init() {
