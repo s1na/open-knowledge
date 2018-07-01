@@ -1,8 +1,10 @@
 pragma solidity ^0.4.23;
 
+import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
+
 import "./Graph.sol";
 
-contract GraphRegistry {
+contract GraphRegistry is Ownable {
   event NewGraph(
     address addr
   );

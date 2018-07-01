@@ -38,4 +38,10 @@ contract('Graph', async (accounts) => {
       assert(revertFound, `Expected "revert", got ${e} instead`)
     }
   })
+
+  it('should be able to transfer ownership', async () => {
+    let tx = await defaultG.transferOwnership(accounts[1])
+    let o = await defaultG.owner()
+    assert.equal(o, accounts[1])
+  })
 })
