@@ -23,6 +23,8 @@ jobs:
 
       - run: yarn install
 
+      - run: yarn add web3
+
       - save_cache:
           paths:
             - node_modules
