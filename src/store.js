@@ -6,7 +6,6 @@ import Dag from './dag'
 
 export default class Store {
   constructor (ipfs, root) {
-    this.ipfs = ipfs
     this.root = root
     this.dag = new Dag(ipfs)
   }

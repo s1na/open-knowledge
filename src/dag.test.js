@@ -1,7 +1,8 @@
 import CID from 'cids'
 
-import Dag from './dag'
 import { ipfsMock, testCID } from 'ipfs'
+import Dag from './dag'
+import ipfsMem from './ipfs-mem'
 
 let d = new Dag(ipfsMock)
 
@@ -80,5 +81,15 @@ test('should merge nested diff', async () => {
     test: {
       '/': cid
     }
+  })
+})
+
+describe('should work with in-memory ipfs mock', async () => {
+  beforeAll(async () => { await ipfsMem.dag.init() })
+  test('should put and get object', async () => {
+    let d = new Dag(ipfsMem)
+    let cid = await d.put({ test: true })
+    let res = await d.get(cid)
+    expect(res).toEqual({ test: true })
   })
 })
