@@ -23,7 +23,9 @@ export default class Dag {
   }
 
   async put (obj) {
-    return (await this.ipfs.dag.put(obj, { format: 'dag-cbor', hashAlg: 'sha2-256' })).toBaseEncodedString()
+    let cid = (await this.ipfs.dag.put(obj, { format: 'dag-cbor', hashAlg: 'sha2-256' })).toBaseEncodedString()
+    this._cacheSet(cid, obj)
+    return cid
   }
 
   async merge (path, diff) {
@@ -73,5 +75,9 @@ export default class Dag {
     }
 
     this.cache[cid] = v
+  }
+
+  _cacheClear () {
+    this.cache = {}
   }
 }
