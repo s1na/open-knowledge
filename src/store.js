@@ -8,7 +8,7 @@ export default class Store {
   constructor (ipfs, root) {
     this.ipfs = ipfs
     this.root = root
-    this.dag = new Dag(ipfs, root)
+    this.dag = new Dag(ipfs)
   }
 
   setRoot (r) {
@@ -104,6 +104,18 @@ export default class Store {
     }
 
     return res
+  }
+
+  async _getState (path = this.root) {
+    let state = await this.dag.get(path)
+
+    for (let k in state) {
+      if (typeof state[k] === 'object') {
+        state[k] = await this.getState(path + '/' + k)
+      }
+    }
+
+    return state
   }
 
   _addToDiff (i0, k0, k1, k2) {
