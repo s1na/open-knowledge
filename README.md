@@ -35,8 +35,8 @@ and remain flexible, they have been defined as peer dependencies, and therefore 
 separately.
 
 ```shell
-$ npm install ipfs-api
-$ npm install web3
+$ yarn add ipfs-api
+$ yarn add web3
 ```
 
 Import the library in your code and instantiate an object according to the node example.
@@ -107,7 +107,7 @@ $ ganache-cli -i dev
 $ yarn contracts:deploy
 
 # To build library, the result will be in dist/
-$ npm run build
+$ yarn build
 
 # To run node examples
 $ cd example/node
