@@ -11,8 +11,8 @@ Overview
 --------
 
 OpenKnowledge (OK) provides an easy way for developers to query openly available linked data,
-such as directors and actors of movies (from dbpedia) or results of bioinformatics studies,
-in their (decentralized) applications.
+such as directors and actors of movies (from dbpedia), name of all cities in a country,
+or results of bioinformatics studies, in their (decentralized) applications.
 
 On the other hand it enables data producers to publish their data directly to subscribers,
 without a central authority, and without the need for maintaining servers, benefiting from
@@ -30,15 +30,21 @@ First, install the library via npm or yarn:
 $ yarn add open-knowledge
 ```
 
-IPFS and web3 are also peer dependencies, and should be installed:
+OK depends on IPFS and web3 (for communicating with Ethereum), but in order not to make assumptions,
+and remain flexible, they have been defined as peer dependencies, and therefore should be installed
+separately.
 
 ```shell
 $ npm install ipfs-api
 $ npm install web3
 ```
 
-Import the library in your code and instantiate an object according to the node example. Then
-you can query the data:
+Import the library in your code and instantiate an object according to the node example.
+If you're developing a dapp, chances are, you already have an IPFS and web3 object. Pass them
+to `OpenKnowledge` when instantiating. If not, have a look at the [examples](example/) to see how to initialize
+IPFS and web3.
+
+At this point, you can easily query already published data:
 
 ```javascript
 let res = await ok.execute(`
@@ -52,6 +58,24 @@ let res = await ok.execute(`
   } LIMIT 15
 `)
 ```
+
+In order to publish data, you need to have write permissions in a knowledge graph. You can
+create a knowledge graph of your own, in which case you become the owner of the graph. This operation
+requires gas.
+
+```javascript
+let manager = await ok.newGraphManager('myGraph')
+```
+
+Then you can add triples to the knowledge graph, either by calling `addTriples` on the `GraphManager` directly
+or by passing the graph name along with the triples to the `OpenKnowledge` instance.
+
+```javascript
+let tx = await ok.addTriples([['subject', 'property', 'object']], 'myGraph')
+```
+
+Please note that OK does not offer database functionalities and is not suitable for dynamic and fast-changing data.
+Morever, the data is published unencrypted and can be accessed by everyone.
 
 Development Setup
 -----------------
