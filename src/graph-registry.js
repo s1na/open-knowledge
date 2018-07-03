@@ -12,7 +12,7 @@ export default class GraphRegistry {
 
   async getGraphsCount () {
     let c = await this.contract.methods.getGraphsCount().call()
-    return c
+    return parseInt(c)
   }
 
   async getGraphName (i) {
