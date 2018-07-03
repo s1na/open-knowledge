@@ -1,5 +1,6 @@
 'use strict'
 
+import N3 from 'n3'
 import { Parser as SparqlParser } from 'sparqljs'
 
 import GraphManager from './graph-manager'
@@ -99,5 +100,24 @@ export default class OpenKnowledge {
     }
 
     return res
+  }
+
+  parse (doc) {
+    return new Promise((resolve, reject) => {
+      const parser = N3.Parser()
+      let triples = []
+
+      parser.parse(doc, (err, quad, prefixes) => {
+        if (err) {
+          return reject(err)
+        }
+
+        if (quad === null) {
+          return resolve(triples)
+        }
+
+        triples.push([quad.subject.value, quad.predicate.value, quad.object.value])
+      })
+    })
   }
 }

@@ -82,7 +82,6 @@ export default class Store {
     }
 
     let res = []
-    console.log('Getting index ', path)
     let index = await this.dag.get(path)
     if (index === null) {
       console.log('Index not found')

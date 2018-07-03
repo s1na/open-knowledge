@@ -33,7 +33,6 @@ TriplePatternIterator.prototype._createTransformer = function (bindings, options
   // Retrieve the fragment that corresponds to the bound pattern.
   // example: retrieve the fragment for '?s rdf:type dbpedia-owl:City'
   var fragment = this._client.getFragmentByPattern(boundPattern);
-  Logger.logFragment(this, fragment, bindings);
   fragment.on('error', function (error) { Logger.warning(error.message); });
 
   // Transform the fragment's triples into bindings for the triple pattern.

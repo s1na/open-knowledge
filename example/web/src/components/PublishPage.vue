@@ -19,8 +19,6 @@
 </template>
 
 <script>
-import N3 from 'n3'
-
 export default {
   props: [
     'ok'
@@ -35,27 +33,8 @@ export default {
   },
   methods: {
     onSubmit: async function () {
-      let triples = []
-      let n = 10
-      const parser = N3.Parser()
-      let res = parser.parse(this.form.doc, async (err, quad, prefixes) => {
-        if (err) {
-          throw new Error(err)
-        }
-
-        if (quad === null) {
-          console.log('Finished parsing quads, attemping batch insert')
-          if (n >= 0) {
-            triples = triples.slice(0, 5)
-          }
-          let tx = await this.ok.addTriples(triples, this.form.graph)
-          console.log('TX:', tx)
-
-          return
-        }
-
-        triples.push([quad.subject.value, quad.predicate.value, quad.object.value])
-      })
+      let triples = await this.ok.parse(this.form.doc)
+      await this.ok.addTriples(triples, this.form.graph)
     },
   }
 }
