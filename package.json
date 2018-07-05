@@ -30,7 +30,8 @@
     "lodash": "^4.17.10",
     "n3": "^1.0.0-beta.1",
     "openzeppelin-solidity": "^1.10.0",
-    "sparqljs": "^2.0.3"
+    "sparqljs": "^2.0.3",
+    "zos-lib": "^1.2.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",

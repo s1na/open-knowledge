@@ -1,11 +1,12 @@
 pragma solidity ^0.4.23;
 
 import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
+import "zos-lib/contracts/migrations/Migratable.sol";
 
 import "./Graph.sol";
 
 
-contract GraphRegistry is Ownable {
+contract GraphRegistry is Ownable, Migratable {
   event NewGraph(
     address addr
   );
@@ -13,7 +14,7 @@ contract GraphRegistry is Ownable {
   bytes32[] public graphIndices;
   mapping(bytes32 => address) public graphs;
 
-  constructor() public {
+  function initialize() isInitializer("GraphRegistry", "0") public {
     newGraph("default");
   }
 
