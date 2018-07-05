@@ -7,6 +7,7 @@ contract('GraphRegistry', async (accounts) => {
 
   before(async () => {
     inst = await GraphRegistry.deployed()
+    await inst.initialize()
   })
 
   it('should have msg.sender as owner', async () => {
@@ -32,7 +33,8 @@ contract('GraphRegistry', async (accounts) => {
 
   it('should create new graph', async () => {
     let tx = await inst.newGraph('test', { from: accounts[0] })
-    let addr = tx.logs[0].args.addr
+    console.log(tx.logs)
+    let addr = tx.logs[1].args.addr
 
     let res = await inst.graphs.call('test')
     assert.equal(addr, res)

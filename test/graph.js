@@ -7,6 +7,7 @@ contract('Graph', async (accounts) => {
 
   before(async () => {
     registry = await GraphRegistry.deployed()
+    await registry.initialize()
     let defaultAddr = await registry.graphs.call('default')
     defaultG = await Graph.at(defaultAddr)
   })

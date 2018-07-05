@@ -18,6 +18,8 @@ beforeAll(async () => {
   let graphRegistryContract = new web3.eth.Contract(GraphRegistryContract.abi)
   let gas = await graphRegistryContract.deploy({ data: GraphRegistryContract.bytecode }).estimateGas({ from: accounts[0] })
   let contract = await graphRegistryContract.deploy({ data: GraphRegistryContract.bytecode }).send({ from: accounts[0], gas })
+  gas = await contract.methods.initialize().estimateGas({ from: accounts[0] })
+  await contract.methods.initialize().send({ from: accounts[0], gas })
   registry = new GraphRegistry(web3, contract)
   ok = new OpenKnowledge(ipfs, registry)
   await ok.init()

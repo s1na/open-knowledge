@@ -21,7 +21,8 @@ contract GraphRegistry is Ownable, Migratable {
   function newGraph(bytes32 _name) public returns(address addr) {
     require(graphs[_name] == 0);
 
-    Graph g = new Graph(msg.sender);
+    Graph g = new Graph();
+    g.initialize(msg.sender);
     graphs[_name] = g;
     graphIndices.push(_name);
     emit NewGraph(g);

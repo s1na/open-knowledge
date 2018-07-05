@@ -17,6 +17,8 @@ beforeAll(async () => {
   let graphRegistryContract = new web3.eth.Contract(abi)
   let gas = await graphRegistryContract.deploy({ data: bytecode }).estimateGas({ from: accounts[0] })
   contract = await graphRegistryContract.deploy({ data: bytecode }).send({ from: accounts[0], gas })
+  gas = await contract.methods.initialize().estimateGas({ from: accounts[0] })
+  await contract.methods.initialize().send({ from: accounts[0], gas })
   r = new GraphRegistry(web3, contract)
 })
 
