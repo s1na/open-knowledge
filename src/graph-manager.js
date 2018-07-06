@@ -32,6 +32,10 @@ export default class GraphManager {
     return tx
   }
 
+  getTriples (s, p, o, offset = 0, limit = 10) {
+    return this.store.getTriples(s, p, o, offset, limit)
+  }
+
   execute (q) {
     return new Promise((resolve, reject) => {
       let fragmentsClient = new FragmentsClient(this.store)

@@ -46,3 +46,14 @@ test('should add new graph manager', async () => {
   let managers = await ok.getGraphs()
   expect(managers).toHaveProperty('test')
 })
+
+test('should add triples for graph', async () => {
+  let tx = await ok.addTriples([['s', 'p', 'o']], 'test')
+  expect(tx === null).toBe(false)
+})
+
+test('should get triple pattern for graph', async () => {
+  let res = await ok.getTriples(null, null, null, 'test')
+  expect(res).toHaveLength(1)
+  expect(res[0]).toEqual(['s', 'p', 'o'])
+})

@@ -36,6 +36,12 @@ test('should add triples', async () => {
   expect(await graph.root()).toEqual(await m.store.root)
 })
 
+test('should get triple pattern', async () => {
+  let res = await m.getTriples(null, null, 'http://example.com/o')
+  expect(res).toHaveLength(1)
+  expect(res[0]).toEqual(['http://example.com/s', 'http://example.com/p', 'http://example.com/o'])
+})
+
 test('should execute query', async () => {
   let q = 'PREFIX : <http://example.com/> SELECT * WHERE { ?s :p :o }'
   let res = await m.execute(q)

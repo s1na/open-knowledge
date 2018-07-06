@@ -63,6 +63,16 @@ export default class OpenKnowledge {
     return g.addTriples(triples)
   }
 
+  async getTriples (s, p, o, graph = 'default', offset = 0, limit = 10) {
+    let g = await this.getGraphManager(graph)
+    if (g === null) {
+      console.log('Graph', g, 'not found')
+      return []
+    }
+
+    return g.getTriples(s, p, o, offset, limit)
+  }
+
   async execute (query) {
     let graph = 'default'
     let parser = new SparqlParser()
