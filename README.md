@@ -44,7 +44,13 @@ If you're developing a dapp, chances are, you already have an IPFS and web3 obje
 to `OpenKnowledge` when instantiating. If not, have a look at the [examples](example/) to see how to initialize
 IPFS and web3.
 
-At this point, you can easily query already published data:
+At this point, it's possible to retrieve a list of triples adhering to a pattern:
+
+```javascript
+let res = await ok.getTriples(null, 'http://dbpedia.org/ontology/influenced', null, 'dbpedia')
+```
+
+Triple patterns suffice in many cases, but for complex queries, you can write a SPARQL query and execute it:
 
 ```javascript
 let res = await ok.execute(`
@@ -57,6 +63,24 @@ let res = await ok.execute(`
     ?s dbo:influenced ?o
   } LIMIT 15
 `)
+```
+
+The two previous examples only return triples located in one knowledge graph. You can use the full power
+of linked data by executing queries over multiple knowledge graphs:
+
+```javascript
+let q = `
+  PREFIX dbr: <http://dbpedia.org/resource/>
+  PREFIX dbo: <http://dbpedia.org/ontology/>
+  SELECT *
+  {
+    dbr:Lucky_Starr_and_the_Big_Sun_of_Mercury dbo:author ?o.
+    ?s dbo:influenced ?o.
+    ?p dbo:wikiPageRedirects ?s
+  } LIMIT 15
+`
+
+let res = await ok.executeFederated(q, ['default', 'dbpedia'])
 ```
 
 In order to publish data, you need to have write permissions in a knowledge graph. You can
