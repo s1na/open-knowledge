@@ -4,6 +4,8 @@ import N3 from 'n3'
 import { Parser as SparqlParser } from 'sparqljs'
 
 import GraphManager from './graph-manager'
+import FederatedFragmentsClient from './federated-fragments-client'
+import SparqlIterator from './ldf/sparql/SparqlIterator'
 
 export default class OpenKnowledge {
   constructor (ipfs, registry) {
@@ -97,6 +99,28 @@ export default class OpenKnowledge {
     }
 
     return g.execute(query)
+  }
+
+  executeFederated (query, graphs = ['default']) {
+    return new Promise(async (resolve, reject) => {
+      let managers = []
+      for (let i = 0; i < graphs.length; i++) {
+        let manager = await this.getGraphManager(graphs[i])
+        if (manager === null) {
+          throw new Error('Graph manager not found')
+        }
+
+        managers.push(manager)
+      }
+
+      let fragmentsClient = new FederatedFragmentsClient(managers)
+      let stream = new SparqlIterator(query, { fragmentsClient })
+      let results = []
+
+      stream.on('data', (res) => { results.push(res) })
+      stream.on('end', () => { resolve(results) })
+      stream.on('error', (err) => { reject(err) })
+    })
   }
 
   async getGraphs () {
