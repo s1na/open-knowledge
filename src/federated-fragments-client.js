@@ -93,7 +93,6 @@ function CompoundFragment (fragments, options) {
 
     // Process the end of the fragment
     var fragmentDone = _.once(function () {
-      console.log('fragment end')
       // Remove the fragment from the queue
       delete fragments[index]
       // If no fragments are pending anymore, the iterator ends

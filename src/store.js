@@ -15,38 +15,8 @@ export default class Store {
   }
 
   async addTriples (triples) {
-    let diff = { spo: {}, sop: {}, pso: {}, pos: {}, osp: {}, ops: {} }
-    for (let i in triples) {
-      let triple = triples[i]
-      let { s, p, o } = this._sanitizeTriple(triple[0], triple[1], triple[2])
-
-      // Skip if exists
-      let item = await this.dag.get(this.root + '/spo/' + s + '/' + p)
-      if (item !== null && o in item) {
-        console.log('triple exists, skipping')
-        continue
-      }
-
-      this._addToDiff(diff.spo, s, p, o)
-      this._addToDiff(diff.sop, s, o, p)
-      this._addToDiff(diff.pso, p, s, o)
-      this._addToDiff(diff.pos, p, o, s)
-      this._addToDiff(diff.osp, o, s, p)
-      this._addToDiff(diff.ops, o, p, s)
-    }
-
-    let cid = await this.dag.merge(this.root, diff)
-    if (cid === null) {
-      console.log('merge failed')
-      return null
-    }
-
-    if (this.root === cid) {
-      console.log('cid same as root')
-      return null
-    }
-
-    return cid
+    let diff = await this.computeDiff(triples)
+    return this.mergeDiff(diff)
   }
 
   async getTriples (s, p, o, offset = 0, limit = 10) {
@@ -74,6 +44,49 @@ export default class Store {
 
     let res = await this._loopIndex(path, fixedEls, variable)
     return res.slice(offset, limit)
+  }
+
+  async mergeDiff (diff) {
+    let cid = await this.dag.merge(this.root, diff)
+    if (cid === null) {
+      console.log('merge failed')
+      return null
+    }
+
+    if (this.root === cid) {
+      console.log('cid same as root')
+      return null
+    }
+
+    return cid
+  }
+
+  async computeDiff (triples) {
+    let diff = { spo: {}, sop: {}, pso: {}, pos: {}, osp: {}, ops: {} }
+    for (let i in triples) {
+      let triple = triples[i]
+      let { s, p, o } = this._sanitizeTriple(triple[0], triple[1], triple[2])
+
+      // Skip if exists
+      let item = await this.dag.get(this.root + '/spo/' + s + '/' + p)
+      if (item !== null && o in item) {
+        console.log('triple exists, skipping')
+        continue
+      }
+
+      this._addToDiff(diff.spo, s, p, o)
+      this._addToDiff(diff.sop, s, o, p)
+      this._addToDiff(diff.pso, p, s, o)
+      this._addToDiff(diff.pos, p, o, s)
+      this._addToDiff(diff.osp, o, s, p)
+      this._addToDiff(diff.ops, o, p, s)
+    }
+
+    return diff
+  }
+
+  async putDiff (diff) {
+    return this.dag.put(diff)
   }
 
   async _loopIndex (path, fixed, variable) {

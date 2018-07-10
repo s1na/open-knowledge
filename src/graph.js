@@ -44,6 +44,31 @@ export default class Graph {
     return tx
   }
 
+  async diff () {
+    let hex = await this.contract.methods.diff().call()
+    return this._hexToCID(hex)
+  }
+
+  async setDiff (cid) {
+    let coinbase = await this.web3.eth.getCoinbase()
+    let owner = await this.owner()
+    if (coinbase.toLowerCase() !== owner.toLowerCase()) {
+      console.log('Coinbase account does not own Graph contract')
+      return null
+    }
+
+    let hex = this._cidToHex(cid)
+    let tx
+    try {
+      tx = await this.contract.methods.setDiff(hex).send({ from: coinbase })
+    } catch (e) {
+      console.log(e)
+      return null
+    }
+
+    return tx
+  }
+
   onRootUpdated (cb) {
     this.rootUpdatedSub = this.contract.events.RootUpdated()
     this.rootUpdatedSub.on('data', (ev) => {

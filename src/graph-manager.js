@@ -17,13 +17,27 @@ export default class GraphManager {
     this.graph.onRootUpdated((r) => this.store.setRoot(r))
   }
 
-  async addTriples (triples) {
+  async addTriples (triples, submitDiff = false) {
     if (!this.graph.isOwner()) {
       console.log('Coinbase account does not own Graph contract')
       return null
     }
 
-    let newRoot = await this.store.addTriples(triples)
+    let newRoot
+    if (submitDiff) {
+      let diff = await this.store.computeDiff(triples)
+      let diffCid = await this.store.putDiff(diff)
+      let diffTx = await this.graph.setDiff(diffCid)
+      if (diffTx === null) {
+        console.log('Failed to submit diff to graph contract')
+        return null
+      }
+
+      newRoot = await this.store.mergeDiff(diff)
+    } else {
+      newRoot = await this.store.addTriples(triples)
+    }
+
     if (newRoot === null) {
       return null
     }

@@ -22,6 +22,11 @@ contract('Graph', async (accounts) => {
     assert.equal(root, '0x017112200d511ee9a3ab4e52e8e2bc40fd2669d9c44b89164107e9898cd9698c1506c5aa')
   })
 
+  it('should have empty diff', async () => {
+    let diff = await defaultG.diff.call()
+    assert.equal(diff, '0x')
+  })
+
   it('should set root correctly', async () => {
     let hex = '0x01711220c19a797fa1fd590cd2e5b42d1cf5f246e29b91684e2f87404b81dc345c7a56a0'
     await defaultG.setRoot(hex)

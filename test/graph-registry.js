@@ -33,7 +33,6 @@ contract('GraphRegistry', async (accounts) => {
 
   it('should create new graph', async () => {
     let tx = await inst.newGraph('test', { from: accounts[0] })
-    console.log(tx.logs)
     let addr = tx.logs[1].args.addr
 
     let res = await inst.graphs.call('test')

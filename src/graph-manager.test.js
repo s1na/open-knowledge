@@ -36,6 +36,19 @@ test('should add triples', async () => {
   expect(await graph.root()).toEqual(await m.store.root)
 })
 
+test('should submit diff', async () => {
+  let tx = await m.addTriples([['http://example.com/foo', 'http://example.com/bar', 'http://example.com/baz']], true)
+  expect(tx).not.toBe(null)
+  expect(tx).toHaveProperty('events.RootUpdated.returnValues.root')
+  expect(await graph.root()).toEqual(await m.store.root)
+
+  let dcid = await graph.diff()
+  let diff = await m.store.dag.get(dcid)
+  expect(typeof diff).toBe('object')
+  expect(diff).toHaveProperty('spo')
+  expect(diff.spo).toEqual({ 'http%3A%2F%2Fexample.com%2Ffoo': { 'http%3A%2F%2Fexample.com%2Fbar': { 'http%3A%2F%2Fexample.com%2Fbaz': true } } })
+})
+
 test('should get triple pattern', async () => {
   let res = await m.getTriples(null, null, 'http://example.com/o')
   expect(res).toHaveLength(1)
