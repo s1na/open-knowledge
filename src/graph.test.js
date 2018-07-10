@@ -45,11 +45,33 @@ test('should have default root', async () => {
 test('should set new root', async () => {
   let n = 'zdpuAyTBnYSugBZhqJuLsNpzjmAjSmxDqBbtAqXMtsvxiN2v3'
   let tx = await g.setRoot(n)
-  expect(tx).toBeDefined()
+  expect(tx).not.toBe(null)
   expect(tx).toHaveProperty('events.RootUpdated.returnValues.root')
   expect(rootUpdatedMock).toHaveBeenCalledTimes(1)
   expect(rootUpdatedMock).toHaveBeenCalledWith(n)
 
   let r = await g.root()
   expect(r).toBe(n)
+})
+
+test('should get past roots', async () => {
+  let roots = await g.getPastRoots()
+  expect(roots).toHaveLength(1)
+  expect(roots[0]).toBe('zdpuAyTBnYSugBZhqJuLsNpzjmAjSmxDqBbtAqXMtsvxiN2v3')
+})
+
+test('should set diff', async () => {
+  let n = 'zdpuAsMGZ67AjBfzYY8UipuNmwpRnmfbXuh5cjacMeqTF9Y9H'
+  let tx = await g.setDiff(n)
+  expect(tx).not.toBe(null)
+  expect(tx).toHaveProperty('events.DiffUpdated.returnValues.diff')
+
+  let d = await g.diff()
+  expect(d).toBe(n)
+})
+
+test('should get past diffs', async () => {
+  let diffs = await g.getPastDiffs()
+  expect(diffs).toHaveLength(1)
+  expect(diffs[0]).toBe('zdpuAsMGZ67AjBfzYY8UipuNmwpRnmfbXuh5cjacMeqTF9Y9H')
 })

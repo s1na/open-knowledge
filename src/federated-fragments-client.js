@@ -152,4 +152,4 @@ CompoundFragment.prototype.toString = function () {
          _.map(this._fragments, function (f) { return f.toString() }).join(', ') + '}'
 }
 
-module.exports = FederatedFragmentsClient
+export default FederatedFragmentsClient

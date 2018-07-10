@@ -29,15 +29,39 @@ contract('Graph', async (accounts) => {
 
   it('should set root correctly', async () => {
     let hex = '0x01711220c19a797fa1fd590cd2e5b42d1cf5f246e29b91684e2f87404b81dc345c7a56a0'
-    await defaultG.setRoot(hex)
+    let tx = await defaultG.setRoot(hex)
+    assert.isNotNull()
+    assert.nestedInclude(tx, { 'logs[0].args.root': hex })
+
     let root = await defaultG.root.call()
     assert.equal(root, hex)
+  })
+
+  it('should set diff', async () => {
+    let hex = '0x0171122066f042697de42d72f8585d2138ecaa903c4913d57ab15653a049e7a0835fca1c'
+    let tx = await defaultG.setDiff(hex)
+    assert.isNotNull()
+    assert.nestedInclude(tx, { 'logs[0].args.diff': hex })
+
+    let diff = await defaultG.diff.call()
+    assert.equal(diff, hex)
   })
 
   it('should check owner when setting root', async () => {
     let hex = '0x017112200d511ee9a3ab4e52e8e2bc40fd2669d9c44b89164107e9898cd9698c1506c5aa'
     try {
       await defaultG.setRoot(hex, { from: accounts[1] })
+      assert.fail('Expected revert not received')
+    } catch (e) {
+      const revertFound = e.message.search('revert') >= 0
+      assert(revertFound, `Expected "revert", got ${e} instead`)
+    }
+  })
+
+  it('should check owner when setting diff', async () => {
+    let hex = '0x0171122066f042697de42d72f8585d2138ecaa903c4913d57ab15653a049e7a0835fca1c'
+    try {
+      await defaultG.setDiff(hex, { from: accounts[1] })
       assert.fail('Expected revert not received')
     } catch (e) {
       const revertFound = e.message.search('revert') >= 0

@@ -33,6 +33,6 @@ async function publishFile (ok, path, g, n = 10) {
     triples = triples.slice(0, n)
   }
 
-  await ok.addTriples(triples, g)
+  await ok.addTriples(triples, g, true)
   console.log('Added triples to', g)
 }

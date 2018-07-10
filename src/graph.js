@@ -1,6 +1,7 @@
 'use strict'
 
 import CID from 'cids'
+import _ from 'lodash'
 
 export default class Graph {
   constructor (web3, contract) {
@@ -44,6 +45,12 @@ export default class Graph {
     return tx
   }
 
+  async getPastRoots () {
+    let events = await this.contract.getPastEvents('RootUpdated', { fromBlock: 0, toBlock: 'latest' })
+    let roots = _.map(events, (e) => this._hexToCID(e.returnValues.root))
+    return roots
+  }
+
   async diff () {
     let hex = await this.contract.methods.diff().call()
     return this._hexToCID(hex)
@@ -67,6 +74,12 @@ export default class Graph {
     }
 
     return tx
+  }
+
+  async getPastDiffs () {
+    let events = await this.contract.getPastEvents('DiffUpdated', { fromBlock: 0, toBlock: 'latest' })
+    let diffs = _.map(events, (e) => this._hexToCID(e.returnValues.diff))
+    return diffs
   }
 
   onRootUpdated (cb) {

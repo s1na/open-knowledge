@@ -55,14 +55,14 @@ export default class OpenKnowledge {
     return manager
   }
 
-  async addTriples (triples, graph = 'default') {
+  async addTriples (triples, graph = 'default', submitDiff = false) {
     let g = await this.getGraphManager(graph)
     if (g === null) {
       console.log('Graph', g, 'not found')
       return null
     }
 
-    return g.addTriples(triples)
+    return g.addTriples(triples, submitDiff)
   }
 
   async getTriples (s, p, o, graph = 'default', offset = 0, limit = 10) {
