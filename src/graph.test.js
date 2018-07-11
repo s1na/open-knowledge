@@ -1,23 +1,14 @@
-import Ganache from 'ganache-core'
-import Web3 from 'web3'
-
 import Graph from './graph'
 import GraphContract from '../build/contracts/Graph.json'
+import { web3, deployContract } from './test-utils'
 
-const provider = Ganache.provider({})
-const web3 = new Web3(provider)
-let contract
 let accounts
 let g
 let rootUpdatedMock = jest.fn()
 
 beforeAll(async () => {
   accounts = await web3.eth.getAccounts()
-  let abi = GraphContract.abi
-  let bytecode = GraphContract.bytecode
-  let graphContract = new web3.eth.Contract(abi)
-  let gas = await graphContract.deploy({ data: bytecode, arguments: [accounts[0]] }).estimateGas({ from: accounts[0] })
-  contract = await graphContract.deploy({ data: bytecode, arguments: [accounts[0]] }).send({ from: accounts[0], gas })
+  let contract = await deployContract(GraphContract, null, accounts[0])
   g = new Graph(web3, contract)
   g.onRootUpdated(rootUpdatedMock)
 })

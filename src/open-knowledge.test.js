@@ -1,26 +1,16 @@
-import Ganache from 'ganache-core'
-import Web3 from 'web3'
-
 import OpenKnowledge from './open-knowledge'
 import GraphRegistry from './graph-registry'
 import GraphRegistryContract from '../build/contracts/GraphRegistry.json'
 import ipfs from './ipfs-mem'
+import { web3, deployContract } from './test-utils'
 
-let registry
 let ok
 
 beforeAll(async () => {
   await ipfs.dag.init()
 
-  const provider = Ganache.provider({})
-  const web3 = new Web3(provider)
-  let accounts = await web3.eth.getAccounts()
-  let graphRegistryContract = new web3.eth.Contract(GraphRegistryContract.abi)
-  let gas = await graphRegistryContract.deploy({ data: GraphRegistryContract.bytecode }).estimateGas({ from: accounts[0] })
-  let contract = await graphRegistryContract.deploy({ data: GraphRegistryContract.bytecode }).send({ from: accounts[0], gas })
-  gas = await contract.methods.initialize().estimateGas({ from: accounts[0] })
-  await contract.methods.initialize().send({ from: accounts[0], gas })
-  registry = new GraphRegistry(web3, contract)
+  let contract = await deployContract(GraphRegistryContract)
+  let registry = new GraphRegistry(web3, contract)
   ok = new OpenKnowledge(ipfs, registry)
   await ok.init()
 })

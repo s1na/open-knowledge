@@ -1,10 +1,8 @@
-import Ganache from 'ganache-core'
-import Web3 from 'web3'
-
 import GraphManager from './graph-manager'
 import Graph from './graph'
 import GraphContract from '../build/contracts/Graph.json'
 import ipfs from './ipfs-mem'
+import { web3, deployContract } from './test-utils'
 
 let graph
 let m
@@ -12,12 +10,8 @@ let m
 beforeAll(async () => {
   await ipfs.dag.init()
 
-  const provider = Ganache.provider({})
-  const web3 = new Web3(provider)
   let accounts = await web3.eth.getAccounts()
-  let graphContract = new web3.eth.Contract(GraphContract.abi)
-  let gas = await graphContract.deploy({ data: GraphContract.bytecode, arguments: [accounts[0]] }).estimateGas({ from: accounts[0] })
-  let contract = await graphContract.deploy({ data: GraphContract.bytecode, arguments: [accounts[0]] }).send({ from: accounts[0], gas })
+  let contract = await deployContract(GraphContract, null, accounts[0])
   graph = new Graph(web3, contract)
   m = new GraphManager(ipfs, graph)
 })

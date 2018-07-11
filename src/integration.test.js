@@ -2,14 +2,14 @@ import OpenKnowledge from './open-knowledge'
 import GraphRegistry from './graph-registry'
 import GraphRegistryContract from '../build/contracts/GraphRegistry.json'
 import ipfs from './ipfs-mem'
-import { deployContract, publishFile } from './test-utils'
+import { web3, deployContract, publishFile } from './test-utils'
 
 let ok
 
 describe('should perform basic query', () => {
   beforeAll(async () => {
     await ipfs.dag.init()
-    let { web3, contract } = await deployContract(GraphRegistryContract)
+    let contract = await deployContract(GraphRegistryContract)
     let registry = new GraphRegistry(web3, contract)
     ok = new OpenKnowledge(ipfs, registry)
     await ok.init()
@@ -40,7 +40,7 @@ describe('should perform basic query', () => {
 describe('should perform federated query', () => {
   beforeAll(async () => {
     await ipfs.dag.init()
-    let { web3, contract } = await deployContract(GraphRegistryContract)
+    let contract = await deployContract(GraphRegistryContract)
     let registry = new GraphRegistry(web3, contract)
     ok = new OpenKnowledge(ipfs, registry)
     await ok.init()
