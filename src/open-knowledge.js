@@ -25,7 +25,15 @@ export default class OpenKnowledge {
       return this.graphManagers[name]
     }
 
-    let graph = await this.registry.getGraph(name)
+    let version = null
+    let n = name
+    let parts = name.split(':')
+    if (parts.length === 2) {
+      n = parts[0]
+      version = parseInt(parts[1])
+    }
+
+    let graph = await this.registry.getGraph(n, version)
     if (graph === null) {
       return null
     }

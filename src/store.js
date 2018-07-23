@@ -19,7 +19,7 @@ export default class Store {
     return this.mergeDiff(diff)
   }
 
-  async getTriples (s, p, o, offset = 0, limit = 10) {
+  async getTriples (s, p, o, offset = 0, limit = 15) {
     ({ s, p, o } = this._sanitizeTriple(s, p, o))
 
     let els = { s, p, o }

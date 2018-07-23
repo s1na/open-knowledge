@@ -33,7 +33,7 @@ export default class GraphRegistry {
     return res
   }
 
-  async getGraph (name) {
+  async getGraph (name, version = null) {
     let hex = this.web3.utils.utf8ToHex(name)
     let addr = await this.contract.methods.graphs(hex).call()
     if (addr === this.zeroAddr) {
@@ -41,7 +41,7 @@ export default class GraphRegistry {
     }
 
     let contract = new this.web3.eth.Contract(GraphAbi, addr)
-    let g = new Graph(this.web3, contract)
+    let g = new Graph(this.web3, contract, version)
     return g
   }
 

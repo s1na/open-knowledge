@@ -3,12 +3,17 @@ import GraphContract from '../build/contracts/Graph.json'
 import { web3, deployContract } from './test-utils'
 
 let accounts
+let contract
 let g
 let rootUpdatedMock = jest.fn()
+const rootHashes = [
+  'zdpuAmKRXTRNSgwSgXqPDP2FuxVeduNMtM113oGDeUDEoKuA1',
+  'zdpuAyTBnYSugBZhqJuLsNpzjmAjSmxDqBbtAqXMtsvxiN2v3'
+]
 
 beforeAll(async () => {
   accounts = await web3.eth.getAccounts()
-  let contract = await deployContract(GraphContract, null, accounts[0])
+  contract = await deployContract(GraphContract, null, accounts[0])
   g = new Graph(web3, contract)
   g.onRootUpdated(rootUpdatedMock)
 })
@@ -30,25 +35,39 @@ test('should have coinbase as owner', async () => {
 
 test('should have default root', async () => {
   let r = await g.root()
-  expect(r).toBe('zdpuAmKRXTRNSgwSgXqPDP2FuxVeduNMtM113oGDeUDEoKuA1')
+  expect(r).toBe(rootHashes[0])
+})
+
+test('should have version 0', async () => {
+  let v = await g.version()
+  expect(v).toBe(0)
 })
 
 test('should set new root', async () => {
-  let n = 'zdpuAyTBnYSugBZhqJuLsNpzjmAjSmxDqBbtAqXMtsvxiN2v3'
-  let tx = await g.setRoot(n)
+  let tx = await g.setRoot(rootHashes[1])
   expect(tx).not.toBe(null)
   expect(tx).toHaveProperty('events.RootUpdated.returnValues.root')
   expect(rootUpdatedMock).toHaveBeenCalledTimes(1)
-  expect(rootUpdatedMock).toHaveBeenCalledWith(n)
+  expect(rootUpdatedMock).toHaveBeenCalledWith(rootHashes[1])
 
   let r = await g.root()
-  expect(r).toBe(n)
+  expect(r).toBe(rootHashes[1])
+
+  let v = await g.version()
+  expect(v).toBe(1)
 })
 
 test('should get past roots', async () => {
   let roots = await g.getPastRoots()
+  expect(roots).toHaveLength(2)
+  expect(roots[0]).toBe(rootHashes[0])
+  expect(roots[1]).toBe(rootHashes[1])
+})
+
+test('should get past roots by version', async () => {
+  let roots = await g.getPastRoots(1)
   expect(roots).toHaveLength(1)
-  expect(roots[0]).toBe('zdpuAyTBnYSugBZhqJuLsNpzjmAjSmxDqBbtAqXMtsvxiN2v3')
+  expect(roots[0]).toBe(rootHashes[1])
 })
 
 test('should set diff', async () => {
@@ -65,4 +84,14 @@ test('should get past diffs', async () => {
   let diffs = await g.getPastDiffs()
   expect(diffs).toHaveLength(1)
   expect(diffs[0]).toBe('zdpuAsMGZ67AjBfzYY8UipuNmwpRnmfbXuh5cjacMeqTF9Y9H')
+})
+
+test('should instantiate with specific version', async () => {
+  let g0 = new Graph(web3, contract, 0)
+
+  let v = await g0.version()
+  expect(v).toBe(0)
+
+  let r = await g0.root()
+  expect(r).toBe(rootHashes[0])
 })

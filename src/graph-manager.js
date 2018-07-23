@@ -23,6 +23,11 @@ export default class GraphManager {
       return null
     }
 
+    if (this.graph.v !== null) {
+      console.log('Adding triples to previous graph versions is not supported')
+      return null
+    }
+
     let newRoot
     if (submitDiff) {
       let diff = await this.store.computeDiff(triples)

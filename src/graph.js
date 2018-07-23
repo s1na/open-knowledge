@@ -4,9 +4,10 @@ import CID from 'cids'
 import _ from 'lodash'
 
 export default class Graph {
-  constructor (web3, contract) {
+  constructor (web3, contract, version = null) {
     this.web3 = web3
     this.contract = contract
+    this.v = version
   }
 
   async owner () {
@@ -21,11 +22,24 @@ export default class Graph {
   }
 
   async root () {
+    if (this.v !== null) {
+      let roots = await this.getPastRoots(this.v)
+      if (roots.length !== 1) {
+        throw new Error('Couldn\'t find root for corresponding version of graph')
+      }
+
+      return roots[0]
+    }
+
     let hex = await this.contract.methods.root().call()
     return this._hexToCID(hex)
   }
 
   async setRoot (cid) {
+    if (this.v !== null) {
+      throw new Error('Updating root of previous versions is not allowed')
+    }
+
     let coinbase = await this.web3.eth.getCoinbase()
     let owner = await this.owner()
     if (coinbase.toLowerCase() !== owner.toLowerCase()) {
@@ -45,8 +59,13 @@ export default class Graph {
     return tx
   }
 
-  async getPastRoots () {
-    let events = await this.contract.getPastEvents('RootUpdated', { fromBlock: 0, toBlock: 'latest' })
+  async getPastRoots (version = null) {
+    let searchParams = { fromBlock: 0, toBlock: 'latest' }
+    if (version !== null && Number.isInteger(version)) {
+      searchParams.filter = { version: [version] }
+    }
+
+    let events = await this.contract.getPastEvents('RootUpdated', searchParams)
     let roots = _.map(events, (e) => this._hexToCID(e.returnValues.root))
     return roots
   }
@@ -57,6 +76,10 @@ export default class Graph {
   }
 
   async setDiff (cid) {
+    if (this.v !== null) {
+      throw new Error('Updating diff of previous versions is not allowed')
+    }
+
     let coinbase = await this.web3.eth.getCoinbase()
     let owner = await this.owner()
     if (coinbase.toLowerCase() !== owner.toLowerCase()) {
@@ -80,6 +103,15 @@ export default class Graph {
     let events = await this.contract.getPastEvents('DiffUpdated', { fromBlock: 0, toBlock: 'latest' })
     let diffs = _.map(events, (e) => this._hexToCID(e.returnValues.diff))
     return diffs
+  }
+
+  async version () {
+    if (this.v !== null) {
+      return this.v
+    }
+
+    let v = await this.contract.methods.version().call()
+    return parseInt(v)
   }
 
   onRootUpdated (cb) {

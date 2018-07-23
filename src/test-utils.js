@@ -28,12 +28,10 @@ export async function deployContract (Contract, args, initArgs) {
   return contract
 }
 
-export async function publishFile (ok, path, g, n = 10) {
+export async function publishFile (ok, path, g, skip = 0, limit = 10) {
   let doc = await readFile(path, 'utf8')
-  let triples = await ok.parse(doc, n)
-  if (n > 0) {
-    triples = triples.slice(0, n)
-  }
+  let triples = await ok.parse(doc)
+  triples = triples.slice(skip, limit)
 
   await ok.addTriples(triples, g)
 }

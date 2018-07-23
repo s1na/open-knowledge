@@ -47,3 +47,8 @@ test('should get triple pattern for graph', async () => {
   expect(res).toHaveLength(1)
   expect(res[0]).toEqual(['s', 'p', 'o'])
 })
+
+test('should allow getting triples for previous version', async () => {
+  let res = await ok.getTriples(null, null, null, 'test:0')
+  expect(res).toHaveLength(0)
+})

@@ -27,13 +27,23 @@ describe('should perform basic query', () => {
       } LIMIT 15
     `
 
-    await publishFile(ok, 'example/node/Isaac_Asimov.n3', 'default', 10)
-    let res = await ok.execute(q1, 'default')
+    await publishFile(ok, 'example/node/Isaac_Asimov.n3', 'default', 0, 10)
+    let res = await ok.execute(q1)
     expect(res).toHaveLength(10)
 
     res = await ok.execute(q2)
     expect(res).toHaveLength(1)
     expect(res[0]['?s']).toBe('http://dbpedia.org/resource/John_W._Campbell')
+  })
+
+  test('should query previous versions', async () => {
+    let q1 = `SELECT * { ?s ?p ?o }`
+    let q2 = `SELECT * FROM <openknowledge:default:1> { ?s ?p ?o }`
+    await publishFile(ok, 'example/node/Isaac_Asimov.n3', 'default', 10, 11)
+    let res = await ok.execute(q1)
+    expect(res).toHaveLength(11)
+    let res2 = await ok.execute(q2)
+    expect(res2).toHaveLength(10)
   })
 })
 
@@ -52,8 +62,8 @@ describe('should perform federated query', () => {
   })
 
   test('should add triples', async () => {
-    await publishFile(ok, 'example/node/Isaac_Asimov.n3', 'default', 10)
-    await publishFile(ok, 'example/node/John_W._Campbell.n3', 'dbpedia', 10)
+    await publishFile(ok, 'example/node/Isaac_Asimov.n3', 'default', 0, 10)
+    await publishFile(ok, 'example/node/John_W._Campbell.n3', 'dbpedia', 0, 10)
 
     let res = await ok.getTriples(null, null, null, 'default')
     expect(res).toHaveLength(10)

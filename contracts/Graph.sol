@@ -14,12 +14,14 @@ contract Graph is Ownable, Migratable {
     bytes diff
   );
 
-  bytes public root = hex"017112200d511ee9a3ab4e52e8e2bc40fd2669d9c44b89164107e9898cd9698c1506c5aa";
+  bytes public root;
   bytes public diff;
   uint32 public version;
 
   function initialize(address _owner) isInitializer("Graph", "0") public {
     owner = _owner;
+    root = hex"017112200d511ee9a3ab4e52e8e2bc40fd2669d9c44b89164107e9898cd9698c1506c5aa";
+    emit RootUpdated(root, version);
   }
 
   function setRoot(bytes _root) public onlyOwner {
