@@ -27,6 +27,11 @@ contract('Graph', async (accounts) => {
     assert.equal(diff, '0x')
   })
 
+  it('should have version 0', async () => {
+    let version = await defaultG.version.call()
+    assert.equal(version, 0)
+  })
+
   it('should set root correctly', async () => {
     let hex = '0x01711220c19a797fa1fd590cd2e5b42d1cf5f246e29b91684e2f87404b81dc345c7a56a0'
     let tx = await defaultG.setRoot(hex)
@@ -35,6 +40,9 @@ contract('Graph', async (accounts) => {
 
     let root = await defaultG.root.call()
     assert.equal(root, hex)
+
+    let version = await defaultG.version.call()
+    assert.equal(version, 1)
   })
 
   it('should set diff', async () => {
