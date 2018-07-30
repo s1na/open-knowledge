@@ -1,5 +1,8 @@
 pragma solidity ^0.4.23;
 
+// Import dependencies, otherwise migrate
+// won't be able to find them
+import "tcr/RegistryFactory.sol";
 
 contract Migrations {
   address public owner;
