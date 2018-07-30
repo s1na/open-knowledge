@@ -2,3 +2,4 @@ node_modules/
 dist/
 orbitdb
 build
+installed_contracts
