@@ -13,7 +13,8 @@ const rootHashes = [
 
 beforeAll(async () => {
   accounts = await web3.eth.getAccounts()
-  contract = await deployContract(GraphContract, null, accounts[0])
+  let hex = web3.utils.utf8ToHex('test')
+  contract = await deployContract(GraphContract, null, [accounts[0], hex])
   g = new Graph(web3, contract)
   g.onRootUpdated(rootUpdatedMock)
 })
@@ -31,6 +32,11 @@ test('should have coinbase as owner', async () => {
   let o = await g.owner()
   expect(o).toEqual(accounts[0].toLowerCase())
   expect(await g.isOwner()).toBe(true)
+})
+
+test('should have test id', async () => {
+  let id = await g.id()
+  expect(id).toEqual('test')
 })
 
 test('should have default root', async () => {

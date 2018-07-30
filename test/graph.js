@@ -1,20 +1,24 @@
-const GraphRegistry = artifacts.require('GraphRegistry')
 const Graph = artifacts.require('Graph')
+const Web3 = require('web3')
+const web3 = new Web3()
 
 contract('Graph', async (accounts) => {
-  let registry
   let defaultG
 
   before(async () => {
-    registry = await GraphRegistry.deployed()
-    await registry.initialize()
-    let defaultAddr = await registry.graphs.call('default')
-    defaultG = await Graph.at(defaultAddr)
+    defaultG = await Graph.new()
+    await defaultG.initialize(accounts[0], 'default')
   })
 
   it('should have msg.sender as owner', async () => {
     let owner = await defaultG.owner.call()
     assert.equal(owner, accounts[0])
+  })
+
+  it('should have default id', async () => {
+    let hex = await defaultG.id.call()
+    let id = web3.utils.hexToUtf8(hex)
+    assert.equal(id, 'default')
   })
 
   it('should have default root', async () => {

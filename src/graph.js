@@ -21,6 +21,32 @@ export default class Graph {
     return o === coinbase.toLowerCase()
   }
 
+  async id () {
+    let hex = await this.contract.methods.id().call()
+    let id = this.web3.utils.hexToUtf8(hex)
+    return id
+  }
+
+  async setId (id) {
+    let coinbase = await this.web3.eth.getCoinbase()
+    let owner = await this.owner()
+    if (coinbase.toLowerCase() !== owner.toLowerCase()) {
+      console.log('Coinbase account does not own Graph contract')
+      return null
+    }
+
+    let hex = this.web3.utils.utf8ToHex(id)
+    let tx
+    try {
+      tx = await this.contract.methods.setId(hex).send({ from: coinbase })
+    } catch (e) {
+      console.log(e)
+      return null
+    }
+
+    return tx
+  }
+
   async root () {
     if (this.v !== null) {
       let roots = await this.getPastRoots(this.v)

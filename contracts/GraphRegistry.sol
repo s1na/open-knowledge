@@ -22,7 +22,7 @@ contract GraphRegistry is Ownable, Migratable {
     require(graphs[_name] == 0);
 
     Graph g = new Graph();
-    g.initialize(msg.sender);
+    g.initialize(msg.sender, _name);
     graphs[_name] = g;
     graphIndices.push(_name);
     emit NewGraph(g);

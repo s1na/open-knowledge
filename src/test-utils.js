@@ -17,8 +17,8 @@ export async function deployContract (Contract, args, initArgs) {
 
   if (typeof contract.methods.initialize === 'function') {
     if (initArgs) {
-      gas = await contract.methods.initialize(initArgs).estimateGas({ from: accounts[0] })
-      await contract.methods.initialize(initArgs).send({ from: accounts[0], gas })
+      gas = await contract.methods.initialize(...initArgs).estimateGas({ from: accounts[0] })
+      await contract.methods.initialize(...initArgs).send({ from: accounts[0], gas })
     } else {
       gas = await contract.methods.initialize().estimateGas({ from: accounts[0] })
       await contract.methods.initialize().send({ from: accounts[0], gas })
