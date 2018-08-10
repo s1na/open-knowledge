@@ -2,22 +2,30 @@
 
 import N3 from 'n3'
 import { Parser as SparqlParser } from 'sparqljs'
+import Web3 from 'web3'
+import TCR from 'tcr.js'
 
 import GraphManager from './graph-manager'
 import FederatedFragmentsClient from './federated-fragments-client'
 import SparqlIterator from './ldf/sparql/SparqlIterator'
+import Registry from './registry'
 
 export default class OpenKnowledge {
-  constructor (ipfs, registry) {
+  constructor (ipfs, provider, registryContract) {
     this.ipfs = ipfs
-    this.registry = registry
+    this.provider = provider
+    this.web3 = new Web3(provider)
+    this.registryContract = registryContract
+    this.tcr = new TCR(provider, registryContract)
+    this.registry = new Registry(this.web3, this.tcr)
     this.graphManagers = {}
     this.emptyGraphCid = 'zdpuAmKRXTRNSgwSgXqPDP2FuxVeduNMtM113oGDeUDEoKuA1'
     this.emptyObjCid = 'zdpuAyTBnYSugBZhqJuLsNpzjmAjSmxDqBbtAqXMtsvxiN2v3'
   }
 
   async init () {
-    this.graphManagers.default = await this.getGraphManager('default')
+    await this.registry.init()
+    this.web3.eth.defaultAccount = await this.web3.eth.getCoinbase()
   }
 
   async getGraphManager (name) {
