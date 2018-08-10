@@ -10,6 +10,12 @@ export default class Graph {
     this.v = version
   }
 
+  async initialize (owner, id) {
+    let hex = this.web3.utils.utf8ToHex(id)
+    let gas = await this.contract.methods.initialize(owner, hex).estimateGas({ from: this.web3.eth.defaultAccount })
+    return this.contract.methods.initialize(owner, hex).send({ from: this.web3.eth.defaultAccount, gas })
+  }
+
   async owner () {
     let o = await this.contract.methods.owner().call()
     return o.toLowerCase()

@@ -3,3 +3,4 @@ dist/
 orbitdb
 build
 installed_contracts
+yarn.lock
