@@ -6,6 +6,8 @@ Open Knowledge
 Decentralized open linked data for your (decentralized) applications.
 
 **Note:** This library is in early development phase, and therefore not suitable for production use.
+**Note:** Open-knowledge is undergoing changes in the architecture, and consequently the API. The `Registry`
+is being replaced by a [TCR](github.com/skmgoldin/tcr).
 
 Overview
 --------
