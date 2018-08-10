@@ -36,7 +36,7 @@ export default class Registry {
     return listing
   }
 
-  async getGraph (name) {
+  async getGraph (name, version = null) {
     const hash = this.web3.utils.sha3(name)
     const listing = await this.tcr.getListing(hash)
     if (!listing || !listing.whitelisted) {
@@ -44,7 +44,7 @@ export default class Registry {
     }
 
     const addr = listing.data
-    const graph = this.getGraphFromAddr(addr)
+    const graph = this.getGraphFromAddr(addr, version)
     const graphId = await graph.id()
     if (graphId !== name) {
       throw new Error('The listing data has a different id')
@@ -53,9 +53,9 @@ export default class Registry {
     return graph
   }
 
-  getGraphFromAddr (addr) {
+  getGraphFromAddr (addr, version = null) {
     let contract = new this.web3.eth.Contract(GraphContract.abi, addr)
-    const graph = new Graph(this.web3, contract)
+    const graph = new Graph(this.web3, contract, version)
     return graph
   }
 }
