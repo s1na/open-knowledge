@@ -1,18 +1,37 @@
+import { Deployer } from '../../../eth/tcr.js/dist/tcr.cjs.js'
+
 import OpenKnowledge from './open-knowledge'
-import GraphRegistry from './graph-registry'
-import GraphRegistryContract from '../build/contracts/GraphRegistry.json'
 import ipfs from './ipfs-mem'
-import { web3, deployContract, publishFile } from './test-utils'
+import { web3, publishFile, sleep } from './test-utils'
 
 let ok
 
 describe('should perform basic query', () => {
   beforeAll(async () => {
     await ipfs.dag.init()
-    let contract = await deployContract(GraphRegistryContract)
-    let registry = new GraphRegistry(web3, contract)
-    ok = new OpenKnowledge(ipfs, registry)
+
+    const deployer = new Deployer(web3.currentProvider)
+    let params = deployer.defaultParams
+    // Set apply stage to 1 sec
+    // to test whitelisted listings
+    params[2] = 1
+    let contract = await deployer.newRegistry()
+    ok = new OpenKnowledge(ipfs, web3.currentProvider, contract)
     await ok.init()
+  })
+
+  test('should create new default graph', async () => {
+    let m = await ok.newGraphManager('default')
+    expect(await m.graph.id()).toEqual('default')
+  })
+
+  test('should apply for graph', async () => {
+    let hash = web3.utils.sha3('default')
+    let m = await ok.getGraphManager('default')
+    let listing = await ok.registry.apply(m.graph, 120)
+    expect(listing.hash).toEqual(hash)
+    // Wait to be whitelisted
+    await sleep(1000)
   })
 
   test('should add triples and query successfully', async () => {
@@ -50,15 +69,18 @@ describe('should perform basic query', () => {
 describe('should perform federated query', () => {
   beforeAll(async () => {
     await ipfs.dag.init()
-    let contract = await deployContract(GraphRegistryContract)
-    let registry = new GraphRegistry(web3, contract)
-    ok = new OpenKnowledge(ipfs, registry)
+
+    const deployer = new Deployer(web3.currentProvider)
+    let contract = await deployer.newRegistry()
+    ok = new OpenKnowledge(ipfs, web3.currentProvider, contract)
     await ok.init()
   })
 
   test('should create graph manager', async () => {
-    let manager = await ok.newGraphManager('dbpedia')
-    expect(typeof manager).toBe('object')
+    let defaultManager = await ok.newGraphManager('default')
+    expect(typeof defaultManager).toBe('object')
+    let dbpediaManager = await ok.newGraphManager('dbpedia')
+    expect(typeof dbpediaManager).toBe('object')
   })
 
   test('should add triples', async () => {

@@ -35,3 +35,7 @@ export async function publishFile (ok, path, g, skip = 0, limit = 10) {
 
   await ok.addTriples(triples, g)
 }
+
+export function sleep (ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
