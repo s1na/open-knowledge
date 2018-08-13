@@ -1,12 +1,12 @@
-const GraphRegistry = artifacts.require('GraphRegistry')
+const SimpleRegistry = artifacts.require('SimpleRegistry')
 const Web3 = require('web3')
 const web3 = new Web3()
 
-contract('GraphRegistry', async (accounts) => {
+contract('SimpleRegistry', async (accounts) => {
   let inst
 
   before(async () => {
-    inst = await GraphRegistry.deployed()
+    inst = await SimpleRegistry.new()
     await inst.initialize()
   })
 

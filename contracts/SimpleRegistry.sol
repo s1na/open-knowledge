@@ -6,7 +6,7 @@ import "zos-lib/contracts/migrations/Migratable.sol";
 import "./Graph.sol";
 
 
-contract GraphRegistry is Ownable, Migratable {
+contract SimpleRegistry is Ownable, Migratable {
   event NewGraph(
     address addr
   );
@@ -14,7 +14,7 @@ contract GraphRegistry is Ownable, Migratable {
   bytes32[] public graphIndices;
   mapping(bytes32 => address) public graphs;
 
-  function initialize() isInitializer("GraphRegistry", "0") public {
+  function initialize() isInitializer("SimpleRegistry", "0") public {
     newGraph("default");
   }
 

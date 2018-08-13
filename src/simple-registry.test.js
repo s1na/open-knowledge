@@ -1,12 +1,12 @@
-import GraphRegistry from './graph-registry'
-import GraphRegistryContract from '../build/contracts/GraphRegistry.json'
+import SimpleRegistry from './simple-registry'
+import SimpleRegistryContract from '../build/contracts/SimpleRegistry.json'
 import { web3, deployContract } from './test-utils'
 
 let r
 
 beforeAll(async () => {
-  let contract = await deployContract(GraphRegistryContract)
-  r = new GraphRegistry(web3, contract)
+  let contract = await deployContract(SimpleRegistryContract)
+  r = new SimpleRegistry(web3, contract)
 })
 
 test('should instantiate', () => {

@@ -3,7 +3,7 @@
 import Graph from './graph'
 import { abi as GraphAbi } from '../build/contracts/Graph.json'
 
-export default class GraphRegistry {
+export default class SimpleRegistry {
   constructor (web3, contract) {
     this.web3 = web3
     this.contract = contract
