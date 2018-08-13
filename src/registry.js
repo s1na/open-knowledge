@@ -39,7 +39,7 @@ export default class Registry {
   async getGraph (name, version = null) {
     const hash = this.web3.utils.sha3(name)
     const listing = await this.tcr.getListing(hash)
-    if (!listing || !listing.whitelisted) {
+    if (!listing) {
       throw new Error('Listing is not in the registry')
     }
 

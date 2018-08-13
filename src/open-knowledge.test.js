@@ -1,17 +1,16 @@
+import { Deployer } from '../../../eth/tcr.js/dist/tcr.cjs.js'
 import OpenKnowledge from './open-knowledge'
-import GraphRegistry from './graph-registry'
-import GraphRegistryContract from '../build/contracts/GraphRegistry.json'
 import ipfs from './ipfs-mem'
-import { web3, deployContract } from './test-utils'
+import { web3 } from './test-utils'
 
 let ok
 
 beforeAll(async () => {
   await ipfs.dag.init()
 
-  let contract = await deployContract(GraphRegistryContract)
-  let registry = new GraphRegistry(web3, contract)
-  ok = new OpenKnowledge(ipfs, registry)
+  const deployer = new Deployer(web3.currentProvider)
+  let contract = await deployer.newRegistry()
+  ok = new OpenKnowledge(ipfs, web3.currentProvider, contract)
   await ok.init()
 })
 
@@ -19,22 +18,27 @@ test('should instantiate', async () => {
   expect(typeof ok).toBe('object')
 })
 
-test('should have default graph manager', async () => {
+test('should have no graph manager initially', async () => {
   let m = await ok.getGraphManager('default')
-  expect(typeof m).toBe('object')
-
-  let managers = await ok.getGraphs()
-  expect(managers).toHaveProperty('default')
-  expect(managers.default).toHaveProperty('graph')
+  expect(m).toBe(null)
 })
 
 test('should add new graph manager', async () => {
   let m = await ok.newGraphManager('test')
   expect(typeof m).toBe('object')
   expect(m).toHaveProperty('graph')
+  expect(await m.graph.id()).toEqual('test')
+})
 
-  let managers = await ok.getGraphs()
-  expect(managers).toHaveProperty('test')
+test('should apply for the new graph', async () => {
+  let hash = web3.utils.sha3('test')
+
+  let m = await ok.getGraphManager('test')
+  expect(await m.graph.id()).toEqual('test')
+
+  let listing = await ok.registry.apply(m.graph, 120)
+  expect(listing.hash).toEqual(hash)
+  expect(listing.whitelisted).toBe(false)
 })
 
 test('should add triples for graph', async () => {

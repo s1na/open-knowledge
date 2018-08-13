@@ -6,7 +6,7 @@ import Web3 from 'web3'
 
 const readFile = promisify(fs.readFile)
 
-const provider = Ganache.provider({})
+const provider = Ganache.provider({ gasLimit: 8000000 })
 export const web3 = new Web3(provider)
 
 export async function deployContract (Contract, args, initArgs) {

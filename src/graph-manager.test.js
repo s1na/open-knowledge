@@ -11,7 +11,8 @@ beforeAll(async () => {
   await ipfs.dag.init()
 
   let accounts = await web3.eth.getAccounts()
-  let contract = await deployContract(GraphContract, null, accounts[0])
+  let hex = web3.utils.utf8ToHex('test')
+  let contract = await deployContract(GraphContract, null, [accounts[0], hex])
   graph = new Graph(web3, contract)
   m = new GraphManager(ipfs, graph)
 })

@@ -3,7 +3,7 @@
 import N3 from 'n3'
 import { Parser as SparqlParser } from 'sparqljs'
 import Web3 from 'web3'
-import TCR from 'tcr.js'
+import { TCR } from '../../../eth/tcr.js/dist/tcr.esm.js'
 
 import GraphManager from './graph-manager'
 import FederatedFragmentsClient from './federated-fragments-client'
@@ -41,7 +41,13 @@ export default class OpenKnowledge {
       version = parseInt(parts[1])
     }
 
-    let graph = await this.registry.getGraph(n, version)
+    let graph
+    try {
+      graph = await this.registry.getGraph(n, version)
+    } catch (e) {
+      return null
+    }
+
     if (graph === null) {
       return null
     }
